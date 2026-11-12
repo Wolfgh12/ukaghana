@@ -8,7 +8,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # Load local environment secrets
 load_dotenv(BASE_DIR / '.env')
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = os.getenv('SECRET_KEY') or 'uka-ghana-eastern-region-2026-secret-key'
+
+ALLOWED_HOSTS = ['.vercel.app', 'ukaghana.vercel.app', '127.0.0.1', 'localhost']
+CSRF_TRUSTED_ORIGINS = ['https://*.vercel.app', 'https://ukaghana.vercel.app']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -65,12 +68,12 @@ USE_I18N = True
 USE_TZ = True
 
 # Static files
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Media files (Receipts, outreach media, executive headshots)
-MEDIA_URL = 'media/'
+MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
