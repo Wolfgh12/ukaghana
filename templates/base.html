@@ -6,9 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>{% block title %}United Kabye Association of Ghana | Eastern Region Branch{% endblock %}</title>
     
-    <!-- Favicon -->
+    <!-- Favicon & WhatsApp / Social Link Preview -->
     <link rel="icon" type="image/jpeg" href="{% static 'images/wc.jpg' %}">
+    <link rel="shortcut icon" type="image/jpeg" href="{% static 'images/wc.jpg' %}">
     <link rel="apple-touch-icon" href="{% static 'images/wc.jpg' %}">
+
+    <meta property="og:site_name" content="United Kabye Association of Ghana">
+    <meta property="og:title" content="United Kabye Association of Ghana | Eastern Region Branch">
+    <meta property="og:description" content="Unity • Culture • Progress • Service — Official Eastern Region Branch Portal, Welfare Scheme, and Member Secretariat.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    <meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{% static 'images/wc.jpg' %}">
+    <meta property="og:image:secure_url" content="https://{{ request.get_host }}{% static 'images/wc.jpg' %}">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="United Kabye Association of Ghana Official Crest">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="United Kabye Association of Ghana | Eastern Region Branch">
+    <meta name="twitter:description" content="Unity • Culture • Progress • Service — Official Eastern Region Branch Portal.">
+    <meta name="twitter:image" content="{{ request.scheme }}://{{ request.get_host }}{% static 'images/wc.jpg' %}">
     
     <!-- Google Fonts: Cinzel (Display & Emblem Prestige) & Plus Jakarta Sans (Digital Clarity) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
