@@ -1,0 +1,384 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>{% block title %}United Kabye Association of Ghana | Eastern Region Branch{% endblock %}</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="{% static 'images/wc.jpg' %}">
+    <link rel="apple-touch-icon" href="{% static 'images/wc.jpg' %}">
+    
+    <!-- Google Fonts: Cinzel (Display & Emblem Prestige) & Plus Jakarta Sans (Digital Clarity) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Standalone Tailwind Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        uka: {
+                            deep: '#03170C',
+                            forest: '#072A17',
+                            emerald: '#0B4728',
+                            moss: '#145D36',
+                            gold: '#F3BA2F',
+                            goldlight: '#FDE394',
+                            golddark: '#B87B0E',
+                            crimson: '#D9222A',
+                            terracotta: '#D45B28',
+                            parchment: '#FCFBF7',
+                            cream: '#F6F3EB',
+                            border: '#E8E1D1'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'spin-slow': 'spin 12s linear infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html, body {
+            max-width: 100%;
+            overflow-x: clip;
+        }
+
+        /* Gold Foil Gradient Text */
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF1BE 0%, #F3BA2F 50%, #B87B0E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Forest-to-Gold Luxury Gradient */
+        .bg-gradient-uka {
+            background: linear-gradient(135deg, #072A17 0%, #0B4728 50%, #03170C 100%);
+        }
+
+        /* Ambient Glow Shadows */
+        .glow-gold {
+            box-shadow: 0 0 35px -5px rgba(243, 186, 47, 0.35);
+        }
+        .glow-emerald {
+            box-shadow: 0 0 40px -5px rgba(11, 71, 40, 0.30);
+        }
+
+        /* Seamless Infinite Marquee */
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: inline-flex;
+            width: max-content;
+            animation: marquee 28s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+
+        /* Electric Blue Circuit Sweep Animation */
+        @keyframes electricSweep {
+            0% { transform: translateX(-150%) skewX(-25deg); }
+            50%, 100% { transform: translateX(250%) skewX(-25deg); }
+        }
+        .electric-circuit {
+            position: relative;
+            overflow: hidden;
+        }
+        .electric-circuit::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 45%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.8), rgba(59, 130, 246, 0.9), transparent);
+            animation: electricSweep 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-uka-parchment text-slate-900 font-sans antialiased min-h-screen w-full flex flex-col selection:bg-uka-gold selection:text-uka-deep">
+
+    <!-- 2-SECOND GOD-MODE PRELOADER -->
+    <div id="preloader" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-b from-uka-deep via-uka-forest to-black px-4 transition-opacity duration-700 ease-out">
+        <div class="relative flex items-center justify-center">
+            <!-- Pulsing Ambient Aura -->
+            <div class="absolute w-44 h-44 sm:w-52 sm:h-52 rounded-full bg-gradient-to-tr from-uka-gold via-uka-crimson to-emerald-500 blur-3xl opacity-60 animate-pulse-slow"></div>
+            
+            <!-- Rotating Ceremonial Gold Orbit Ring -->
+            <div class="w-36 h-36 sm:w-40 sm:h-40 rounded-full border-2 border-transparent border-t-uka-gold border-r-uka-goldlight border-b-uka-golddark animate-spin-slow"></div>
+            
+            <!-- Crest Container -->
+            <div class="absolute w-24 h-24 sm:w-28 sm:h-28 rounded-full p-1 bg-gradient-to-tr from-uka-gold via-yellow-200 to-uka-golddark shadow-2xl overflow-hidden animate-pulse">
+                <img src="{% static 'images/wc.jpg' %}" alt="United Kabye Association of Ghana Crest" class="w-full h-full object-cover rounded-full">
+            </div>
+        </div>
+
+        <!-- Preloader Typography & Progress Bar -->
+        <div class="mt-8 text-center space-y-3 max-w-xs mx-auto">
+            <span class="inline-block px-3 py-1 rounded-full bg-white/10 border border-uka-gold/30 text-[10px] font-mono uppercase tracking-[0.22em] text-uka-goldlight">
+                Official Branch Portal
+            </span>
+            <h2 class="font-heading font-black text-sm tracking-[0.18em] text-white uppercase">
+                United Kabye Association
+            </h2>
+            <div class="w-48 sm:w-56 h-1.5 bg-black/60 rounded-full overflow-hidden mx-auto p-0.5 border border-white/10">
+                <div id="loader-bar" class="h-full bg-gradient-to-r from-uka-gold via-amber-400 to-uka-terracotta rounded-full w-0 transition-all duration-[1900ms] ease-out"></div>
+            </div>
+            <p class="font-mono text-[10px] text-slate-400 tracking-widest uppercase">
+                Architected by Wolvatarr
+            </p>
+        </div>
+    </div>
+
+    <!-- Top Administrative Micro-Bar -->
+    <div class="w-full bg-gradient-to-r from-uka-deep via-uka-forest to-uka-deep text-white/90 text-xs py-2 px-3 sm:px-8 border-b border-uka-gold/20">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-1.5 text-center md:text-left">
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 sm:gap-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-0.5 rounded-full text-[10px] font-bold bg-gradient-to-r from-uka-gold to-yellow-500 text-uka-deep uppercase tracking-wider shadow-sm">
+                    ★ Official Eastern Region Branch Charter
+                </span>
+                <span class="text-white/80 text-[11px] hidden lg:inline">
+                    Recognized Media: <strong class="text-white">Kabiye</strong> • <strong class="text-white">English</strong> • <strong class="text-white">Twi</strong> • <strong class="text-white">Français</strong>
+                </span>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-[10px] sm:text-[11px]">
+                <span class="flex items-center gap-1.5 text-white/90">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping shrink-0"></span>
+                    <span>Assembly: 1st & 3rd Sunday @ 2:00 PM</span>
+                </span>
+                <span class="hidden sm:inline text-uka-goldlight font-semibold border-l border-white/20 pl-3">Eastern Region, Ghana</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Floating Navigation Bar -->
+    <header class="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-xl border-b border-uka-border shadow-md transition-shadow duration-300">
+        <div class="max-w-7xl mx-auto px-3 sm:px-8 h-20 sm:h-24 flex items-center justify-between gap-2 sm:gap-6">
+            
+            <!-- Brand Crest & Moniker -->
+            <a href="{% url 'core:home' %}" class="flex items-center gap-2.5 sm:gap-3.5 group min-w-0">
+                <div class="w-11 h-11 sm:w-16 sm:h-16 rounded-full p-0.5 bg-gradient-to-tr from-uka-gold via-yellow-300 to-uka-golddark shadow-lg ring-2 ring-uka-gold/30 group-hover:scale-105 transition-transform duration-300 shrink-0">
+                    <img src="{% static 'images/wc.jpg' %}" alt="UKA Logo" class="w-full h-full object-cover rounded-full">
+                </div>
+                <div class="min-w-0">
+                    <span class="block font-heading font-black text-xs sm:text-lg xl:text-xl text-uka-forest tracking-tight leading-tight group-hover:text-uka-emerald transition-colors">
+                        UNITED KABYE ASSOCIATION
+                    </span>
+                    <span class="block text-[9px] sm:text-[11px] font-bold text-uka-terracotta uppercase tracking-[0.12em] sm:tracking-[0.18em] mt-0.5 truncate">
+                        Of Ghana • Eastern Region
+                    </span>
+                </div>
+            </a>
+
+            <!-- Balanced Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-6 font-semibold text-xs tracking-wider uppercase text-slate-600">
+                <a href="{% url 'core:home' %}" class="{% if request.resolver_match.url_name == 'home' %}text-uka-forest font-bold underline decoration-uka-gold decoration-2 underline-offset-8{% endif %} hover:text-uka-forest transition-colors">Home</a>
+                <a href="{% url 'core:about' %}" class="{% if request.resolver_match.url_name == 'about' %}text-uka-forest font-bold underline decoration-uka-gold decoration-2 underline-offset-8{% endif %} hover:text-uka-forest transition-colors">About</a>
+                <a href="{% url 'core:impact' %}" class="{% if request.resolver_match.url_name == 'impact' %}text-uka-forest font-bold underline decoration-uka-gold decoration-2 underline-offset-8{% endif %} hover:text-uka-forest transition-colors">Impact & Gallery</a>
+                
+                <!-- Charter & Welfare Dropdown -->
+                <div class="relative group py-2">
+                    <button type="button" class="flex items-center gap-1 hover:text-uka-forest transition-colors focus:outline-none">
+                        <span>Charter & Law</span>
+                        <svg class="w-3.5 h-3.5 text-uka-gold group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-white rounded-2xl shadow-xl border border-uka-border p-2 space-y-1 z-50">
+                        <a href="{% url 'core:about' %}#creed" class="block px-3.5 py-2.5 text-[11px] font-semibold text-slate-700 hover:bg-uka-parchment hover:text-uka-forest rounded-xl transition">Constitutional Creed</a>
+                        <a href="{% url 'core:home' %}#welfare" class="block px-3.5 py-2.5 text-[11px] font-semibold text-slate-700 hover:bg-uka-parchment hover:text-uka-forest rounded-xl transition">Welfare Shield (Art. 5)</a>
+                        <a href="{% url 'core:about' %}#directorate" class="block px-3.5 py-2.5 text-[11px] font-semibold text-slate-700 hover:bg-uka-parchment hover:text-uka-forest rounded-xl transition">Executive Directorate</a>
+                        <a href="{% url 'core:home' %}#dues" class="block px-3.5 py-2.5 text-[11px] font-semibold text-slate-700 hover:bg-uka-parchment hover:text-uka-forest rounded-xl transition">MoMo Dues Paypoint</a>
+                    </div>
+                </div>
+
+                <a href="{% url 'core:about' %}#faq" class="hover:text-uka-forest transition-colors">FAQ</a>
+                <a href="{% url 'core:contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}text-uka-forest font-bold underline decoration-uka-gold decoration-2 underline-offset-8{% endif %} hover:text-uka-forest transition-colors">Contact</a>
+            </nav>
+
+            <!-- Sleek, Compact Portal Button & Mobile Menu Toggle -->
+            <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+                <a href="{% url 'core:home' %}#membership" class="inline-flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-uka-gold via-yellow-400 to-amber-500 hover:brightness-105 text-uka-deep font-bold text-[11px] sm:text-xs uppercase tracking-wider shadow-md shadow-uka-gold/20 hover:scale-[1.02] transition-all">
+                    <svg class="w-3.5 h-3.5 text-uka-deep shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                    <span>Join<span class="hidden sm:inline"> Portal</span></span>
+                </a>
+
+                <button type="button" onclick="document.getElementById('mobile-nav').classList.toggle('hidden')" class="lg:hidden p-2 sm:p-2.5 rounded-xl border border-uka-border text-uka-forest hover:bg-uka-parchment" aria-label="Toggle Menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-nav" class="hidden lg:hidden bg-white border-t border-uka-border px-5 py-4 space-y-1.5 text-xs font-bold uppercase tracking-wider text-slate-700 shadow-lg">
+            <a href="{% url 'core:home' %}" onclick="document.getElementById('mobile-nav').classList.add('hidden')" class="{% if request.resolver_match.url_name == 'home' %}bg-uka-parchment text-uka-forest{% endif %} block py-2.5 px-3 rounded-xl hover:bg-uka-parchment hover:text-uka-forest">Home</a>
+            <a href="{% url 'core:about' %}" onclick="document.getElementById('mobile-nav').classList.add('hidden')" class="{% if request.resolver_match.url_name == 'about' %}bg-uka-parchment text-uka-forest{% endif %} block py-2.5 px-3 rounded-xl hover:bg-uka-parchment hover:text-uka-forest">About Our Union</a>
+            <a href="{% url 'core:impact' %}" onclick="document.getElementById('mobile-nav').classList.add('hidden')" class="{% if request.resolver_match.url_name == 'impact' %}bg-uka-parchment text-uka-forest{% endif %} block py-2.5 px-3 rounded-xl hover:bg-uka-parchment hover:text-uka-forest">Impact & Gallery</a>
+            <a href="{% url 'core:contact' %}" onclick="document.getElementById('mobile-nav').classList.add('hidden')" class="{% if request.resolver_match.url_name == 'contact' %}bg-uka-parchment text-uka-forest{% endif %} block py-2.5 px-3 rounded-xl hover:bg-uka-parchment hover:text-uka-forest">Contact Us</a>
+            <a href="{% url 'core:home' %}#welfare" onclick="document.getElementById('mobile-nav').classList.add('hidden')" class="block py-2.5 px-3 rounded-xl hover:bg-uka-parchment hover:text-uka-forest">Welfare Shield (Art. 5)</a>
+            <a href="{% url 'core:about' %}#directorate" onclick="document.getElementById('mobile-nav').classList.add('hidden')" class="block py-2.5 px-3 rounded-xl hover:bg-uka-parchment hover:text-uka-forest">Executive Directorate</a>
+            <a href="{% url 'core:home' %}#dues" onclick="document.getElementById('mobile-nav').classList.add('hidden')" class="block py-2.5 px-3 rounded-xl hover:bg-uka-parchment hover:text-uka-forest">Dues & MoMo Paypoint</a>
+            <a href="{% url 'core:home' %}#membership" onclick="document.getElementById('mobile-nav').classList.add('hidden')" class="block py-2.5 px-3 rounded-xl bg-gradient-to-r from-uka-gold/25 to-amber-100 text-uka-forest">Apply for Membership (GHC 50)</a>
+        </div>
+
+        <!-- Ghana Flag Trim Accent Line -->
+        <div class="h-0.5 w-full bg-gradient-to-r from-uka-crimson via-uka-gold to-emerald-600"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow w-full overflow-x-hidden">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Executive Footer -->
+    <footer class="w-full bg-gradient-to-b from-uka-deep to-black text-white/80 pt-16 sm:pt-20 pb-12 border-t-4 border-uka-gold relative overflow-hidden">
+        <!-- Ambient Background Glow -->
+        <div class="absolute -top-32 right-10 w-80 sm:w-96 h-80 sm:h-96 bg-uka-emerald/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-4 gap-10 sm:gap-12 pb-14 sm:pb-16 border-b border-white/10 relative z-10">
+            <!-- Brand Summary -->
+            <div class="space-y-4 md:col-span-2">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-12 h-12 rounded-full p-0.5 bg-gradient-to-tr from-uka-gold to-yellow-200 shrink-0">
+                        <img src="{% static 'images/wc.jpg' %}" alt="UKA Crest" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div>
+                        <span class="block font-heading font-black text-base sm:text-lg text-white">United Kabye Association</span>
+                        <span class="block text-[11px] sm:text-xs text-uka-gold uppercase tracking-widest">Eastern Region Branch Secretariat</span>
+                    </div>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-lg">
+                    The supreme regional fraternal union dedicated to family solidarity, cultural pride, quarterly healthcare and orphanage outreach, and comprehensive member welfare protection across the Eastern Region of Ghana.
+                </p>
+                <div class="inline-flex flex-wrap items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white/5 border border-white/10 text-[11px] sm:text-xs text-uka-goldlight font-mono max-w-full">
+                    <span class="text-uka-gold">Motto:</span>
+                    <strong>"Unity Culture Progress and Service"</strong>
+                </div>
+            </div>
+
+            <!-- Constitutional Directory -->
+            <div>
+                <h4 class="font-heading text-xs text-uka-gold uppercase tracking-[0.22em] mb-4">Constitutional Pillars</h4>
+                <ul class="space-y-2.5 text-xs text-slate-300 font-medium">
+                    <li><a href="{% url 'core:about' %}" class="hover:text-white transition">Article 1 & 2: Governance Charter</a></li>
+                    <li><a href="{% url 'core:home' %}#dues" class="hover:text-white transition">Article 3: Statutory Dues (GHC 20/mo)</a></li>
+                    <li><a href="{% url 'core:home' %}#membership" class="hover:text-white transition">Article 4: Membership & GHC 50 Induction</a></li>
+                    <li><a href="{% url 'core:home' %}#welfare" class="hover:text-white transition">Article 5: 5 Statutory Welfare Packages</a></li>
+                    <li><a href="{% url 'core:impact' %}" class="hover:text-white transition">Article 10: Quarterly CSR & Field Gallery</a></li>
+                </ul>
+            </div>
+
+            <!-- Secretariat Governance -->
+            <div>
+                <h4 class="font-heading text-xs text-uka-gold uppercase tracking-[0.22em] mb-4">Branch Governance</h4>
+                <div class="space-y-3 text-xs text-slate-300">
+                    <p class="leading-relaxed">
+                        <strong class="text-white">Assembly Schedule:</strong><br>
+                        Bi-monthly sessions convened on the 1st and 3rd Sunday of each calendar month at 2:00 PM prompt.
+                    </p>
+                    <p class="leading-relaxed">
+                        <strong class="text-white">Dual Mandatory Signatories:</strong><br>
+                        Branch Chairman & Branch Treasurer.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 pt-8 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left text-xs text-slate-400 gap-4 relative z-10">
+            <p>© 2026 United Kabye Association of Ghana - Eastern Region Branch. All Rights Reserved.</p>
+            
+            <!-- Electric Blue Digital Architects Terminal Badge -->
+            <div class="relative max-w-full">
+                <a href="https://www.wolvatarr.com" target="_blank" rel="noopener noreferrer" 
+                   class="electric-circuit inline-flex flex-wrap items-center justify-center gap-1.5 sm:gap-2.5 px-3.5 sm:px-4 py-2 rounded-xl bg-slate-950 border border-cyan-400/60 text-cyan-400 font-mono text-[10px] sm:text-[11px] font-bold tracking-wider shadow-[0_0_20px_rgba(6,182,212,0.35)] hover:shadow-[0_0_35px_rgba(6,182,212,0.8)] hover:border-cyan-300 hover:scale-105 transition-all duration-300 group max-w-full">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping shrink-0"></span>
+                    <span class="text-slate-400 group-hover:text-slate-200 transition-colors">Engineered by</span>
+                    <span class="bg-gradient-to-r from-cyan-300 via-sky-200 to-blue-400 bg-clip-text text-transparent font-black tracking-normal">
+                        Wolvatarr - The Digital Architects ⚡
+                    </span>
+                    <svg class="w-3.5 h-3.5 text-cyan-400 group-hover:translate-x-0.5 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Scroll-Progress Back-to-Top Medallion -->
+    <button id="back-to-top" type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+            aria-label="Scroll back to top"
+            class="fixed bottom-5 right-5 sm:bottom-7 sm:right-7 z-40 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br from-uka-deep via-uka-forest to-uka-emerald text-uka-gold shadow-[0_10px_30px_rgba(3,23,12,0.55)] hover:shadow-[0_0_28px_rgba(243,186,47,0.65)] flex items-center justify-center opacity-0 translate-y-4 pointer-events-none hover:scale-110 active:scale-95 transition-all duration-300 group">
+        <!-- Live Circular Gold Scroll Ring -->
+        <svg class="absolute inset-0 w-full h-full -rotate-90 pointer-events-none" viewBox="0 0 56 56">
+            <circle cx="28" cy="28" r="24" fill="none" stroke="rgba(243, 186, 47, 0.2)" stroke-width="2.5"></circle>
+            <circle id="scroll-ring" cx="28" cy="28" r="24" fill="none" stroke="#F3BA2F" stroke-width="2.5"
+                    stroke-linecap="round" stroke-dasharray="150.8" stroke-dashoffset="150.8"></circle>
+        </svg>
+        <!-- Upward Arrow -->
+        <svg class="w-5 h-5 text-uka-gold group-hover:text-uka-goldlight group-hover:-translate-y-0.5 transition-all duration-300 relative z-10"
+             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path>
+        </svg>
+    </button>
+
+    <!-- Preloader & Scroll-Progress Script -->
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const bar = document.getElementById('loader-bar');
+            const preloader = document.getElementById('preloader');
+            
+            setTimeout(() => {
+                if (bar) bar.style.width = '100%';
+            }, 50);
+
+            setTimeout(() => {
+                if (preloader) {
+                    preloader.style.opacity = '0';
+                    setTimeout(() => preloader.remove(), 700);
+                }
+            }, 2000);
+
+            // Floating Back-to-Top Visibility & Circular Progress
+            const topBtn = document.getElementById('back-to-top');
+            const ring = document.getElementById('scroll-ring');
+            const circumference = 150.8;
+
+            const updateScrollBtn = () => {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = docHeight > 0 ? Math.min(scrollTop / docHeight, 1) : 0;
+
+                if (ring) {
+                    ring.style.strokeDashoffset = circumference - (progress * circumference);
+                }
+
+                if (scrollTop > 280) {
+                    topBtn.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+                    topBtn.classList.add('opacity-100', 'translate-y-0');
+                } else {
+                    topBtn.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+                    topBtn.classList.remove('opacity-100', 'translate-y-0');
+                }
+            };
+
+            window.addEventListener('scroll', updateScrollBtn, { passive: true });
+            updateScrollBtn();
+        });
+    </script>
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

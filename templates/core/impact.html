@@ -1,0 +1,548 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Impact Chronicles & Field Gallery | United Kabye Association{% endblock %}
+
+{% block content %}
+<!-- HERO SECTION: Article 10 Civic & Fraternal Chronicles -->
+<section class="relative w-full bg-gradient-to-b from-uka-parchment via-uka-cream to-uka-parchment pt-10 pb-14 sm:pt-14 sm:pb-20 lg:pt-20 lg:pb-24 overflow-x-clip">
+    <!-- Ambient Gradient Orbs -->
+    <div class="absolute top-12 left-4 sm:left-12 w-72 sm:w-96 h-72 sm:h-96 bg-gradient-to-tr from-uka-gold/25 to-emerald-500/10 rounded-full blur-3xl animate-pulse-slow pointer-events-none"></div>
+    <div class="absolute bottom-8 right-4 sm:right-12 w-72 sm:w-[420px] h-72 sm:h-[420px] bg-gradient-to-tr from-uka-terracotta/15 to-uka-gold/15 rounded-full blur-3xl animate-pulse-slow pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-8 text-center relative z-10 space-y-5 sm:space-y-6">
+        <!-- Live Mandate Badge -->
+        <div class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white border border-uka-gold/40 shadow-sm max-w-full">
+            <span class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-emerald-500 animate-ping shrink-0"></span>
+            <span class="text-[11px] sm:text-sm font-black uppercase tracking-wider bg-gradient-to-r from-uka-forest to-uka-emerald bg-clip-text text-transparent">
+                Article 10 Civic & Fraternal Chronicles
+            </span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="font-heading text-3xl sm:text-5xl lg:text-6xl font-black text-uka-deep leading-[1.15] tracking-tight">
+            Service in motion.<br>
+            <span class="bg-gradient-to-r from-uka-forest via-emerald-700 to-uka-golddark bg-clip-text text-transparent underline decoration-uka-gold decoration-wavy">
+                Kinship in living color.
+            </span>
+        </h1>
+
+        <p class="text-sm sm:text-xl text-slate-700 leading-relaxed font-normal max-w-2xl mx-auto">
+            Every quarter, the Eastern Region Branch turns constitutional duty into visible action—sanitizing public markets, uplifting pediatric wards and children's homes, and uniting Kabye families across Ghana.
+        </p>
+
+        <!-- Breadcrumb -->
+        <div class="pt-1 sm:pt-2 flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm font-mono text-slate-500 uppercase tracking-widest">
+            <a href="{% url 'core:home' %}" class="hover:text-uka-forest transition-colors">Home</a>
+            <span>/</span>
+            <span class="text-uka-golddark font-bold">Impact & Field Gallery</span>
+        </div>
+    </div>
+</section>
+
+<!-- IMPACT TELEMETRY STRIP -->
+<section class="w-full py-10 sm:py-12 bg-white border-y border-uka-border overflow-x-clip">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
+            <div class="p-4 sm:p-7 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-white to-uka-cream border border-uka-border shadow-sm text-center hover:border-uka-gold transition">
+                <span class="block font-sans text-2xl sm:text-4xl font-black text-uka-forest">4x / Year</span>
+                <span class="text-[11px] sm:text-xs font-bold text-slate-700 uppercase tracking-wider block mt-1.5">Quarterly CSR Missions</span>
+            </div>
+            <div class="p-4 sm:p-7 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-white to-uka-cream border border-uka-border shadow-sm text-center hover:border-uka-gold transition">
+                <span class="block font-sans text-2xl sm:text-4xl font-black text-uka-terracotta">All Districts</span>
+                <span class="text-[11px] sm:text-xs font-bold text-slate-700 uppercase tracking-wider block mt-1.5">Eastern Region Footprint</span>
+            </div>
+            <div class="p-4 sm:p-7 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-white to-uka-cream border border-uka-border shadow-sm text-center hover:border-uka-gold transition">
+                <span class="block font-sans text-2xl sm:text-4xl font-black text-uka-forest">3 Pillars</span>
+                <span class="text-[11px] sm:text-xs font-bold text-slate-700 uppercase tracking-wider block mt-1.5">Health • Sanitation • Youth</span>
+            </div>
+            <div class="p-4 sm:p-7 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-white to-uka-cream border border-uka-border shadow-sm text-center hover:border-uka-gold transition">
+                <span class="block font-sans text-2xl sm:text-4xl font-black text-uka-golddark">100% Audited</span>
+                <span class="text-[11px] sm:text-xs font-bold text-slate-700 uppercase tracking-wider block mt-1.5">Social & Welfare Ledger</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INTERACTIVE BENTO GALLERY & CHRONICLE ARCHIVE -->
+<section class="w-full py-14 sm:py-20 bg-uka-parchment relative overflow-x-clip">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        
+        <!-- Header & Category Filter Bar -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 sm:gap-8 mb-10 sm:mb-12">
+            <div class="space-y-2.5">
+                <span class="text-xs font-black text-uka-terracotta uppercase tracking-[0.22em]">Visual Archive</span>
+                <h2 class="font-heading text-2xl sm:text-4xl font-black text-uka-deep">
+                    Field Chronicles & Brotherhood Gallery
+                </h2>
+                <p class="text-sm sm:text-base text-slate-700 max-w-xl">
+                    Filter by mission pillar or click any frame to inspect the full operational report and committee leadership.
+                </p>
+            </div>
+
+            <!-- Interactive Filter Pills -->
+            <div class="flex flex-wrap items-center gap-2 sm:gap-2.5" id="gallery-filters">
+                <button type="button" onclick="filterGallery('all', this)" class="filter-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-uka-forest to-uka-emerald text-white font-bold text-[11px] sm:text-xs uppercase tracking-wider shadow-md transition">
+                    All Chronicles (7)
+                </button>
+                <button type="button" onclick="filterGallery('cleanups', this)" class="filter-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white border border-uka-border text-slate-700 hover:border-uka-forest font-bold text-[11px] sm:text-xs uppercase tracking-wider transition">
+                    Municipal Cleanups
+                </button>
+                <button type="button" onclick="filterGallery('clinics', this)" class="filter-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white border border-uka-border text-slate-700 hover:border-uka-forest font-bold text-[11px] sm:text-xs uppercase tracking-wider transition">
+                    Clinics & Orphanages
+                </button>
+                <button type="button" onclick="filterGallery('excursions', this)" class="filter-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white border border-uka-border text-slate-700 hover:border-uka-forest font-bold text-[11px] sm:text-xs uppercase tracking-wider transition">
+                    Excursions & Culture
+                </button>
+                <button type="button" onclick="filterGallery('assemblies', this)" class="filter-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white border border-uka-border text-slate-700 hover:border-uka-forest font-bold text-[11px] sm:text-xs uppercase tracking-wider transition">
+                    General Assemblies
+                </button>
+            </div>
+        </div>
+
+        <!-- Asymmetric Editorial Bento Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-7" id="bento-grid">
+
+            <!-- FRAME 01 (Wide Feature - 8 Cols): Koforidua Market Cleanup -->
+            <article data-category="cleanups" onclick="openLightbox(0)"
+                     class="gallery-card w-full md:col-span-8 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-br from-uka-deep via-uka-forest to-emerald-950 border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[320px] sm:min-h-[380px] flex flex-col justify-between p-6 sm:p-10 text-white">
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(243,186,47,0.22),transparent_60%)] pointer-events-none"></div>
+                <div class="absolute -right-10 -bottom-10 w-52 sm:w-64 h-52 sm:h-64 opacity-10 rounded-full overflow-hidden pointer-events-none group-hover:scale-110 transition-transform duration-700">
+                    <img src="{% static 'images/wc.jpg' %}" alt="UKA Watermark" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Top Metadata Row -->
+                <div class="relative z-10 flex flex-wrap items-center justify-between gap-2">
+                    <span class="px-3 py-1 rounded-full bg-uka-gold text-uka-deep font-mono text-[10px] sm:text-xs font-black uppercase tracking-wider shadow">
+                        Municipal Sanitation • Koforidua
+                    </span>
+                    <span class="px-3 py-1 rounded-full bg-black/50 backdrop-blur-md border border-white/15 font-mono text-[10px] sm:text-xs text-uka-goldlight">
+                        Chronicle № 01 • Expand ↗
+                    </span>
+                </div>
+
+                <!-- Bottom Narrative Overlay -->
+                <div class="relative z-10 space-y-2.5 sm:space-y-3 max-w-2xl pt-12 sm:pt-16">
+                    <span class="text-[11px] sm:text-xs font-mono text-emerald-300 uppercase tracking-widest block">
+                        Coordinated by Branch Youth Organizer
+                    </span>
+                    <h3 class="font-heading text-xl sm:text-4xl font-black leading-tight text-white group-hover:text-uka-goldlight transition-colors">
+                        New Juaben Central Market & Drainage Revitalization
+                    </h3>
+                    <p class="text-xs sm:text-base text-slate-200 leading-relaxed font-light">
+                        Over 65 inducted members mobilized at dawn with sanitation equipment to clear arterial market drains and public walkways in partnership with municipal environmental officers.
+                    </p>
+                </div>
+            </article>
+
+            <!-- FRAME 02 (Tall Feature - 4 Cols): Pediatric Ward Visitation -->
+            <article data-category="clinics" onclick="openLightbox(1)"
+                     class="gallery-card w-full md:col-span-4 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-br from-[#2B1208] via-uka-terracotta/90 to-uka-deep border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[300px] sm:min-h-[380px] flex flex-col justify-between p-6 sm:p-8 text-white">
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(243,186,47,0.25),transparent_65%)] pointer-events-none"></div>
+                <div class="absolute -right-8 -top-8 w-40 sm:w-44 h-40 sm:h-44 opacity-10 rounded-full overflow-hidden pointer-events-none group-hover:scale-110 transition-transform duration-700">
+                    <img src="{% static 'images/wc.jpg' %}" alt="UKA Watermark" class="w-full h-full object-cover">
+                </div>
+
+                <div class="relative z-10 flex items-center justify-between gap-2">
+                    <span class="px-3 py-1 rounded-full bg-white/95 text-uka-deep font-mono text-[10px] sm:text-[11px] font-black uppercase tracking-wider">
+                        Healthcare Outreach
+                    </span>
+                    <span class="w-9 h-9 rounded-full bg-black/40 border border-white/20 flex items-center justify-center text-uka-gold text-sm group-hover:scale-110 transition-transform shrink-0">
+                        ↗
+                    </span>
+                </div>
+
+                <div class="relative z-10 space-y-2.5 pt-10 sm:pt-14">
+                    <span class="text-[11px] sm:text-xs font-mono text-uka-goldlight uppercase tracking-wider block">
+                        Women's Organizer Delegation
+                    </span>
+                    <h3 class="font-heading text-xl sm:text-2xl font-black leading-snug text-white">
+                        Regional Pediatric Ward Support & Maternal Relief
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-100 leading-relaxed font-light">
+                        Direct donation of clinical toiletries, baby essentials, and nutritional staples to recovering mothers and children in Koforidua.
+                    </p>
+                </div>
+            </article>
+
+            <!-- FRAME 03 (4 Cols): Brotherhood Excursion -->
+            <article data-category="excursions" onclick="openLightbox(2)"
+                     class="gallery-card w-full md:col-span-4 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-br from-uka-forest via-uka-moss to-uka-deep border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[290px] sm:min-h-[340px] flex flex-col justify-between p-6 sm:p-8 text-white">
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(243,186,47,0.2),transparent_60%)] pointer-events-none"></div>
+
+                <div class="relative z-10 flex items-center justify-between gap-2">
+                    <span class="px-3 py-1 rounded-full bg-uka-gold/20 border border-uka-gold/40 text-uka-gold font-mono text-[10px] sm:text-[11px] font-bold uppercase tracking-wider">
+                        Cultural Excursion
+                    </span>
+                    <span class="w-9 h-9 rounded-full bg-black/40 border border-white/20 flex items-center justify-center text-uka-gold text-sm group-hover:scale-110 transition-transform shrink-0">
+                        ↗
+                    </span>
+                </div>
+
+                <div class="relative z-10 space-y-2.5 pt-10 sm:pt-12">
+                    <span class="text-[11px] sm:text-xs font-mono text-emerald-300 uppercase tracking-wider block">
+                        Yilo Krobo & Akuapem Ridge
+                    </span>
+                    <h3 class="font-heading text-xl sm:text-2xl font-black leading-snug text-white">
+                        Annual Brotherhood & Family Heritage Retreat
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-light">
+                        Uniting households across districts for traditional Kabiye music, youth leadership induction, and fraternal bonding.
+                    </p>
+                </div>
+            </article>
+
+            <!-- FRAME 04 (4 Cols): Bi-Monthly Assembly -->
+            <article data-category="assemblies" onclick="openLightbox(3)"
+                     class="gallery-card w-full md:col-span-4 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-br from-slate-950 via-uka-deep to-uka-forest border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[290px] sm:min-h-[340px] flex flex-col justify-between p-6 sm:p-8 text-white">
+                <div class="absolute -right-6 -bottom-6 w-36 sm:w-40 h-36 sm:h-40 opacity-15 rounded-full overflow-hidden pointer-events-none">
+                    <img src="{% static 'images/wc.jpg' %}" alt="UKA Crest" class="w-full h-full object-cover">
+                </div>
+
+                <div class="relative z-10 flex items-center justify-between gap-2">
+                    <span class="px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 font-mono text-[10px] sm:text-[11px] font-bold uppercase tracking-wider">
+                        Article 6 Assembly
+                    </span>
+                    <span class="w-9 h-9 rounded-full bg-black/40 border border-white/20 flex items-center justify-center text-uka-gold text-sm group-hover:scale-110 transition-transform shrink-0">
+                        ↗
+                    </span>
+                </div>
+
+                <div class="relative z-10 space-y-2.5 pt-10 sm:pt-12">
+                    <span class="text-[11px] sm:text-xs font-mono text-uka-gold uppercase tracking-wider block">
+                        1st & 3rd Sundays @ 2:00 PM
+                    </span>
+                    <h3 class="font-heading text-xl sm:text-2xl font-black leading-snug text-white">
+                        Multilingual Constitutional Convocation
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-light">
+                        Deliberations conducted in Kabiye, English, Twi, and French—reviewing audited Treasurer ledgers and inducting new members.
+                    </p>
+                </div>
+            </article>
+
+            <!-- FRAME 05 (4 Cols): Children's Home Provisions -->
+            <article data-category="clinics" onclick="openLightbox(4)"
+                     class="gallery-card w-full md:col-span-4 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-br from-[#3B2606] via-uka-golddark/90 to-uka-deep border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[290px] sm:min-h-[340px] flex flex-col justify-between p-6 sm:p-8 text-white">
+                <div class="relative z-10 flex items-center justify-between gap-2">
+                    <span class="px-3 py-1 rounded-full bg-white/95 text-uka-deep font-mono text-[10px] sm:text-[11px] font-black uppercase tracking-wider">
+                        Orphanage Solidarity
+                    </span>
+                    <span class="w-9 h-9 rounded-full bg-black/40 border border-white/20 flex items-center justify-center text-uka-gold text-sm group-hover:scale-110 transition-transform shrink-0">
+                        ↗
+                    </span>
+                </div>
+
+                <div class="relative z-10 space-y-2.5 pt-10 sm:pt-12">
+                    <span class="text-[11px] sm:text-xs font-mono text-uka-goldlight uppercase tracking-wider block">
+                        Suhum & Nsawam Corridor
+                    </span>
+                    <h3 class="font-heading text-xl sm:text-2xl font-black leading-snug text-white">
+                        Children's Home Food & Educational Drive
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-100 leading-relaxed font-light">
+                        Quarterly delivery of bags of rice, cooking oil, exercise books, and sanitary supplies to regional children's homes.
+                    </p>
+                </div>
+            </article>
+
+            <!-- FRAME 06 (Wide Bottom Left - 6 Cols): Nkawkaw Sanitation -->
+            <article data-category="cleanups" onclick="openLightbox(5)"
+                     class="gallery-card w-full md:col-span-6 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-r from-uka-deep via-uka-forest to-uka-moss border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[270px] sm:min-h-[300px] flex flex-col justify-between p-6 sm:p-8 text-white">
+                <div class="relative z-10 flex items-center justify-between gap-2">
+                    <span class="px-3 py-1 rounded-full bg-uka-gold text-uka-deep font-mono text-[10px] sm:text-[11px] font-black uppercase tracking-wider">
+                        District Civic Action • Nkawkaw
+                    </span>
+                    <span class="w-9 h-9 rounded-full bg-black/40 border border-white/20 flex items-center justify-center text-uka-gold text-sm group-hover:scale-110 transition-transform shrink-0">
+                        ↗
+                    </span>
+                </div>
+
+                <div class="relative z-10 space-y-2 pt-8 sm:pt-10">
+                    <span class="text-[11px] sm:text-xs font-mono text-emerald-300 uppercase tracking-wider block">
+                        Kwahu West Municipal Partnership
+                    </span>
+                    <h3 class="font-heading text-xl sm:text-2xl font-black leading-snug text-white">
+                        Kwahu Corridor Public Health & Clinic Grounds Cleanup
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-light">
+                        Branch volunteers clearing overgrown clinic perimeters and public transit terminals to safeguard community hygiene.
+                    </p>
+                </div>
+            </article>
+
+            <!-- FRAME 07 (Wide Bottom Right - 6 Cols): Youth & Cultural Mentorship -->
+            <article data-category="excursions" onclick="openLightbox(6)"
+                     class="gallery-card w-full md:col-span-6 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-r from-uka-forest via-uka-deep to-black border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[270px] sm:min-h-[300px] flex flex-col justify-between p-6 sm:p-8 text-white">
+                <div class="relative z-10 flex items-center justify-between gap-2">
+                    <span class="px-3 py-1 rounded-full bg-white/15 border border-uka-gold/40 text-uka-gold font-mono text-[10px] sm:text-[11px] font-bold uppercase tracking-wider">
+                        Next-Gen Heritage
+                    </span>
+                    <span class="w-9 h-9 rounded-full bg-black/40 border border-white/20 flex items-center justify-center text-uka-gold text-sm group-hover:scale-110 transition-transform shrink-0">
+                        ↗
+                    </span>
+                </div>
+
+                <div class="relative z-10 space-y-2 pt-8 sm:pt-10">
+                    <span class="text-[11px] sm:text-xs font-mono text-uka-goldlight uppercase tracking-wider block">
+                        Youth & Women's Joint Initiative
+                    </span>
+                    <h3 class="font-heading text-xl sm:text-2xl font-black leading-snug text-white">
+                        Kabiye Language, Apprenticeship & Student Mentorship
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-light">
+                        Connecting Kabye elders and business owners with students and young artisans across the Eastern Region.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ARTICLE 10 FIELD LEDGER & ACCOUNTABILITY -->
+<section class="w-full py-14 sm:py-20 bg-white border-t border-uka-border overflow-x-clip">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14 space-y-3">
+            <span class="text-xs sm:text-sm font-black text-uka-terracotta uppercase tracking-[0.22em]">How Missions Are Governed</span>
+            <h2 class="font-heading text-2xl sm:text-4xl font-black text-uka-deep">
+                Structured service, audited down to the last cedi
+            </h2>
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                Under Article 10 of our Branch Constitution, community outreach is never ad-hoc—it is budgeted, executed by designated officers, and verified before the assembly.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-7">
+            <div class="p-6 sm:p-8 rounded-3xl bg-uka-parchment border border-uka-border space-y-3.5">
+                <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-uka-forest font-mono text-xs font-bold">01 • Planning</span>
+                <h3 class="font-heading text-xl font-bold text-uka-forest">Social & Welfare Committee</h3>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Identifies high-need pediatric wards, children's homes, and municipal sanitation zones each quarter and submits itemized supply budgets to the Executive.
+                </p>
+            </div>
+
+            <div class="p-6 sm:p-8 rounded-3xl bg-uka-parchment border border-uka-border space-y-3.5">
+                <span class="inline-block px-3 py-1 rounded-full bg-amber-100 text-uka-golddark font-mono text-xs font-bold">02 • Execution</span>
+                <h3 class="font-heading text-xl font-bold text-uka-forest">Women's & Youth Organizers</h3>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Mobilize branch members across Koforidua, Suhum, Nsawam, and Nkawkaw to deliver relief items in person and lead Saturday civic cleanups.
+                </p>
+            </div>
+
+            <div class="p-6 sm:p-8 rounded-3xl bg-uka-parchment border border-uka-border space-y-3.5">
+                <span class="inline-block px-3 py-1 rounded-full bg-orange-100 text-uka-terracotta font-mono text-xs font-bold">03 • Disclosure</span>
+                <h3 class="font-heading text-xl font-bold text-uka-forest">Dual-Signatory & Audit</h3>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    All outreach disbursements require joint Chairman and Treasurer authorization, with purchase receipts audited and read at the next Sunday assembly.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CLOSING CALL TO ACTION -->
+<section class="w-full py-12 sm:py-16 bg-uka-parchment border-t border-uka-border overflow-x-clip">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="rounded-3xl bg-gradient-to-r from-uka-deep via-uka-forest to-uka-deep text-white p-6 sm:p-14 shadow-2xl text-center relative overflow-hidden border-2 border-uka-gold/30">
+            <div class="max-w-2xl mx-auto space-y-4 sm:space-y-5 relative z-10">
+                <span class="inline-block px-3.5 sm:px-4 py-1.5 rounded-full bg-uka-gold/20 text-uka-gold text-[11px] sm:text-xs font-black uppercase tracking-widest border border-uka-gold/30">
+                    Unity • Culture • Progress • Service
+                </span>
+                <h2 class="font-heading text-2xl sm:text-4xl font-black leading-tight">
+                    Stand with us on the next regional mission
+                </h2>
+                <p class="text-xs sm:text-base text-slate-200 leading-relaxed font-light">
+                    Join our registered membership or fulfill your monthly dues to power both our 5-pillar member welfare shield and our quarterly Eastern Region community outreach.
+                </p>
+                <div class="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-4 pt-2">
+                    <a href="{% url 'core:home' %}#membership" class="w-full sm:w-auto text-center px-7 sm:px-8 py-3.5 rounded-full bg-gradient-to-r from-uka-gold via-yellow-400 to-amber-500 hover:brightness-105 text-uka-deep font-black text-xs sm:text-sm uppercase tracking-widest shadow-xl shadow-uka-gold/30 hover:scale-105 transition-all">
+                        Join the Association (GHC 50)
+                    </a>
+                    <a href="{% url 'core:about' %}" class="w-full sm:w-auto text-center px-7 sm:px-8 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-xs sm:text-sm uppercase tracking-widest border border-white/30 backdrop-blur-sm transition">
+                        Read Our Full Charter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CINEMA LIGHTBOX MODAL -->
+<div id="cinema-lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/85 backdrop-blur-xl p-3 sm:p-8 overflow-x-clip" onclick="closeLightboxOnBackdrop(event)">
+    <div class="relative w-full max-w-4xl max-h-[92vh] rounded-3xl bg-gradient-to-br from-uka-deep via-uka-forest to-black border-2 border-uka-gold/50 shadow-2xl flex flex-col overflow-hidden text-white">
+        
+        <!-- Top Bar -->
+        <div class="flex items-center justify-between gap-3 px-4 sm:px-8 py-3.5 sm:py-4 border-b border-white/15 bg-black/40 shrink-0">
+            <div class="flex items-center gap-2.5 sm:gap-3 min-w-0">
+                <span id="lb-badge" class="px-2.5 sm:px-3 py-1 rounded-full bg-uka-gold text-uka-deep font-mono text-[10px] sm:text-xs font-black uppercase tracking-wider truncate">
+                    Category
+                </span>
+                <span id="lb-counter" class="font-mono text-[11px] sm:text-xs text-slate-300 shrink-0">01 / 07</span>
+            </div>
+            <button type="button" onclick="closeLightbox()" class="w-9 h-9 rounded-full bg-white/10 hover:bg-uka-crimson text-white flex items-center justify-center font-bold transition shrink-0" aria-label="Close modal">
+                ✕
+            </button>
+        </div>
+
+        <!-- Scrollable Modal Content -->
+        <div class="overflow-y-auto flex-grow">
+            <!-- Visual Showcase Stage -->
+            <div class="relative h-48 sm:h-72 bg-gradient-to-tr from-uka-deep via-uka-emerald/40 to-uka-forest flex flex-col items-center justify-center p-5 sm:p-8 text-center border-b border-white/10 overflow-hidden">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-1 bg-gradient-to-tr from-uka-gold to-yellow-200 shadow-2xl mb-3 sm:mb-4">
+                    <img src="{% static 'images/wc.jpg' %}" alt="UKA Official Crest" class="w-full h-full object-cover rounded-full">
+                </div>
+                <span id="lb-location" class="font-mono text-[11px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.25em] text-uka-goldlight">
+                    Eastern Region, Ghana
+                </span>
+                <p class="text-[10px] sm:text-[11px] font-mono text-slate-300/80 mt-1.5 sm:mt-2">
+                    Official Branch Field Archive • Verified by Social & Welfare Committee
+                </p>
+            </div>
+
+            <!-- Chronicle Details -->
+            <div class="p-5 sm:p-8 space-y-4">
+                <div class="flex flex-wrap items-center justify-between gap-2 text-[11px] sm:text-xs font-mono text-uka-gold">
+                    <span id="lb-lead">Lead Officer</span>
+                    <span>Charter Mandate: Article 10 CSR</span>
+                </div>
+                <h3 id="lb-title" class="font-heading text-xl sm:text-3xl font-black text-white leading-tight">
+                    Chronicle Title
+                </h3>
+                <p id="lb-desc" class="text-xs sm:text-base text-slate-200 leading-relaxed font-light">
+                    Chronicle description text.
+                </p>
+
+                <!-- Navigation Controls -->
+                <div class="pt-4 border-t border-white/15 flex items-center justify-between gap-2 sm:gap-3">
+                    <button type="button" onclick="stepLightbox(-1)" class="px-3.5 sm:px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-[11px] sm:text-xs uppercase tracking-wider transition">
+                        ← Previous
+                    </button>
+                    <button type="button" onclick="stepLightbox(1)" class="px-3.5 sm:px-5 py-2.5 rounded-full bg-gradient-to-r from-uka-gold to-amber-500 text-uka-deep font-black text-[11px] sm:text-xs uppercase tracking-wider hover:brightness-105 transition">
+                        Next Frame →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    const chronicles = [
+        {
+            badge: "Municipal Sanitation • Koforidua",
+            location: "New Juaben South Municipality, Eastern Region",
+            lead: "Coordinated by Branch Youth Organizer",
+            title: "New Juaben Central Market & Drainage Revitalization",
+            desc: "Over 65 inducted members mobilized at dawn with sanitation equipment to clear arterial market drains and public walkways in partnership with municipal environmental officers."
+        },
+        {
+            badge: "Healthcare Outreach",
+            location: "Koforidua Regional Pediatric & Maternal Wards",
+            lead: "Coordinated by Women's Organizer Delegation",
+            title: "Regional Pediatric Ward Support & Maternal Relief",
+            desc: "Direct donation of clinical toiletries, baby essentials, and nutritional staples to recovering mothers and children in Koforidua, accompanied by bedside solidarity prayers."
+        },
+        {
+            badge: "Cultural Excursion",
+            location: "Yilo Krobo & Akuapem Ridge Corridor",
+            lead: "Coordinated by Branch Organizer",
+            title: "Annual Brotherhood & Family Heritage Retreat",
+            desc: "Uniting households across Eastern Region districts for traditional Kabiye music, youth leadership induction, and fraternal bonding outside the assembly hall."
+        },
+        {
+            badge: "Article 6 Assembly",
+            location: "Eastern Region Branch Secretariat",
+            lead: "Presided by Branch Chairman & Secretariat",
+            title: "Multilingual Constitutional Convocation",
+            desc: "Bi-monthly deliberations conducted inclusively in Kabiye, English, Twi, and French—reviewing audited Treasurer ledgers, verifying welfare claims, and inducting new members."
+        },
+        {
+            badge: "Orphanage Solidarity",
+            location: "Suhum & Nsawam Municipal Corridor",
+            lead: "Coordinated by Social & Welfare Committee",
+            title: "Children's Home Food & Educational Drive",
+            desc: "Quarterly delivery of bags of rice, cooking oil, exercise books, and sanitary supplies to regional children's homes under Article 10 community service."
+        },
+        {
+            badge: "District Civic Action • Nkawkaw",
+            location: "Kwahu West Municipality, Eastern Region",
+            lead: "Coordinated by Youth & Sanitation Taskforce",
+            title: "Kwahu Corridor Public Health & Clinic Grounds Cleanup",
+            desc: "Branch volunteers clearing overgrown clinic perimeters and public transit terminals in Nkawkaw to safeguard community hygiene and public health."
+        },
+        {
+            badge: "Next-Gen Heritage",
+            location: "Eastern Region Youth & Artisans Forum",
+            lead: "Coordinated by Youth & Women's Joint Wing",
+            title: "Kabiye Language, Apprenticeship & Student Mentorship",
+            desc: "Connecting Kabye elders, civil servants, and business owners with students and young artisans across the Eastern Region to preserve heritage and career growth."
+        }
+    ];
+
+    let currentIdx = 0;
+
+    function filterGallery(category, btnEl) {
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.className = "filter-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white border border-uka-border text-slate-700 hover:border-uka-forest font-bold text-[11px] sm:text-xs uppercase tracking-wider transition";
+        });
+        btnEl.className = "filter-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-uka-forest to-uka-emerald text-white font-bold text-[11px] sm:text-xs uppercase tracking-wider shadow-md transition";
+
+        document.querySelectorAll('.gallery-card').forEach(card => {
+            if (category === 'all' || card.dataset.category === category) {
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+    }
+
+    function openLightbox(index) {
+        currentIdx = index;
+        renderLightbox();
+        const modal = document.getElementById('cinema-lightbox');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        const modal = document.getElementById('cinema-lightbox');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+    }
+
+    function closeLightboxOnBackdrop(e) {
+        if (e.target.id === 'cinema-lightbox') {
+            closeLightbox();
+        }
+    }
+
+    function stepLightbox(dir) {
+        currentIdx = (currentIdx + dir + chronicles.length) % chronicles.length;
+        renderLightbox();
+    }
+
+    function renderLightbox() {
+        const item = chronicles[currentIdx];
+        document.getElementById('lb-badge').innerText = item.badge;
+        document.getElementById('lb-counter').innerText = `${String(currentIdx + 1).padStart(2, '0')} / ${String(chronicles.length).padStart(2, '0')}`;
+        document.getElementById('lb-location').innerText = item.location;
+        document.getElementById('lb-lead').innerText = item.lead;
+        document.getElementById('lb-title').innerText = item.title;
+        document.getElementById('lb-desc').innerText = item.desc;
+    }
+
+    document.addEventListener('keydown', (e) => {
+        const modal = document.getElementById('cinema-lightbox');
+        if (modal && !modal.classList.contains('hidden')) {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') stepLightbox(1);
+            if (e.key === 'ArrowLeft') stepLightbox(-1);
+        }
+    });
+</script>
+{% endblock %}

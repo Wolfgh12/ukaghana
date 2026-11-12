@@ -1,0 +1,794 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Our Fraternity & Charter | United Kabye Association{% endblock %}
+
+{% block content %}
+<!-- HERO SECTION: The Core Creed -->
+<section class="relative w-full bg-gradient-to-b from-uka-parchment via-uka-cream to-uka-parchment pt-10 pb-14 sm:pt-14 sm:pb-20 lg:pt-20 lg:pb-28 overflow-x-clip">
+    <!-- Ambient Pulsating Aura -->
+    <div class="absolute top-10 left-1/2 -translate-x-1/2 w-80 sm:w-[650px] h-56 sm:h-[360px] bg-gradient-to-tr from-uka-gold/25 via-emerald-500/10 to-uka-terracotta/15 rounded-full blur-3xl animate-pulse-slow pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-8 text-center relative z-10 space-y-5 sm:space-y-6">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white border border-uka-gold/40 shadow-sm max-w-full">
+            <span class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-emerald-500 animate-ping shrink-0"></span>
+            <span class="text-[11px] sm:text-sm font-black uppercase tracking-wider bg-gradient-to-r from-uka-forest to-uka-emerald bg-clip-text text-transparent">
+                Our Sovereign Origin & Purpose
+            </span>
+        </div>
+
+        <!-- Punchline -->
+        <h1 class="font-heading text-3xl sm:text-5xl lg:text-6xl font-black text-uka-deep leading-[1.15] tracking-tight">
+            One united family.<br>
+            <span class="bg-gradient-to-r from-uka-forest via-emerald-700 to-uka-golddark bg-clip-text text-transparent underline decoration-uka-gold decoration-wavy">
+                That is the whole brief.
+            </span>
+        </h1>
+
+        <p class="text-base sm:text-xl text-slate-700 leading-relaxed font-normal max-w-2xl mx-auto">
+            We are the Eastern Region Branch of the United Kabye Association—a constitutional brotherhood built on one unbreakable rule: when one household celebrates, we honor them together; when one household hurts, the entire union responds.
+        </p>
+
+        <!-- Breadcrumb -->
+        <div class="pt-1 sm:pt-2 flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm font-mono text-slate-500 uppercase tracking-widest">
+            <a href="{% url 'core:home' %}" class="hover:text-uka-forest transition-colors">Home</a>
+            <span>/</span>
+            <span class="text-uka-golddark font-bold">About Our Union</span>
+        </div>
+    </div>
+</section>
+
+<!-- ORIGIN STORY: "It Started with Families Who Stood Together" -->
+<section id="creed" class="w-full py-14 sm:py-20 bg-white border-y border-uka-border overflow-x-clip">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+            
+            <!-- Left Ceremonial Crest Showcase with Floating Status Cards -->
+            <div class="lg:col-span-5 relative">
+                <div class="hidden sm:block absolute -inset-4 bg-gradient-to-tr from-uka-gold/25 via-emerald-600/15 to-uka-terracotta/15 rounded-3xl blur-2xl -z-10"></div>
+
+                <div class="relative rounded-3xl bg-gradient-to-br from-uka-deep via-uka-forest to-black p-6 sm:p-12 shadow-2xl border-2 border-uka-gold/40 flex flex-col items-center justify-center text-center overflow-hidden">
+                    <!-- Decorative Ring -->
+                    <div class="w-44 h-44 sm:w-64 sm:h-64 rounded-full p-1.5 bg-gradient-to-tr from-uka-gold via-yellow-200 to-uka-golddark shadow-2xl mb-5 sm:mb-6">
+                        <img src="{% static 'images/wc.jpg' %}" alt="United Kabye Association Official Crest" class="w-full h-full object-cover rounded-full">
+                    </div>
+
+                    <span class="font-heading font-black text-lg sm:text-xl text-white tracking-wide">United Kabye Association</span>
+                    <span class="text-[11px] sm:text-xs font-mono text-uka-gold uppercase tracking-[0.2em] sm:tracking-[0.22em] mt-1">Eastern Region Branch • Ghana</span>
+
+                    <!-- Floating Bottom Corner Pill -->
+                    <div class="mt-5 sm:mt-6 w-full pt-4 sm:pt-5 border-t border-white/15 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-300">
+                        <span>Jurisdiction: <strong class="text-white">Eastern Region</strong></span>
+                        <span class="px-2.5 py-1 rounded-full bg-uka-gold/20 text-uka-gold font-mono font-bold">Ratified Charter</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Narrative -->
+            <div class="lg:col-span-7 space-y-5 sm:space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 text-uka-terracotta border border-uka-gold/30 text-xs sm:text-sm font-bold uppercase tracking-wider">
+                    How It Began
+                </div>
+
+                <h2 class="font-heading text-2xl sm:text-4xl lg:text-5xl font-black text-uka-deep leading-tight">
+                    It started with families who refused to let any brother stand alone
+                </h2>
+
+                <p class="text-sm sm:text-lg text-slate-700 leading-relaxed">
+                    Living and working across the municipalities and towns of Ghana's Eastern Region—from Koforidua to Suhum, Nsawam, Nkawkaw, and Somanya—people of Kabye lineage carried hard work in their hands and heritage in their hearts. Yet when sudden hospital emergencies struck, when marriages were solemnized, or when bereavement fell upon a household, families often faced the burden scattered and isolated.
+                </p>
+
+                <p class="text-sm sm:text-lg text-slate-700 leading-relaxed">
+                    In response, elders, women leaders, and youth organizers convened to establish an enduring institutional home. Rather than relying on informal promises, they ratified the Supreme Branch Charter—anchoring our fraternity on mandatory monthly welfare dues, serialized digital receipts, quarterly civic service, and bi-monthly democratic assemblies.
+                </p>
+
+                <div class="pt-4 border-t border-uka-border grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 text-xs sm:text-sm text-slate-700 font-medium">
+                    <div class="flex items-start sm:items-center gap-2.5">
+                        <span class="w-3 h-3 rounded-full bg-uka-forest shrink-0 mt-1 sm:mt-0"></span>
+                        <span>Motto: <strong class="text-uka-forest">Unity Culture Progress and Service</strong></span>
+                    </div>
+                    <div class="flex items-start sm:items-center gap-2.5">
+                        <span class="w-3 h-3 rounded-full bg-uka-gold shrink-0 mt-1 sm:mt-0"></span>
+                        <span>Languages: <strong class="text-uka-forest">Kabiye • English • Twi • Français</strong></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- THE CONSTITUTIONAL NON-NEGOTIABLES: 3 Core Pillars + 4 Operating Standards -->
+<section class="w-full py-14 sm:py-24 bg-uka-parchment relative overflow-x-clip">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-3">
+            <span class="text-xs sm:text-sm font-black text-uka-terracotta uppercase tracking-[0.22em]">What Anchors Us</span>
+            <h2 class="font-heading text-2xl sm:text-5xl font-black text-uka-deep leading-tight">
+                Three things we will not compromise on
+            </h2>
+            <p class="text-sm sm:text-lg text-slate-700 leading-relaxed">
+                Informal groups fade over time; our branch is constitutionally governed, fiscally audited, and built to serve generations.
+            </p>
+        </div>
+
+        <!-- 3 Primary Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
+            <!-- Mission -->
+            <div class="bg-white p-6 sm:p-9 rounded-3xl border border-uka-border shadow-sm hover:shadow-xl hover:border-uka-gold transition-all space-y-4">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-emerald-100 text-uka-forest flex items-center justify-center font-bold text-xl sm:text-2xl">
+                    🛡️
+                </div>
+                <h3 class="font-heading text-xl sm:text-2xl font-bold text-uka-forest">Our Mission</h3>
+                <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                    To protect every active member through five guaranteed statutory welfare packages, execute quarterly municipal cleanups and orphanage outreaches, and cultivate disciplined youth leadership across the Eastern Region.
+                </p>
+            </div>
+
+            <!-- Vision -->
+            <div class="bg-white p-6 sm:p-9 rounded-3xl border border-uka-border shadow-sm hover:shadow-xl hover:border-uka-gold transition-all space-y-4">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-amber-100 text-uka-golddark flex items-center justify-center font-bold text-xl sm:text-2xl">
+                    👁️
+                </div>
+                <h3 class="font-heading text-xl sm:text-2xl font-bold text-uka-forest">Our Vision</h3>
+                <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                    An unbreakable, self-sustaining Kabye fraternity in Ghana where every child's naming is celebrated with pride, no hospitalized member lacks bedside solidarity, and no family bears grief alone.
+                </p>
+            </div>
+
+            <!-- Promise -->
+            <div class="bg-white p-6 sm:p-9 rounded-3xl border border-uka-border shadow-sm hover:shadow-xl hover:border-uka-gold transition-all space-y-4">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-orange-100 text-uka-terracotta flex items-center justify-center font-bold text-xl sm:text-2xl">
+                    📜
+                </div>
+                <h3 class="font-heading text-xl sm:text-2xl font-bold text-uka-forest">Our Promise</h3>
+                <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                    Absolute fiduciary transparency. Every cedi collected is issued a serialized receipt, guarded by dual mandatory signatories, and audited openly before the General Assembly.
+                </p>
+            </div>
+        </div>
+
+        <!-- 4 Operational Standards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+            <div class="bg-white p-6 sm:p-7 rounded-3xl border border-uka-border shadow-sm hover:border-uka-gold transition">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-uka-forest to-uka-emerald text-uka-gold flex items-center justify-center font-mono font-bold text-sm mb-4">01</div>
+                <h4 class="font-heading font-bold text-lg text-uka-forest mb-2">Dignity First</h4>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Welfare benefactions are statutory entitlements earned through active good standing—never charity or favors.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 sm:p-7 rounded-3xl border border-uka-border shadow-sm hover:border-uka-gold transition">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-uka-forest to-uka-emerald text-uka-gold flex items-center justify-center font-mono font-bold text-sm mb-4">02</div>
+                <h4 class="font-heading font-bold text-lg text-uka-forest mb-2">Practical Shield</h4>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Five clear relief pillars covering childbirth, lawful marriage, severe illness, bereavement, and natural calamity.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 sm:p-7 rounded-3xl border border-uka-border shadow-sm hover:border-uka-gold transition">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-uka-forest to-uka-emerald text-uka-gold flex items-center justify-center font-mono font-bold text-sm mb-4">03</div>
+                <h4 class="font-heading font-bold text-lg text-uka-forest mb-2">Quarterly Service</h4>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Every quarter we mobilize in the field—visiting pediatric clinics, supporting orphanages, and cleaning public markets.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 sm:p-7 rounded-3xl border border-uka-border shadow-sm hover:border-uka-gold transition">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-uka-forest to-uka-emerald text-uka-gold flex items-center justify-center font-mono font-bold text-sm mb-4">04</div>
+                <h4 class="font-heading font-bold text-lg text-uka-forest mb-2">Secret Ballot Rule</h4>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Universal secret ballot elections at the Annual General Meeting with strict 3-year executive term limits.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- THE ROAD SO FAR: Chronological Milestone Timeline -->
+<section class="w-full py-14 sm:py-24 bg-white border-y border-uka-border overflow-x-clip">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-3">
+            <span class="text-xs sm:text-sm font-black text-uka-terracotta uppercase tracking-[0.22em]">Our Institutional Evolution</span>
+            <h2 class="font-heading text-2xl sm:text-5xl font-black text-uka-deep leading-tight">
+                From informal gatherings to sovereign charter
+            </h2>
+            <p class="text-sm sm:text-lg text-slate-700 leading-relaxed">
+                Step by step, district by district, forging an enduring home away from home.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+            <!-- Timeline Steps (Left 7 Columns) -->
+            <div class="lg:col-span-7 space-y-6 sm:space-y-8 relative before:absolute before:inset-0 before:left-5 before:w-0.5 before:bg-gradient-to-b before:from-uka-forest before:via-uka-gold before:to-uka-border">
+                
+                <!-- Step 1 -->
+                <div class="relative flex items-start gap-4 sm:gap-6">
+                    <div class="w-10 h-10 rounded-full bg-uka-forest text-uka-gold font-mono font-bold flex items-center justify-center shrink-0 ring-4 ring-white shadow-md z-10">
+                        01
+                    </div>
+                    <div class="bg-uka-parchment p-5 sm:p-7 rounded-3xl border border-uka-border shadow-sm flex-grow min-w-0">
+                        <span class="text-xs font-mono font-bold text-uka-terracotta uppercase tracking-wider block mb-1">Phase I • Kinship Convocation</span>
+                        <h4 class="font-heading font-bold text-lg sm:text-2xl text-uka-forest mb-2">The First Gathering of Households</h4>
+                        <p class="text-xs sm:text-base text-slate-700 leading-relaxed">
+                            Kabye elders, professionals, and artisans across the Eastern Region convened to unite scattered families—establishing regular Sunday fellowship and mutual emergency assistance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative flex items-start gap-4 sm:gap-6">
+                    <div class="w-10 h-10 rounded-full bg-uka-forest text-uka-gold font-mono font-bold flex items-center justify-center shrink-0 ring-4 ring-white shadow-md z-10">
+                        02
+                    </div>
+                    <div class="bg-uka-parchment p-5 sm:p-7 rounded-3xl border border-uka-border shadow-sm flex-grow min-w-0">
+                        <span class="text-xs font-mono font-bold text-uka-terracotta uppercase tracking-wider block mb-1">Phase II • Civic Mobilization</span>
+                        <h4 class="font-heading font-bold text-lg sm:text-2xl text-uka-forest mb-2">Quarterly Field Outreaches Launched</h4>
+                        <p class="text-xs sm:text-base text-slate-700 leading-relaxed">
+                            The association stepped into public service—organizing municipal market cleanups, donating supplies to pediatric wards and children's homes, and hosting regional family excursions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative flex items-start gap-4 sm:gap-6">
+                    <div class="w-10 h-10 rounded-full bg-uka-forest text-uka-gold font-mono font-bold flex items-center justify-center shrink-0 ring-4 ring-white shadow-md z-10">
+                        03
+                    </div>
+                    <div class="bg-uka-parchment p-5 sm:p-7 rounded-3xl border border-uka-border shadow-sm flex-grow min-w-0">
+                        <span class="text-xs font-mono font-bold text-uka-terracotta uppercase tracking-wider block mb-1">Phase III • Constitutional Ratification</span>
+                        <h4 class="font-heading font-bold text-lg sm:text-2xl text-uka-forest mb-2">Adoption of the Supreme Branch Charter</h4>
+                        <p class="text-xs sm:text-base text-slate-700 leading-relaxed">
+                            Members ratified the formal Constitution and Operational Bye-Laws—codifying the GHC 20 monthly dues, GHC 50 induction fee, 6-month welfare vesting period, and dual-signatory banking controls.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative flex items-start gap-4 sm:gap-6">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-uka-gold to-amber-500 text-uka-deep font-mono font-black flex items-center justify-center shrink-0 ring-4 ring-white shadow-lg z-10">
+                        ★
+                    </div>
+                    <div class="bg-gradient-to-br from-uka-deep via-uka-forest to-black text-white p-5 sm:p-8 rounded-3xl shadow-xl border-2 border-uka-gold/40 flex-grow min-w-0">
+                        <span class="text-xs font-mono font-bold text-uka-gold uppercase tracking-wider block mb-1">Today • Digital & Fraternal Excellence</span>
+                        <h4 class="font-heading font-bold text-lg sm:text-2xl text-white mb-2">The United Front in Full Motion</h4>
+                        <p class="text-xs sm:text-base text-slate-200 leading-relaxed font-light">
+                            Operating with an elected executive directorate, serialized digital receipting, active welfare disbursements, and bi-monthly assemblies every 1st and 3rd Sunday.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Sticky Constitutional Summary Card (Right 5 Columns) -->
+            <div class="lg:col-span-5 lg:sticky lg:top-28 space-y-6">
+                <div class="rounded-3xl bg-gradient-to-br from-uka-parchment via-uka-cream to-white p-6 sm:p-9 border-2 border-uka-gold/30 shadow-xl space-y-6">
+                    <div class="flex items-center gap-3.5 sm:gap-4 border-b border-uka-border pb-5">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full p-0.5 bg-gradient-to-tr from-uka-gold to-yellow-300 shrink-0">
+                            <img src="{% static 'images/wc.jpg' %}" alt="UKA Crest" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="min-w-0">
+                            <span class="text-xs font-mono font-bold text-uka-terracotta uppercase tracking-wider block">Governance Snapshot</span>
+                            <h3 class="font-heading font-black text-base sm:text-lg text-uka-forest">Charter At A Glance</h3>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 sm:space-y-4 text-xs sm:text-sm">
+                        <div class="flex items-center justify-between gap-3 py-2 border-b border-uka-border/70">
+                            <span class="text-slate-600">Induction Fee (Art. 4.5)</span>
+                            <strong class="font-mono text-uka-forest text-right">GHC 50.00 (One-Time)</strong>
+                        </div>
+                        <div class="flex items-center justify-between gap-3 py-2 border-b border-uka-border/70">
+                            <span class="text-slate-600">Monthly Dues (Art. 3.1)</span>
+                            <strong class="font-mono text-uka-forest text-right">GHC 20.00 / Month</strong>
+                        </div>
+                        <div class="flex items-center justify-between gap-3 py-2 border-b border-uka-border/70">
+                            <span class="text-slate-600">Welfare Vesting (Art. 5.1)</span>
+                            <strong class="font-mono text-uka-terracotta text-right">6 Continuous Months</strong>
+                        </div>
+                        <div class="flex items-center justify-between gap-3 py-2 border-b border-uka-border/70">
+                            <span class="text-slate-600">Ordinary Assembly (Art. 6)</span>
+                            <strong class="font-mono text-uka-forest text-right">1st & 3rd Sun @ 2:00 PM</strong>
+                        </div>
+                        <div class="flex items-center justify-between gap-3 py-2 border-b border-uka-border/70">
+                            <span class="text-slate-600">Deliberative Quorum</span>
+                            <strong class="font-mono text-uka-forest text-right">1/3 Active Members</strong>
+                        </div>
+                        <div class="flex items-center justify-between gap-3 py-2">
+                            <span class="text-slate-600">Executive Mandate (Art. 2)</span>
+                            <strong class="font-mono text-uka-forest text-right">3-Year Secret Ballot</strong>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="{% url 'core:home' %}#membership" class="block w-full text-center py-3.5 sm:py-4 rounded-full bg-gradient-to-r from-uka-gold via-yellow-400 to-amber-500 hover:brightness-105 text-uka-deep font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg shadow-uka-gold/25 transition">
+                            Become a Registered Member →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ARTICLE 2 BRANCH EXECUTIVE DIRECTORATE -->
+<section id="directorate" class="w-full py-14 sm:py-24 bg-uka-parchment overflow-x-clip">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-3">
+            <span class="text-xs sm:text-sm font-black text-uka-terracotta uppercase tracking-[0.22em]">Article 2 Constitutional Governance</span>
+            <h2 class="font-heading text-2xl sm:text-5xl font-black text-uka-deep">
+                Acting Branch Executive Directorate
+            </h2>
+            <p class="text-sm sm:text-lg text-slate-700 leading-relaxed">
+                Serving in an active interim constitutional capacity ahead of universal secret ballot elections at the Annual General Meeting.
+            </p>
+        </div>
+
+        <!-- EXECUTIVE SPOTLIGHT: Office of the Acting Branch Chairman -->
+        <div class="relative mb-8 sm:mb-10 rounded-3xl bg-gradient-to-br from-uka-deep via-uka-forest to-black border-2 border-uka-gold/50 shadow-2xl overflow-hidden group">
+            <!-- Ambient Gold Aura -->
+            <div class="hidden sm:block absolute -top-24 -right-24 w-96 h-96 bg-uka-gold/15 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+                <!-- Left Executive Portrait Frame -->
+                <div class="lg:col-span-6 relative min-h-[300px] sm:min-h-[380px] lg:min-h-[420px] overflow-hidden bg-uka-deep">
+                    <img src="{% static 'images/kcm.jpg' %}"
+                         alt="Mr. Paul Abotsi — Acting Branch Chairman, United Kabye Association of Ghana, Eastern Region Branch"
+                         class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700">
+                    
+                    <!-- Subtle Edge Vignette for Seamless Blend -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/15 lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-uka-deep/90 pointer-events-none"></div>
+
+                    <!-- Floating Gold Crest Seal -->
+                    <div class="absolute bottom-3.5 left-3.5 right-3.5 sm:bottom-4 sm:left-4 sm:right-auto inline-flex items-center gap-3 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-2xl bg-black/75 backdrop-blur-md border border-uka-gold/40 shadow-xl">
+                        <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full p-0.5 bg-gradient-to-tr from-uka-gold to-yellow-200 shrink-0">
+                            <img src="{% static 'images/wc.jpg' %}" alt="UKA Seal" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="min-w-0">
+                            <span class="block text-[10px] font-mono uppercase tracking-widest text-uka-gold truncate">Acting Branch Chairman</span>
+                            <span class="block text-xs font-bold text-white truncate">Mr. Paul Abotsi • Eastern Region</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Presidential Mandate & Bio -->
+                <div class="lg:col-span-6 p-6 sm:p-10 lg:p-12 flex flex-col justify-between text-white relative z-10 space-y-5 sm:space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="px-3 py-1 rounded-full bg-gradient-to-r from-uka-gold to-amber-500 text-uka-deep font-mono text-[10px] sm:text-[11px] font-black uppercase tracking-wider shadow">
+                                ★ Office of the Acting Chairman
+                            </span>
+                            <span class="px-3 py-1 rounded-full bg-white/10 border border-uka-gold/30 text-uka-goldlight font-mono text-[10px] sm:text-[11px] font-bold uppercase tracking-wider">
+                                Mandatory Signatory (Art. 8)
+                            </span>
+                        </div>
+
+                        <div>
+                            <h3 class="font-heading text-2xl sm:text-4xl font-black text-white leading-tight">
+                                Mr. Paul Abotsi
+                            </h3>
+                            <p class="text-xs sm:text-sm font-mono text-uka-gold uppercase tracking-[0.15em] sm:tracking-[0.2em] mt-1">
+                                Acting Branch Chairman • Eastern Region Branch
+                            </p>
+                        </div>
+
+                        <p class="text-sm sm:text-base text-slate-200 leading-relaxed font-light">
+                            As the acting constitutional head of the Eastern Region Branch, Mr. Paul presides over all bi-monthly General Assemblies, upholds the ratified Supreme Charter, represents the fraternity in regional civic partnerships, and serves as joint mandatory signatory with the Acting Branch Treasurer across all institutional accounts.
+                        </p>
+
+                        <blockquote class="border-l-2 border-uka-gold pl-4 py-1 text-xs sm:text-sm italic text-uka-goldlight/95">
+                            "Our duty is simple and sacred: to keep every Kabye household across the Eastern Region united in dignity, protected in hardship, and proud in service."
+                        </blockquote>
+                    </div>
+
+                    <!-- Constitutional Authority Pillars -->
+                    <div class="pt-4 sm:pt-5 border-t border-white/15 grid grid-cols-3 gap-2 sm:gap-3 text-center">
+                        <div class="p-2.5 sm:p-3 rounded-2xl bg-white/5 border border-white/10">
+                            <span class="block font-mono text-xs sm:text-sm font-black text-uka-gold">Article 2</span>
+                            <span class="block text-[9px] sm:text-[10px] uppercase tracking-wider text-slate-300 mt-0.5">Acting Mandate</span>
+                        </div>
+                        <div class="p-2.5 sm:p-3 rounded-2xl bg-white/5 border border-white/10">
+                            <span class="block font-mono text-xs sm:text-sm font-black text-uka-gold">Article 6</span>
+                            <span class="block text-[9px] sm:text-[10px] uppercase tracking-wider text-slate-300 mt-0.5">Assembly Chair</span>
+                        </div>
+                        <div class="p-2.5 sm:p-3 rounded-2xl bg-white/5 border border-white/10">
+                            <span class="block font-mono text-xs sm:text-sm font-black text-uka-gold">Article 8</span>
+                            <span class="block text-[9px] sm:text-[10px] uppercase tracking-wider text-slate-300 mt-0.5">Joint Signatory</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Core Executive Officers Grid: Secretary, Treasurer & Branch Organizer -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
+            <!-- 1. Acting Branch Secretary: Mary Samoh -->
+            <div onclick="openOfficerModal(0)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openOfficerModal(0)"
+                 class="bg-white p-6 sm:p-7 rounded-3xl border-2 border-uka-gold/40 shadow-md hover:shadow-xl hover:-translate-y-1 hover:border-uka-gold transition-all cursor-pointer text-center space-y-3 flex flex-col justify-between group">
+                <div class="space-y-3">
+                    <div class="w-24 h-24 rounded-full p-1 bg-gradient-to-tr from-uka-gold via-yellow-300 to-uka-golddark mx-auto shadow-lg ring-2 ring-uka-gold/25 overflow-hidden">
+                        <img src="{% static 'images/funsec.jpg' %}"
+                             alt="Mary Samoh — Acting Branch Secretary, United Kabye Association of Ghana, Eastern Region Branch"
+                             class="w-full h-full object-cover object-top rounded-full group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <span class="inline-block px-2.5 py-0.5 rounded-full bg-emerald-50 text-uka-forest font-mono text-[10px] font-bold uppercase">Acting Branch Secretary</span>
+                    <h4 class="font-heading font-bold text-lg text-uka-deep group-hover:text-uka-forest transition-colors">Mary Samoh</h4>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">Custodian of the branch charter, official assembly minutes, membership roll, and formal correspondence.</p>
+                </div>
+                <div class="pt-3 border-t border-uka-border/70">
+                    <span class="inline-flex items-center gap-1 text-[11px] font-mono font-bold text-uka-forest group-hover:text-uka-terracotta uppercase tracking-wider transition-colors">
+                        View Full Portrait & Bio ↗
+                    </span>
+                </div>
+            </div>
+
+            <!-- 2. Acting Branch Treasurer: Yaw Djato -->
+            <div onclick="openOfficerModal(1)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openOfficerModal(1)"
+                 class="bg-white p-6 sm:p-7 rounded-3xl border-2 border-uka-gold/40 shadow-md hover:shadow-xl hover:-translate-y-1 hover:border-uka-gold transition-all cursor-pointer text-center space-y-3 flex flex-col justify-between group">
+                <div class="space-y-3">
+                    <div class="w-24 h-24 rounded-full p-1 bg-gradient-to-tr from-uka-gold via-yellow-300 to-uka-golddark mx-auto shadow-lg ring-2 ring-uka-gold/25 overflow-hidden">
+                        <img src="{% static 'images/yaw_djato.jpg' %}"
+                             alt="Yaw Djato — Acting Branch Treasurer, United Kabye Association of Ghana, Eastern Region Branch"
+                             class="w-full h-full object-cover object-top rounded-full group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <span class="inline-block px-2.5 py-0.5 rounded-full bg-amber-50 text-uka-golddark font-mono text-[10px] font-bold uppercase">Acting Branch Treasurer</span>
+                    <h4 class="font-heading font-bold text-lg text-uka-deep group-hover:text-uka-forest transition-colors">Yaw Djato</h4>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">Custodian of branch bank and MoMo assets, disbursing approved welfare relief and co-signing withdrawals.</p>
+                </div>
+                <div class="pt-3 border-t border-uka-border/70">
+                    <span class="inline-flex items-center gap-1 text-[11px] font-mono font-bold text-uka-golddark group-hover:text-uka-forest uppercase tracking-wider transition-colors">
+                        View Full Portrait & Bio ↗
+                    </span>
+                </div>
+            </div>
+
+            <!-- 3. Acting Branch Organizer: Esso Samah -->
+            <div onclick="openOfficerModal(2)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openOfficerModal(2)"
+                 class="bg-white p-6 sm:p-7 rounded-3xl border-2 border-uka-gold/40 shadow-md hover:shadow-xl hover:-translate-y-1 hover:border-uka-gold transition-all cursor-pointer text-center space-y-3 flex flex-col justify-between group">
+                <div class="space-y-3">
+                    <div class="w-24 h-24 rounded-full p-1 bg-gradient-to-tr from-uka-gold via-yellow-300 to-uka-golddark mx-auto shadow-lg ring-2 ring-uka-gold/25 overflow-hidden">
+                        <img src="{% static 'images/brog.jpg' %}"
+                             alt="Esso Samah — Acting Branch Organizer, United Kabye Association of Ghana, Eastern Region Branch"
+                             class="w-full h-full object-cover object-top rounded-full group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <span class="inline-block px-2.5 py-0.5 rounded-full bg-orange-50 text-uka-terracotta font-mono text-[10px] font-bold uppercase">Acting Branch Organizer</span>
+                    <h4 class="font-heading font-bold text-lg text-uka-deep group-hover:text-uka-forest transition-colors">Esso Samah</h4>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">Mobilizes members for assemblies, coordinates annual cultural excursions, and leads delegation protocol.</p>
+                </div>
+                <div class="pt-3 border-t border-uka-border/70">
+                    <span class="inline-flex items-center gap-1 text-[11px] font-mono font-bold text-uka-terracotta group-hover:text-uka-forest uppercase tracking-wider transition-colors">
+                        View Full Portrait & Bio ↗
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INTERACTIVE CONSTITUTIONAL FAQ ACCORDION -->
+<section id="faq" class="w-full py-14 sm:py-24 bg-white border-t border-uka-border overflow-x-clip">
+    <div class="max-w-3xl mx-auto px-4 sm:px-8">
+        <div class="text-center space-y-3 mb-10 sm:mb-14">
+            <span class="text-xs sm:text-sm font-black text-uka-terracotta uppercase tracking-[0.22em]">Constitutional Clarity</span>
+            <h2 class="font-heading text-2xl sm:text-4xl font-black text-uka-deep">
+                Questions members & allies ask before joining
+            </h2>
+            <p class="text-sm sm:text-base text-slate-600">
+                Direct answers drawn straight from our ratified Branch Constitution and Bye-Laws.
+            </p>
+        </div>
+
+        <div class="space-y-3.5 sm:space-y-4" id="faq-container">
+            <!-- FAQ 1 -->
+            <div class="rounded-2xl border border-uka-border bg-uka-parchment overflow-hidden transition-all">
+                <button type="button" onclick="toggleFaq(1)" class="w-full px-4 sm:px-6 py-4 sm:py-5 text-left flex items-center justify-between gap-3 sm:gap-4 font-heading font-bold text-sm sm:text-lg text-uka-forest hover:text-uka-emerald">
+                    <span>1. Who is eligible to join the Eastern Region Branch?</span>
+                    <span id="faq-icon-1" class="text-xl font-mono text-uka-terracotta shrink-0 transition-transform duration-200">−</span>
+                </button>
+                <div id="faq-body-1" class="px-4 sm:px-6 pb-5 text-xs sm:text-base text-slate-700 leading-relaxed border-t border-uka-border/60 pt-4">
+                    Membership is open to all individuals of Kabye heritage by birth, marriage, or legal/cultural affiliation who reside or work within the Eastern Region of Ghana. Applicants submit a formal registration accompanied by the one-time statutory induction fee of <strong>GHC 50.00</strong> and are presented at the Ordinary General Assembly.
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="rounded-2xl border border-uka-border bg-uka-parchment overflow-hidden transition-all">
+                <button type="button" onclick="toggleFaq(2)" class="w-full px-4 sm:px-6 py-4 sm:py-5 text-left flex items-center justify-between gap-3 sm:gap-4 font-heading font-bold text-sm sm:text-lg text-uka-forest hover:text-uka-emerald">
+                    <span>2. How do the GHC 20.00 monthly dues and receipts work?</span>
+                    <span id="faq-icon-2" class="text-xl font-mono text-uka-terracotta shrink-0 transition-transform duration-200">+</span>
+                </button>
+                <div id="faq-body-2" class="hidden px-4 sm:px-6 pb-5 text-xs sm:text-base text-slate-700 leading-relaxed border-t border-uka-border/60 pt-4">
+                    Every active member contributes a mandatory monthly subscription of <strong>GHC 20.00</strong> payable by the last day of each calendar month via our institutional Mobile Money or bank account. Upon payment, the Financial Secretary issues an official serialized digital receipt. Defaulting beyond 3 months triggers a formal arrears notice, and default exceeding 6 months suspends voting and welfare entitlements.
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="rounded-2xl border border-uka-border bg-uka-parchment overflow-hidden transition-all">
+                <button type="button" onclick="toggleFaq(3)" class="w-full px-4 sm:px-6 py-4 sm:py-5 text-left flex items-center justify-between gap-3 sm:gap-4 font-heading font-bold text-sm sm:text-lg text-uka-forest hover:text-uka-emerald">
+                    <span>3. When do my 5 statutory welfare benefits become active?</span>
+                    <span id="faq-icon-3" class="text-xl font-mono text-uka-terracotta shrink-0 transition-transform duration-200">+</span>
+                </button>
+                <div id="faq-body-3" class="hidden px-4 sm:px-6 pb-5 text-xs sm:text-base text-slate-700 leading-relaxed border-t border-uka-border/60 pt-4">
+                    Under Article 5.1, welfare rights vest after <strong>6 continuous months</strong> of active membership and uninterrupted dues compliance. Once vested, you are protected across all five statutory packages: Childbirth & Naming, Lawful Marriage, Severe In-Patient Illness, Bereavement Solidarity (member, spouse, child, or biological parent), and Natural Calamity relief.
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="rounded-2xl border border-uka-border bg-uka-parchment overflow-hidden transition-all">
+                <button type="button" onclick="toggleFaq(4)" class="w-full px-4 sm:px-6 py-4 sm:py-5 text-left flex items-center justify-between gap-3 sm:gap-4 font-heading font-bold text-sm sm:text-lg text-uka-forest hover:text-uka-emerald">
+                    <span>4. How are association funds protected against misuse?</span>
+                    <span id="faq-icon-4" class="text-xl font-mono text-uka-terracotta shrink-0 transition-transform duration-200">+</span>
+                </button>
+                <div id="faq-body-4" class="hidden px-4 sm:px-6 pb-5 text-xs sm:text-base text-slate-700 leading-relaxed border-t border-uka-border/60 pt-4">
+                    No single officer can withdraw or spend association funds. All accounts operate under strict <strong>dual mandatory signatories</strong> (the Branch Chairman and Branch Treasurer), backed by serialized receipt books maintained by the Financial Secretary and regular audits presented openly to the General Assembly.
+                </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="rounded-2xl border border-uka-border bg-uka-parchment overflow-hidden transition-all">
+                <button type="button" onclick="toggleFaq(5)" class="w-full px-4 sm:px-6 py-4 sm:py-5 text-left flex items-center justify-between gap-3 sm:gap-4 font-heading font-bold text-sm sm:text-lg text-uka-forest hover:text-uka-emerald">
+                    <span>5. When are General Assemblies held and in what languages?</span>
+                    <span id="faq-icon-5" class="text-xl font-mono text-uka-terracotta shrink-0 transition-transform duration-200">+</span>
+                </button>
+                <div id="faq-body-5" class="hidden px-4 sm:px-6 pb-5 text-xs sm:text-base text-slate-700 leading-relaxed border-t border-uka-border/60 pt-4">
+                    Ordinary General Assemblies convene bi-monthly on the <strong>1st and 3rd Sundays of every month at 2:00 PM prompt</strong>. Under Article 7, deliberations are conducted inclusively in <strong>Kabiye, English, Twi, and French</strong> so every member participates fully.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HIGH-CONTRAST CLOSING CALL TO ACTION -->
+<section class="w-full py-12 sm:py-16 bg-uka-parchment border-t border-uka-border overflow-x-clip">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="rounded-3xl bg-gradient-to-r from-uka-deep via-uka-forest to-uka-deep text-white p-6 sm:p-16 shadow-2xl text-center relative overflow-hidden border-2 border-uka-gold/30">
+            <div class="max-w-3xl mx-auto space-y-5 sm:space-y-6 relative z-10">
+                <span class="inline-block px-3.5 sm:px-4 py-1.5 rounded-full bg-uka-gold/20 text-uka-gold text-[11px] sm:text-xs font-black uppercase tracking-widest border border-uka-gold/30">
+                    Unity • Culture • Progress • Service
+                </span>
+                <h2 class="font-heading text-2xl sm:text-5xl font-black leading-tight">
+                    Take your place in the united family
+                </h2>
+                <p class="text-sm sm:text-lg text-slate-200 leading-relaxed font-light">
+                    Register as an inducted member or fulfill your monthly dues contribution today and stand under a constitutional shield built for our people.
+                </p>
+                <div class="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-4 pt-2 sm:pt-3">
+                    <a href="{% url 'core:home' %}#membership" class="w-full sm:w-auto text-center px-7 sm:px-9 py-3.5 sm:py-4 rounded-full bg-gradient-to-r from-uka-gold via-yellow-400 to-amber-500 hover:brightness-105 text-uka-deep font-black text-xs sm:text-sm uppercase tracking-widest shadow-xl shadow-uka-gold/30 hover:scale-105 transition-all">
+                        Apply for Membership (GHC 50)
+                    </a>
+                    <a href="{% url 'core:home' %}#dues" class="w-full sm:w-auto text-center px-7 sm:px-9 py-3.5 sm:py-4 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-xs sm:text-sm uppercase tracking-widest border border-white/30 backdrop-blur-sm transition">
+                        Open MoMo Dues Terminal
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EXECUTIVE OFFICER DOSSIER MODAL -->
+<div id="officer-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/85 backdrop-blur-xl p-3 sm:p-6 overflow-x-clip" onclick="closeOfficerModalOnBackdrop(event)">
+    <div class="relative w-full max-w-3xl max-h-[92vh] rounded-3xl bg-gradient-to-br from-uka-deep via-uka-forest to-black border-2 border-uka-gold/50 shadow-2xl flex flex-col overflow-hidden text-white">
+        
+        <!-- Top Modal Header -->
+        <div class="flex items-center justify-between gap-3 px-4 sm:px-8 py-3.5 sm:py-4 border-b border-white/15 bg-black/40 shrink-0">
+            <div class="flex items-center gap-2.5 sm:gap-3 min-w-0">
+                <span id="om-badge" class="px-2.5 sm:px-3 py-1 rounded-full bg-uka-gold text-uka-deep font-mono text-[10px] sm:text-xs font-black uppercase tracking-wider truncate">
+                    Acting Mandate
+                </span>
+                <span id="om-counter" class="font-mono text-[11px] sm:text-xs text-slate-300 shrink-0">Officer 01 / 03</span>
+            </div>
+            <button type="button" onclick="closeOfficerModal()" class="w-9 h-9 rounded-full bg-white/10 hover:bg-uka-crimson text-white flex items-center justify-center font-bold transition shrink-0" aria-label="Close officer modal">
+                ✕
+            </button>
+        </div>
+
+        <!-- Modal Body: Large Portrait / Emblem + Constitutional Profile -->
+        <div class="grid grid-cols-1 md:grid-cols-12 overflow-y-auto flex-grow">
+            <!-- Left Visual Frame (Large Portrait when available, Prestige Emblem otherwise) -->
+            <div class="md:col-span-5 relative min-h-[240px] sm:min-h-[320px] bg-gradient-to-b from-uka-forest to-uka-deep flex flex-col items-center justify-center p-6 border-b md:border-b-0 md:border-r border-white/15 overflow-hidden shrink-0">
+                <!-- Photo Container -->
+                <div id="om-photo-wrap" class="hidden w-full h-full absolute inset-0">
+                    <img id="om-photo" src="" alt="Officer Portrait" class="w-full h-full object-cover object-top">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/10 pointer-events-none"></div>
+                    <div class="absolute bottom-3.5 left-3.5 right-3.5 px-3.5 py-2 rounded-xl bg-black/75 backdrop-blur-md border border-uka-gold/40">
+                        <span class="block text-[10px] font-mono uppercase tracking-widest text-uka-gold">Eastern Region Directorate</span>
+                        <span id="om-photo-caption" class="block text-xs font-bold text-white">Acting Officer</span>
+                    </div>
+                </div>
+
+                <!-- Monogram Emblem Fallback -->
+                <div id="om-emblem-wrap" class="relative z-10 flex flex-col items-center text-center space-y-4">
+                    <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1.5 bg-gradient-to-tr from-uka-gold via-yellow-200 to-uka-golddark shadow-2xl flex items-center justify-center">
+                        <div class="w-full h-full rounded-full bg-uka-deep flex items-center justify-center">
+                            <span id="om-initials" class="font-heading font-black text-2xl sm:text-3xl text-uka-gold tracking-wider">SEC</span>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="block text-[10px] font-mono uppercase tracking-[0.22em] text-uka-goldlight">Official Directorate Seal</span>
+                        <span class="block text-xs text-slate-300">Eastern Region Branch</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Constitutional Details -->
+            <div class="md:col-span-7 p-5 sm:p-8 flex flex-col justify-between space-y-5">
+                <div class="space-y-4">
+                    <div>
+                        <span id="om-article" class="text-[11px] sm:text-xs font-mono font-bold text-uka-gold uppercase tracking-widest block">
+                            Article 2 • Constitutional Governance
+                        </span>
+                        <h3 id="om-title" class="font-heading text-2xl sm:text-3xl font-black text-white leading-tight mt-1">
+                            Acting Officer Title
+                        </h3>
+                        <p id="om-holder" class="text-[11px] sm:text-xs font-mono text-emerald-300 uppercase tracking-wider mt-1">
+                            Acting Officeholder • Eastern Region Secretariat
+                        </p>
+                    </div>
+
+                    <p id="om-summary" class="text-xs sm:text-sm text-slate-200 leading-relaxed font-light">
+                        Constitutional role summary.
+                    </p>
+
+                    <div class="space-y-2 pt-2 border-t border-white/15">
+                        <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-uka-gold block">
+                            Key Constitutional Duties & Powers
+                        </span>
+                        <ul id="om-duties" class="space-y-2 text-xs sm:text-sm text-slate-200">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Prev / Next Navigation -->
+                <div class="pt-4 border-t border-white/15 flex items-center justify-between gap-2 sm:gap-3">
+                    <button type="button" onclick="stepOfficerModal(-1)" class="px-3.5 sm:px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-[11px] sm:text-xs uppercase tracking-wider transition">
+                        ← Previous
+                    </button>
+                    <button type="button" onclick="stepOfficerModal(1)" class="px-3.5 sm:px-4 py-2 rounded-full bg-gradient-to-r from-uka-gold to-amber-500 text-uka-deep font-black text-[11px] sm:text-xs uppercase tracking-wider hover:brightness-105 transition">
+                        Next Officer →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    function toggleFaq(id) {
+        const body = document.getElementById(`faq-body-${id}`);
+        const icon = document.getElementById(`faq-icon-${id}`);
+        const isHidden = body.classList.contains('hidden');
+
+        // Close all items first for clean single-focus accordion
+        for (let i = 1; i <= 5; i++) {
+            const b = document.getElementById(`faq-body-${i}`);
+            const ic = document.getElementById(`faq-icon-${i}`);
+            if (b) b.classList.add('hidden');
+            if (ic) ic.innerText = '+';
+        }
+
+        if (isHidden) {
+            body.classList.remove('hidden');
+            icon.innerText = '−';
+        }
+    }
+
+    // Executive Directorate Dossier Modal Data
+    const actingOfficers = [
+        {
+            initials: "SEC",
+            photo: "{% static 'images/funsec.jpg' %}",
+            badge: "Acting Secretariat Head",
+            article: "Article 2 & Article 6 • Secretariat",
+            title: "Mary Samoh",
+            holder: "Acting Branch Secretary • Eastern Region Secretariat",
+            summary: "As Acting Branch Secretary, Mary Samoh serves as chief administrative custodian of the Eastern Region Branch—maintaining official charter records, assembly minutes, membership rolls, and formal correspondence.",
+            duties: [
+                "Records, preserves, and reads official minutes of all Ordinary and Annual General Assemblies.",
+                "Maintains the master register of inducted members, towns of residence, and active good standing.",
+                "Issues official notices for bi-monthly assemblies (1st & 3rd Sundays) and handles external correspondence."
+            ]
+        },
+        {
+            initials: "TR",
+            photo: "{% static 'images/yaw_djato.jpg' %}",
+            badge: "Acting Mandatory Signatory",
+            article: "Article 2 & Article 8 • Fiduciary Custody",
+            title: "Yaw Djato",
+            holder: "Acting Branch Treasurer • Joint Account Signatory",
+            summary: "As Acting Branch Treasurer, Yaw Djato serves as primary fiduciary custodian of all branch bank and Mobile Money funds, executing approved welfare disbursements under strict dual-signatory controls.",
+            duties: [
+                "Serves as mandatory joint signatory alongside the Acting Branch Chairman on all institutional accounts.",
+                "Disburses Executive-approved Article 5 welfare relief grants promptly upon verification.",
+                "Prepares and presents periodic financial statements for Internal Audit and Assembly review."
+            ]
+        },
+        {
+            initials: "ORG",
+            photo: "{% static 'images/brog.jpg' %}",
+            badge: "Acting Field Logistics",
+            article: "Article 2 & Article 10 • Mobilization",
+            title: "Esso Samah",
+            holder: "Acting Branch Organizer • Eastern Region Secretariat",
+            summary: "As Acting Branch Organizer, Esso Samah leads assembly logistics, member mobilization, protocol delegations for weddings and funerals, and annual brotherhood cultural excursions.",
+            duties: [
+                "Coordinates venue setup, order, and member mobilization for 1st and 3rd Sunday General Assemblies.",
+                "Organizes official executive delegations for childbirth naming, marriage, hospital, and bereavement rites.",
+                "Plans and directs annual Eastern Region brotherhood cultural excursions and retreats."
+            ]
+        }
+    ];
+
+    let activeOfficerIdx = 0;
+
+    function openOfficerModal(index) {
+        activeOfficerIdx = index;
+        renderOfficerModal();
+        const modal = document.getElementById('officer-modal');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeOfficerModal() {
+        const modal = document.getElementById('officer-modal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+    }
+
+    function closeOfficerModalOnBackdrop(e) {
+        if (e.target.id === 'officer-modal') {
+            closeOfficerModal();
+        }
+    }
+
+    function stepOfficerModal(dir) {
+        activeOfficerIdx = (activeOfficerIdx + dir + actingOfficers.length) % actingOfficers.length;
+        renderOfficerModal();
+    }
+
+    function renderOfficerModal() {
+        const officer = actingOfficers[activeOfficerIdx];
+        document.getElementById('om-badge').innerText = officer.badge;
+        document.getElementById('om-counter').innerText = `Officer ${String(activeOfficerIdx + 1).padStart(2, '0')} / ${String(actingOfficers.length).padStart(2, '0')}`;
+        document.getElementById('om-article').innerText = officer.article;
+        document.getElementById('om-title').innerText = officer.title;
+        document.getElementById('om-holder').innerText = officer.holder;
+        document.getElementById('om-summary').innerText = officer.summary;
+
+        const photoWrap = document.getElementById('om-photo-wrap');
+        const emblemWrap = document.getElementById('om-emblem-wrap');
+
+        if (officer.photo) {
+            document.getElementById('om-photo').src = officer.photo;
+            document.getElementById('om-photo').alt = officer.title;
+            document.getElementById('om-photo-caption').innerText = officer.title;
+            photoWrap.classList.remove('hidden');
+            emblemWrap.classList.add('hidden');
+        } else {
+            document.getElementById('om-initials').innerText = officer.initials;
+            photoWrap.classList.add('hidden');
+            emblemWrap.classList.remove('hidden');
+        }
+
+        const dutiesList = document.getElementById('om-duties');
+        dutiesList.innerHTML = officer.duties.map(duty => `
+            <li class="flex items-start gap-2.5">
+                <span class="text-uka-gold font-black mt-0.5">✓</span>
+                <span>${duty}</span>
+            </li>
+        `).join('');
+    }
+
+    document.addEventListener('keydown', (e) => {
+        const modal = document.getElementById('officer-modal');
+        if (modal && !modal.classList.contains('hidden')) {
+            if (e.key === 'Escape') closeOfficerModal();
+            if (e.key === 'ArrowRight') stepOfficerModal(1);
+            if (e.key === 'ArrowLeft') stepOfficerModal(-1);
+        }
+    });
+</script>
+{% endblock %}

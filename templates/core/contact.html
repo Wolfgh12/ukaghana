@@ -1,0 +1,368 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Contact & Welcome Desk | United Kabye Association of Ghana{% endblock %}
+
+{% block content %}
+<!-- WARM WELCOMING HERO WITH OFFICIAL CREST -->
+<section class="relative w-full bg-gradient-to-b from-uka-parchment via-uka-cream to-uka-parchment pt-10 pb-14 sm:pt-14 sm:pb-20 lg:pt-20 lg:pb-24 overflow-x-clip">
+    <!-- Ambient Golden & Emerald Aura -->
+    <div class="absolute top-8 left-1/2 -translate-x-1/2 w-80 sm:w-[680px] h-56 sm:h-[360px] bg-gradient-to-tr from-uka-gold/25 via-emerald-500/10 to-uka-terracotta/15 rounded-full blur-3xl animate-pulse-slow pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-8 text-center relative z-10 space-y-5 sm:space-y-6">
+        <!-- Ceremonial UKA Crest Medallion -->
+        <div class="relative inline-flex items-center justify-center mx-auto mb-1">
+            <div class="absolute -inset-2.5 rounded-full bg-gradient-to-tr from-uka-gold via-emerald-500/30 to-uka-terracotta/40 blur-lg opacity-75 animate-pulse-slow"></div>
+            <div class="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full p-1 bg-gradient-to-tr from-uka-gold via-yellow-200 to-uka-golddark shadow-2xl ring-4 ring-white">
+                <img src="{% static 'images/wc.jpg' %}" alt="United Kabye Association of Ghana Official Crest" class="w-full h-full object-cover rounded-full">
+            </div>
+        </div>
+
+        <!-- Multilingual Welcome Pill -->
+        <div>
+            <div class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-white border border-uka-gold/40 shadow-sm max-w-full">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping shrink-0"></span>
+                <span class="text-[11px] sm:text-xs font-black uppercase tracking-wider bg-gradient-to-r from-uka-forest to-uka-emerald bg-clip-text text-transparent">
+                    Akwaaba • Bienvenue • Welcome Home
+                </span>
+            </div>
+        </div>
+
+        <!-- Friendly Headline -->
+        <h1 class="font-heading text-3xl sm:text-5xl lg:text-6xl font-black text-uka-deep leading-[1.15] tracking-tight">
+            Our doors & hearts are<br>
+            <span class="bg-gradient-to-r from-uka-forest via-emerald-700 to-uka-golddark bg-clip-text text-transparent underline decoration-uka-gold decoration-wavy">
+                always open to you.
+            </span>
+        </h1>
+
+        <p class="text-sm sm:text-xl text-slate-700 leading-relaxed font-normal max-w-2xl mx-auto">
+            Whether you are a Kabye brother or sister looking to join the Eastern Region family, a member seeking welfare or dues support, or a community partner reaching out—our Secretariat is delighted to hear from you.
+        </p>
+
+        <!-- Breadcrumb -->
+        <div class="pt-1 flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm font-mono text-slate-500 uppercase tracking-widest">
+            <a href="{% url 'core:home' %}" class="hover:text-uka-forest transition-colors">Home</a>
+            <span>/</span>
+            <span class="text-uka-golddark font-bold">Contact & Welcome Desk</span>
+        </div>
+    </div>
+</section>
+
+<!-- QUICK WELCOMING TOPIC CARDS (Click to Pre-Fill Inquiry Form) -->
+<section class="w-full py-10 sm:py-14 bg-white border-y border-uka-border overflow-x-clip">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-xl mx-auto mb-8 sm:mb-10 space-y-2">
+            <span class="text-xs font-black text-uka-terracotta uppercase tracking-[0.22em]">How Can We Help Today?</span>
+            <h2 class="font-heading text-2xl sm:text-3xl font-black text-uka-deep">
+                Choose a topic or send a direct note
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+            <!-- Topic 1 -->
+            <button type="button" onclick="selectInquiryTopic('New Membership & Induction (GHC 50)')"
+                    class="text-left p-5 sm:p-6 rounded-3xl bg-gradient-to-b from-white to-uka-parchment border border-uka-border hover:border-uka-gold hover:shadow-lg transition-all group space-y-2.5">
+                <div class="w-11 h-11 rounded-2xl bg-emerald-100 text-uka-forest flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                    🤝
+                </div>
+                <h3 class="font-heading font-bold text-base sm:text-lg text-uka-forest">Join the Family</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Questions about Article 4 induction, eligibility, or attending your first Sunday assembly.
+                </p>
+                <span class="inline-block text-[11px] font-mono font-bold text-uka-golddark uppercase tracking-wider pt-1">
+                    Select Topic →
+                </span>
+            </button>
+
+            <!-- Topic 2 -->
+            <button type="button" onclick="selectInquiryTopic('Article 5 Welfare & Family Support')"
+                    class="text-left p-5 sm:p-6 rounded-3xl bg-gradient-to-b from-white to-uka-parchment border border-uka-border hover:border-uka-gold hover:shadow-lg transition-all group space-y-2.5">
+                <div class="w-11 h-11 rounded-2xl bg-amber-100 text-uka-golddark flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                    🛡️
+                </div>
+                <h3 class="font-heading font-bold text-base sm:text-lg text-uka-forest">Welfare & Milestones</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Notify the Secretariat about childbirth, marriage, hospital admission, or bereavement.
+                </p>
+                <span class="inline-block text-[11px] font-mono font-bold text-uka-golddark uppercase tracking-wider pt-1">
+                    Select Topic →
+                </span>
+            </button>
+
+            <!-- Topic 3 -->
+            <button type="button" onclick="selectInquiryTopic('Monthly Dues & Serialized Receipt')"
+                    class="text-left p-5 sm:p-6 rounded-3xl bg-gradient-to-b from-white to-uka-parchment border border-uka-border hover:border-uka-gold hover:shadow-lg transition-all group space-y-2.5">
+                <div class="w-11 h-11 rounded-2xl bg-orange-100 text-uka-terracotta flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                    🧾
+                </div>
+                <h3 class="font-heading font-bold text-base sm:text-lg text-uka-forest">Dues & Receipts</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Confirm your GHC 20 MoMo transfer or request verification for your serialized receipt.
+                </p>
+                <span class="inline-block text-[11px] font-mono font-bold text-uka-golddark uppercase tracking-wider pt-1">
+                    Select Topic →
+                </span>
+            </button>
+
+            <!-- Topic 4 -->
+            <button type="button" onclick="selectInquiryTopic('Civic Outreach & Partnership')"
+                    class="text-left p-5 sm:p-6 rounded-3xl bg-gradient-to-b from-white to-uka-parchment border border-uka-border hover:border-uka-gold hover:shadow-lg transition-all group space-y-2.5">
+                <div class="w-11 h-11 rounded-2xl bg-rose-100 text-uka-crimson flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                    🌍
+                </div>
+                <h3 class="font-heading font-bold text-base sm:text-lg text-uka-forest">Civic & Cultural Allies</h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    Partner with us on quarterly clinic outreaches, cleanups, or cultural celebrations.
+                </p>
+                <span class="inline-block text-[11px] font-mono font-bold text-uka-golddark uppercase tracking-wider pt-1">
+                    Select Topic →
+                </span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- MAIN CONTACT DESK: MESSAGE FORM + SECRETARIAT HOSPITALITY CARD -->
+<section id="contact-desk" class="w-full py-14 sm:py-20 bg-uka-parchment relative overflow-x-clip">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-start">
+
+            <!-- Left 7 Columns: Welcoming Message Form -->
+            <div class="lg:col-span-7">
+                <div class="bg-white p-6 sm:p-10 rounded-3xl border-2 border-uka-gold/35 shadow-xl space-y-6">
+                    <!-- Form Header with Crest -->
+                    <div class="flex items-center gap-3.5 sm:gap-4 border-b border-uka-border pb-5">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full p-0.5 bg-gradient-to-tr from-uka-gold to-yellow-300 shrink-0 shadow">
+                            <img src="{% static 'images/wc.jpg' %}" alt="UKA Crest" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="min-w-0">
+                            <span class="text-[11px] font-mono font-bold text-uka-terracotta uppercase tracking-wider block">
+                                Direct Secretariat Message
+                            </span>
+                            <h2 class="font-heading text-xl sm:text-2xl font-black text-uka-deep leading-tight">
+                                Write to the Eastern Region Branch
+                            </h2>
+                        </div>
+                    </div>
+
+                    <form id="uka-contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4 sm:space-y-5">
+                        {% csrf_token %}
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="c-name" class="block text-xs font-mono font-bold text-slate-800 uppercase mb-1.5">Your Full Name *</label>
+                                <input id="c-name" type="text" required placeholder="e.g. Kwami Esso"
+                                       class="w-full bg-uka-parchment border border-uka-border rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-uka-forest focus:bg-white transition">
+                            </div>
+                            <div>
+                                <label for="c-phone" class="block text-xs font-mono font-bold text-slate-800 uppercase mb-1.5">Phone / WhatsApp Number *</label>
+                                <input id="c-phone" type="tel" required placeholder="e.g. 024 XXX XXXX"
+                                       class="w-full bg-uka-parchment border border-uka-border rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-uka-forest focus:bg-white transition">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="c-town" class="block text-xs font-mono font-bold text-slate-800 uppercase mb-1.5">Town / Municipality</label>
+                                <input id="c-town" type="text" placeholder="e.g. Koforidua / Suhum / Nsawam"
+                                       class="w-full bg-uka-parchment border border-uka-border rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-uka-forest focus:bg-white transition">
+                            </div>
+                            <div>
+                                <label for="c-topic" class="block text-xs font-mono font-bold text-slate-800 uppercase mb-1.5">How Can We Assist? *</label>
+                                <select id="c-topic"
+                                        class="w-full bg-uka-parchment border border-uka-border rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-uka-forest focus:bg-white transition">
+                                    <option value="New Membership & Induction (GHC 50)">New Membership & Induction (GHC 50)</option>
+                                    <option value="Article 5 Welfare & Family Support">Article 5 Welfare & Family Support</option>
+                                    <option value="Monthly Dues & Serialized Receipt">Monthly Dues & Serialized Receipt</option>
+                                    <option value="Sunday General Assembly Inquiry">Sunday General Assembly Inquiry</option>
+                                    <option value="Civic Outreach & Partnership">Civic Outreach & Partnership</option>
+                                    <option value="General Fraternal Greeting">General Fraternal Greeting</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="c-message" class="block text-xs font-mono font-bold text-slate-800 uppercase mb-1.5">Your Message *</label>
+                            <textarea id="c-message" rows="4" required placeholder="Share your question, greeting, or welfare update—our Secretariat responds warmly and promptly..."
+                                      class="w-full bg-uka-parchment border border-uka-border rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-uka-forest focus:bg-white transition"></textarea>
+                        </div>
+
+                        <!-- Instant Friendly Confirmation Banner -->
+                        <div id="contact-success-box" class="hidden p-4 rounded-2xl bg-emerald-50 border border-emerald-400/60 text-xs sm:text-sm text-uka-forest space-y-1">
+                            <strong class="block font-heading text-base text-uka-forest">★ Akwaaba! Your message has been received.</strong>
+                            <p id="contact-success-text" class="text-slate-700 leading-relaxed"></p>
+                        </div>
+
+                        <button type="submit"
+                                class="w-full py-4 rounded-full bg-gradient-to-r from-uka-gold via-yellow-400 to-amber-500 hover:brightness-105 text-uka-deep font-black text-xs sm:text-sm uppercase tracking-widest shadow-lg shadow-uka-gold/25 hover:scale-[1.01] transition-all">
+                            Send Warm Message to Secretariat →
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right 5 Columns: Official Crest Seal, Direct Lines & Assembly Hospitality -->
+            <div class="lg:col-span-5 space-y-6">
+                
+                <!-- Ceremonial Secretariat Card -->
+                <div class="rounded-3xl bg-gradient-to-br from-uka-deep via-uka-forest to-black text-white p-6 sm:p-8 shadow-2xl border-2 border-uka-gold/40 relative overflow-hidden space-y-6">
+                    <!-- Watermark Logo -->
+                    <div class="absolute -right-8 -bottom-8 w-44 h-44 opacity-10 rounded-full overflow-hidden pointer-events-none">
+                        <img src="{% static 'images/wc.jpg' %}" alt="UKA Crest Watermark" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="flex items-center gap-4 border-b border-white/15 pb-5 relative z-10">
+                        <div class="w-16 h-16 rounded-full p-0.5 bg-gradient-to-tr from-uka-gold via-yellow-200 to-uka-golddark shadow-xl shrink-0">
+                            <img src="{% static 'images/wc.jpg' %}" alt="UKA Official Emblem" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="min-w-0">
+                            <span class="text-[10px] font-mono uppercase tracking-[0.22em] text-uka-gold block">Eastern Region Secretariat</span>
+                            <h3 class="font-heading text-lg sm:text-xl font-black text-white leading-tight">
+                                United Kabye Association
+                            </h3>
+                            <span class="text-xs text-slate-300 block mt-0.5">Koforidua • Eastern Region, Ghana</span>
+                        </div>
+                    </div>
+
+                    <!-- Direct Lines -->
+                    <div class="space-y-4 text-xs sm:text-sm relative z-10">
+                        <div class="p-4 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-between gap-3">
+                            <div class="min-w-0">
+                                <span class="block text-[10px] font-mono uppercase tracking-wider text-uka-gold">Secretariat & MoMo Line</span>
+                                <span id="contact-phone-num" class="font-mono text-base sm:text-lg font-black text-white tracking-wider">0244000000</span>
+                            </div>
+                            <button type="button" onclick="copySecretariatPhone()" class="px-3.5 py-2 rounded-xl bg-uka-gold text-uka-deep font-mono text-[11px] font-black uppercase tracking-wider hover:brightness-105 transition shrink-0">
+                                <span id="copy-phone-label">Copy</span>
+                            </button>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
+                            <span class="block text-[10px] font-mono uppercase tracking-wider text-emerald-300">Ordinary General Assembly</span>
+                            <strong class="block text-white font-heading text-sm sm:text-base">1st & 3rd Sundays @ 2:00 PM Prompt</strong>
+                            <span class="block text-xs text-slate-300">Visitors and prospective inductees are warmly welcomed!</span>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
+                            <span class="block text-[10px] font-mono uppercase tracking-wider text-uka-goldlight">Welcoming Languages (Article 7)</span>
+                            <strong class="block text-white">Kabiye • English • Twi • Français</strong>
+                            <span class="block text-xs text-slate-300">Speak in the language you feel most at home in.</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 border-t border-white/15 flex items-center justify-between text-xs text-uka-goldlight font-mono relative z-10">
+                        <span>Motto:</span>
+                        <strong class="text-uka-gold">Unity Culture Progress and Service</strong>
+                    </div>
+                </div>
+
+                <!-- Acting Executive Contacts Preview -->
+                <div class="rounded-3xl bg-white p-6 sm:p-7 border border-uka-border shadow-md space-y-4">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-mono font-bold text-uka-terracotta uppercase tracking-wider">Your Welcoming Hosts</span>
+                        <a href="{% url 'core:about' %}#directorate" class="text-xs font-mono font-bold text-uka-forest hover:underline">Full Profiles →</a>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3 text-left">
+                        <div class="flex items-center gap-2.5 p-2.5 rounded-2xl bg-uka-parchment border border-uka-border/70">
+                            <img src="{% static 'images/kcm.jpg' %}" alt="Mr. Paul Abotsi" class="w-10 h-10 rounded-full object-cover object-top shrink-0 ring-1 ring-uka-gold">
+                            <div class="min-w-0">
+                                <span class="block text-xs font-bold text-uka-deep truncate">Mr. Paul Abotsi</span>
+                                <span class="block text-[10px] font-mono text-uka-forest truncate">Acting Chairman</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2.5 p-2.5 rounded-2xl bg-uka-parchment border border-uka-border/70">
+                            <img src="{% static 'images/funsec.jpg' %}" alt="Mary Samoh" class="w-10 h-10 rounded-full object-cover object-top shrink-0 ring-1 ring-uka-gold">
+                            <div class="min-w-0">
+                                <span class="block text-xs font-bold text-uka-deep truncate">Mary Samoh</span>
+                                <span class="block text-[10px] font-mono text-uka-forest truncate">Acting Secretary</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2.5 p-2.5 rounded-2xl bg-uka-parchment border border-uka-border/70">
+                            <img src="{% static 'images/yaw_djato.jpg' %}" alt="Yaw Djato" class="w-10 h-10 rounded-full object-cover object-top shrink-0 ring-1 ring-uka-gold">
+                            <div class="min-w-0">
+                                <span class="block text-xs font-bold text-uka-deep truncate">Yaw Djato</span>
+                                <span class="block text-[10px] font-mono text-uka-forest truncate">Acting Treasurer</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2.5 p-2.5 rounded-2xl bg-uka-parchment border border-uka-border/70">
+                            <img src="{% static 'images/brog.jpg' %}" alt="Esso Samah" class="w-10 h-10 rounded-full object-cover object-top shrink-0 ring-1 ring-uka-gold">
+                            <div class="min-w-0">
+                                <span class="block text-xs font-bold text-uka-deep truncate">Esso Samah</span>
+                                <span class="block text-[10px] font-mono text-uka-forest truncate">Acting Organizer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EASTERN REGION MUNICIPAL COVERAGE STRIP -->
+<section class="w-full py-12 sm:py-16 bg-white border-t border-uka-border overflow-x-clip">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 text-center space-y-6">
+        <div class="space-y-2 max-w-2xl mx-auto">
+            <span class="text-xs font-black text-uka-terracotta uppercase tracking-[0.22em]">Across The Eastern Region</span>
+            <h2 class="font-heading text-2xl sm:text-3xl font-black text-uka-deep">
+                Connecting Kabye households in every district
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600">
+                Wherever you live or work in the Eastern Region, you have a home and an active brotherhood chapter nearby.
+            </p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
+            <span class="px-4 py-2 rounded-full bg-uka-parchment border border-uka-gold/40 text-xs sm:text-sm font-bold text-uka-forest">★ Koforidua (Regional Hub)</span>
+            <span class="px-4 py-2 rounded-full bg-uka-parchment border border-uka-border text-xs sm:text-sm font-semibold text-slate-700">Suhum</span>
+            <span class="px-4 py-2 rounded-full bg-uka-parchment border border-uka-border text-xs sm:text-sm font-semibold text-slate-700">Nsawam</span>
+            <span class="px-4 py-2 rounded-full bg-uka-parchment border border-uka-border text-xs sm:text-sm font-semibold text-slate-700">Nkawkaw</span>
+            <span class="px-4 py-2 rounded-full bg-uka-parchment border border-uka-border text-xs sm:text-sm font-semibold text-slate-700">Somanya & Odumase</span>
+            <span class="px-4 py-2 rounded-full bg-uka-parchment border border-uka-border text-xs sm:text-sm font-semibold text-slate-700">Akim Oda</span>
+            <span class="px-4 py-2 rounded-full bg-uka-parchment border border-uka-border text-xs sm:text-sm font-semibold text-slate-700">Asamankese</span>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    function selectInquiryTopic(topicValue) {
+        const select = document.getElementById('c-topic');
+        const desk = document.getElementById('contact-desk');
+        const nameInput = document.getElementById('c-name');
+
+        if (select) select.value = topicValue;
+        if (desk) desk.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setTimeout(() => {
+            if (nameInput) nameInput.focus();
+        }, 450);
+    }
+
+    function copySecretariatPhone() {
+        const num = document.getElementById('contact-phone-num').innerText;
+        navigator.clipboard.writeText(num).then(() => {
+            const label = document.getElementById('copy-phone-label');
+            if (label) {
+                label.innerText = 'Copied!';
+                setTimeout(() => { label.innerText = 'Copy'; }, 2000);
+            }
+        });
+    }
+
+    function handleContactSubmit(e) {
+        e.preventDefault();
+        const name = document.getElementById('c-name').value.trim();
+        const topic = document.getElementById('c-topic').value;
+        const box = document.getElementById('contact-success-box');
+        const text = document.getElementById('contact-success-text');
+
+        text.innerText = `Thank you, ${name}. Your note regarding "${topic}" has been logged for Acting Branch Secretary Mary Samoh and the Eastern Region Secretariat. We will reach out to you shortly!`;
+        box.classList.remove('hidden');
+        e.target.reset();
+    }
+</script>
+{% endblock %}

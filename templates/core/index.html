@@ -1,0 +1,1194 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- HERO SECTION: Warm Luxury with African Forest & Gold Gradients -->
+<section class="relative w-full bg-gradient-to-b from-uka-parchment via-uka-cream to-uka-parchment pt-8 pb-14 sm:pt-10 sm:pb-16 lg:pt-16 lg:pb-24 overflow-hidden">
+    <!-- Ambient Pulsating Gradient Orbs -->
+    <div class="absolute top-10 left-4 sm:left-10 w-64 sm:w-80 h-64 sm:h-80 bg-gradient-to-tr from-uka-gold/20 to-emerald-500/10 rounded-full blur-3xl animate-pulse-slow pointer-events-none"></div>
+    <div class="absolute bottom-10 right-4 sm:right-10 w-72 sm:w-96 h-72 sm:h-96 bg-gradient-to-tr from-uka-terracotta/15 to-uka-gold/15 rounded-full blur-3xl animate-pulse-slow pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center">
+            
+            <!-- Left Narrative -->
+            <div class="lg:col-span-7 space-y-5 sm:space-y-6">
+                <!-- Glowing Live Badge -->
+                <div class="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-white border border-uka-gold/40 shadow-sm max-w-full">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping shrink-0"></span>
+                    <span class="text-[10px] sm:text-xs font-extrabold uppercase tracking-wider bg-gradient-to-r from-uka-forest to-uka-emerald bg-clip-text text-transparent">
+                        Eastern Region Branch Charter № ERB-2026
+                    </span>
+                </div>
+
+                <!-- Main Punchline -->
+                <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-black text-uka-deep leading-[1.15] tracking-tight">
+                    Every family deserves a shield of 
+                    <span class="bg-gradient-to-r from-uka-forest via-emerald-700 to-uka-golddark bg-clip-text text-transparent underline decoration-uka-gold decoration-wavy">
+                        unshakeable unity
+                    </span>
+                </h1>
+
+                <p class="text-sm sm:text-lg text-slate-700 leading-relaxed font-normal max-w-xl">
+                    United Kabye Association works where family kinship and community need are greatest. Organizing municipal cleanups, uplifting pediatric clinics and children's homes, honoring our sacred milestones, and guaranteeing that no brother or sister stands alone in grief or sickness.
+                </p>
+
+                <!-- Primary Action CTAs -->
+                <div class="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-4 pt-2">
+                    <a href="#membership" class="w-full sm:w-auto text-center px-6 sm:px-7 py-3.5 rounded-full bg-gradient-to-r from-uka-gold via-yellow-400 to-amber-500 hover:from-yellow-400 hover:to-uka-gold text-uka-deep font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg shadow-uka-gold/25 hover:scale-105 transition-all duration-300">
+                        Join the Association (GHC 50)
+                    </a>
+                    <a href="#welfare" class="w-full sm:w-auto text-center px-6 sm:px-7 py-3.5 rounded-full bg-white border-2 border-uka-forest text-uka-forest hover:bg-uka-forest hover:text-white font-bold text-xs sm:text-sm uppercase tracking-wider shadow-sm hover:shadow transition-all duration-300">
+                        Explore Welfare Shield →
+                    </a>
+                </div>
+
+                <!-- Heritage Verification Pill -->
+                <div class="pt-2 flex items-center gap-3 text-xs sm:text-sm text-slate-700">
+                    <div class="flex -space-x-2 overflow-hidden shrink-0">
+                        <div class="inline-block h-8 w-8 sm:h-9 sm:w-9 rounded-full ring-2 ring-white overflow-hidden shadow">
+                            <img src="{% static 'images/wc.jpg' %}" alt="UKA Crest" class="w-full h-full object-cover">
+                        </div>
+                        <span class="inline-block h-8 w-8 sm:h-9 sm:w-9 rounded-full ring-2 ring-white bg-uka-forest text-uka-gold font-black flex items-center justify-center text-[10px] sm:text-[11px] shadow">ER</span>
+                        <span class="inline-block h-8 w-8 sm:h-9 sm:w-9 rounded-full ring-2 ring-white bg-gradient-to-tr from-uka-gold to-amber-500 text-uka-deep font-black flex items-center justify-center text-[10px] sm:text-[11px] shadow">GH</span>
+                    </div>
+                    <span>Uniting Kabye families across <strong class="text-uka-forest font-bold">all municipal districts in the Eastern Region</strong></span>
+                </div>
+            </div>
+
+            <!-- Right Visual Showcase: Glowing Constitutional Terminal -->
+            <div class="lg:col-span-5 relative">
+                <!-- Background Gradient Flare -->
+                <div class="hidden sm:block absolute -inset-3 bg-gradient-to-tr from-uka-gold/25 via-emerald-600/15 to-uka-terracotta/15 rounded-3xl blur-2xl -z-10 animate-pulse-slow"></div>
+
+                <!-- Showcase Card Container -->
+                <div class="rounded-3xl bg-gradient-to-br from-uka-deep via-uka-forest to-black p-5 sm:p-8 text-white shadow-2xl border-2 border-uka-gold/40 relative overflow-hidden">
+                    <!-- Subtle Watermark Crest -->
+                    <div class="absolute -right-6 -bottom-6 w-40 sm:w-48 h-40 sm:h-48 opacity-10 pointer-events-none rounded-full overflow-hidden">
+                        <img src="{% static 'images/wc.jpg' %}" alt="Watermark Crest" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Floating Pill: Monthly Dues -->
+                    <div class="bg-white/95 backdrop-blur-md text-uka-deep p-3.5 sm:p-4 rounded-2xl shadow-lg max-w-[210px] mb-5 sm:mb-6 border border-uka-gold/40">
+                        <span class="block text-xl sm:text-2xl font-black font-sans bg-gradient-to-r from-uka-forest to-emerald-700 bg-clip-text text-transparent">GHC 20.00</span>
+                        <span class="text-[11px] sm:text-xs font-bold text-slate-700 uppercase tracking-wider">Statutory Dues / Month</span>
+                    </div>
+
+                    <!-- Assembly Headline -->
+                    <div class="space-y-2 my-3">
+                        <span class="inline-block text-[10px] sm:text-[11px] font-mono font-bold uppercase tracking-widest text-uka-gold bg-black/50 px-3 py-1 rounded-full border border-uka-gold/30">
+                            Article 6 Assembly Mandate
+                        </span>
+                        <h3 class="font-heading text-xl sm:text-2xl font-black leading-tight text-white">
+                            Next General Assembly
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-light">
+                            Bi-monthly assembly convened on 1st & 3rd Sundays at 2:00 PM prompt. Deliberative quorum: 1/3 active members in good standing.
+                        </p>
+                    </div>
+
+                    <!-- Live Real-Time Assembly Clock -->
+                    <div class="grid grid-cols-4 gap-1.5 sm:gap-2 text-center pt-2 pb-3">
+                        <div class="bg-black/60 backdrop-blur-md p-2 sm:p-2.5 rounded-xl border border-white/15">
+                            <span class="block text-lg sm:text-2xl font-black font-mono text-white" id="clock-days">--</span>
+                            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-slate-300">Days</span>
+                        </div>
+                        <div class="bg-black/60 backdrop-blur-md p-2 sm:p-2.5 rounded-xl border border-white/15">
+                            <span class="block text-lg sm:text-2xl font-black font-mono text-white" id="clock-hours">--</span>
+                            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-slate-300">Hours</span>
+                        </div>
+                        <div class="bg-black/60 backdrop-blur-md p-2 sm:p-2.5 rounded-xl border border-white/15">
+                            <span class="block text-lg sm:text-2xl font-black font-mono text-white" id="clock-mins">--</span>
+                            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-slate-300">Mins</span>
+                        </div>
+                        <div class="bg-black/60 backdrop-blur-md p-2 sm:p-2.5 rounded-xl border border-white/15">
+                            <span class="block text-lg sm:text-2xl font-black font-mono text-uka-gold" id="clock-secs">--</span>
+                            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-uka-goldlight">Secs</span>
+                        </div>
+                    </div>
+
+                    <!-- Signatory Footnote -->
+                    <div class="mt-3 pt-3.5 border-t border-white/15 flex items-center justify-between gap-2 text-[11px] sm:text-xs text-slate-200">
+                        <span>Dual Signatory Oversight:</span>
+                        <strong class="text-uka-gold font-bold text-right">Chairman & Treasurer</strong>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTINUOUS MARQUEE RIBBON WITH GHANA ACCENTS -->
+<div class="w-full max-w-full border-y border-uka-gold/30 bg-gradient-to-r from-uka-deep via-uka-forest to-uka-deep text-white py-3 sm:py-3.5 overflow-hidden shadow-inner">
+    <div class="animate-marquee whitespace-nowrap text-[11px] sm:text-xs font-black tracking-[0.2em] sm:tracking-[0.22em] uppercase">
+        <span class="mx-4 sm:mx-6 text-uka-gold">★ Unity Culture Progress and Service</span>
+        <span class="mx-4 sm:mx-6 text-uka-crimson">•</span>
+        <span class="mx-4 sm:mx-6">Communal Cleanups & Sanitation</span>
+        <span class="mx-4 sm:mx-6 text-uka-gold">•</span>
+        <span class="mx-4 sm:mx-6">Children's Home & Clinic Outreaches</span>
+        <span class="mx-4 sm:mx-6 text-emerald-400">•</span>
+        <span class="mx-4 sm:mx-6">Brotherhood Cultural Excursions</span>
+        <span class="mx-4 sm:mx-6 text-uka-gold">•</span>
+        <span class="mx-4 sm:mx-6">5 Statutory Welfare Packages</span>
+        <span class="mx-4 sm:mx-6 text-uka-crimson">•</span>
+        <span class="mx-4 sm:mx-6">Dual Signatory Fiduciary Oversight</span>
+        <span class="mx-4 sm:mx-6 text-uka-gold">•</span>
+        <span class="mx-4 sm:mx-6">★ Eastern Region Branch Secretariat</span>
+        <span class="mx-4 sm:mx-6 text-emerald-400">•</span>
+        <!-- Duplicated loop set for continuous scroll -->
+        <span class="mx-4 sm:mx-6 text-uka-gold">★ Unity Culture Progress and Service</span>
+        <span class="mx-4 sm:mx-6 text-uka-crimson">•</span>
+        <span class="mx-4 sm:mx-6">Communal Cleanups & Sanitation</span>
+        <span class="mx-4 sm:mx-6 text-uka-gold">•</span>
+        <span class="mx-4 sm:mx-6">Children's Home & Clinic Outreaches</span>
+        <span class="mx-4 sm:mx-6 text-emerald-400">•</span>
+        <span class="mx-4 sm:mx-6">Brotherhood Cultural Excursions</span>
+        <span class="mx-4 sm:mx-6 text-uka-gold">•</span>
+        <span class="mx-4 sm:mx-6">5 Statutory Welfare Packages</span>
+        <span class="mx-4 sm:mx-6 text-uka-crimson">•</span>
+        <span class="mx-4 sm:mx-6">Dual Signatory Fiduciary Oversight</span>
+    </div>
+</div>
+
+<!-- KEY CONSTITUTIONAL METRICS BAR -->
+<section class="w-full py-10 sm:py-12 bg-white border-b border-uka-border overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
+            <div class="p-4 sm:p-7 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-white to-uka-cream border border-uka-border shadow-sm text-center hover:border-uka-gold transition-colors group">
+                <span class="block font-sans text-2xl sm:text-4xl font-black text-uka-forest group-hover:text-uka-emerald transition-colors">GHC 20</span>
+                <span class="text-[11px] sm:text-xs font-bold text-slate-700 uppercase tracking-wider block mt-1.5">Monthly Dues (Art. 3)</span>
+            </div>
+            <div class="p-4 sm:p-7 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-white to-uka-cream border border-uka-border shadow-sm text-center hover:border-uka-gold transition-colors group">
+                <span class="block font-sans text-2xl sm:text-4xl font-black text-uka-terracotta group-hover:text-orange-600 transition-colors">6 Months</span>
+                <span class="text-[11px] sm:text-xs font-bold text-slate-700 uppercase tracking-wider block mt-1.5">Welfare Vesting Window</span>
+            </div>
+            <div class="p-4 sm:p-7 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-white to-uka-cream border border-uka-border shadow-sm text-center hover:border-uka-gold transition-colors group">
+                <span class="block font-sans text-2xl sm:text-4xl font-black text-uka-forest group-hover:text-uka-emerald transition-colors">5 Reliefs</span>
+                <span class="text-[11px] sm:text-xs font-bold text-slate-700 uppercase tracking-wider block mt-1.5">Statutory Packages</span>
+            </div>
+            <div class="p-4 sm:p-7 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-white to-uka-cream border border-uka-border shadow-sm text-center hover:border-uka-gold transition-colors group">
+                <span class="block font-sans text-2xl sm:text-4xl font-black text-uka-golddark group-hover:text-amber-600 transition-colors">1st & 3rd</span>
+                <span class="text-[11px] sm:text-xs font-bold text-slate-700 uppercase tracking-wider block mt-1.5">Sundays @ 2:00 PM</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CULTURAL HERITAGE VIDEO SHOWCASE (Feature I: Text Left, Cinema Portrait Right) -->
+<section class="w-full py-14 sm:py-16 lg:py-24 bg-gradient-to-br from-uka-deep via-uka-forest to-black relative overflow-hidden border-b border-uka-gold/30">
+    <div class="absolute top-0 right-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
+        <div class="absolute -right-20 -top-20 w-72 sm:w-[500px] h-72 sm:h-[500px] bg-uka-gold rounded-full blur-[120px]"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            
+            <!-- Left Narrative -->
+            <div class="lg:col-span-7 space-y-5 sm:space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-uka-gold/10 border border-uka-gold/30 text-uka-goldlight text-xs font-bold uppercase tracking-wider">
+                    ★ Living Kabye Heritage
+                </div>
+                
+                <h2 class="font-heading text-2xl sm:text-4xl lg:text-5xl font-black text-white leading-tight">
+                    The heartbeat of the Kabye people, echoing across the Eastern Region
+                </h2>
+
+                <p class="text-sm sm:text-lg text-slate-300 leading-relaxed font-light max-w-2xl">
+                    Our culture is not confined to history books. It lives in the rhythm of our steps, the pride of our traditional attire, and the unity of our gatherings across every district in the Eastern Region.
+                </p>
+
+                <!-- Cultural Highlights Strip -->
+                <div class="grid grid-cols-2 gap-3 sm:gap-4 pt-1 max-w-lg">
+                    <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                        <span class="block font-mono text-xs font-bold text-uka-gold uppercase tracking-wider">Ancestral Rhythm</span>
+                        <span class="block text-xs text-slate-300 mt-1">Traditional Kabye dance & drumming</span>
+                    </div>
+                    <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                        <span class="block font-mono text-xs font-bold text-emerald-300 uppercase tracking-wider">Unified Kinship</span>
+                        <span class="block text-xs text-slate-300 mt-1">Preserving identity across generations</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+                    <a href="{% url 'core:about' %}" class="w-full sm:w-auto text-center px-7 py-3.5 rounded-full bg-gradient-to-r from-uka-gold via-yellow-400 to-amber-500 hover:brightness-110 text-uka-deep font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg shadow-uka-gold/25 transition-all hover:scale-105">
+                        Discover Our Story
+                    </a>
+                    <a href="{% url 'core:impact' %}" class="w-full sm:w-auto text-center px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-xs sm:text-sm uppercase tracking-wider border border-white/25 transition">
+                        Impact & Gallery →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Single Commanding 9:16 Portrait Stage -->
+            <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                <div class="relative w-full max-w-[285px] sm:max-w-[315px] aspect-[9/16] rounded-[2rem] overflow-hidden border-4 border-uka-gold bg-uka-deep shadow-[0_0_55px_rgba(243,186,47,0.28)] group">
+                    <div class="absolute inset-0 z-10 shadow-[inset_0_0_40px_rgba(0,0,0,0.45)] pointer-events-none"></div>
+                    
+                    <video id="heritage-video-1"
+                           autoplay
+                           loop
+                           muted
+                           playsinline
+                           onclick="toggleHeritagePlay(1)"
+                           class="w-full h-full object-cover cursor-pointer">
+                        <source src="{% static 'videos/cultural_dance.mp4' %}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <!-- Top Control Bar -->
+                    <div class="absolute top-3.5 left-3.5 right-3.5 z-20 flex items-center justify-between gap-2">
+                        <button type="button"
+                                id="play-toggle-btn-1"
+                                onclick="toggleHeritagePlay(1)"
+                                aria-label="Play or pause Cultural Dance video"
+                                class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-black/75 hover:bg-uka-gold text-white hover:text-uka-deep border border-uka-gold/50 backdrop-blur-md text-[10px] font-mono font-bold uppercase tracking-wider shadow-lg transition-all">
+                            <span id="play-icon-1">⏸</span>
+                            <span id="play-label-1">Pause</span>
+                        </button>
+
+                        <button type="button"
+                                id="mute-toggle-btn-1"
+                                onclick="toggleHeritageMute(1)"
+                                aria-label="Mute or unmute Cultural Dance video"
+                                class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-black/75 hover:bg-uka-gold text-white hover:text-uka-deep border border-uka-gold/50 backdrop-blur-md text-[10px] font-mono font-bold uppercase tracking-wider shadow-lg transition-all">
+                            <span id="mute-icon-1">🔇</span>
+                            <span id="mute-label-1">Sound</span>
+                        </button>
+                    </div>
+
+                    <!-- Bottom Glassmorphism Status Badge -->
+                    <div class="absolute bottom-3.5 left-3.5 right-3.5 z-20 flex justify-between items-end pointer-events-none">
+                        <div class="bg-black/65 backdrop-blur-md border border-white/20 p-3 rounded-xl shadow-lg">
+                            <span class="block text-[9px] font-mono text-uka-gold uppercase tracking-widest">Featured Showcase</span>
+                            <span class="block text-xs sm:text-sm font-bold text-white leading-none mt-1">Kabye Cultural Dance</span>
+                        </div>
+                        
+                        <div id="eq-bars-1" class="flex items-end gap-1 h-5 pb-1.5 pr-1">
+                            <div class="w-1 h-full bg-uka-gold animate-[pulse_1s_ease-in-out_infinite]"></div>
+                            <div class="w-1 h-2/3 bg-uka-gold animate-[pulse_1.2s_ease-in-out_infinite]"></div>
+                            <div class="w-1 h-4/5 bg-uka-gold animate-[pulse_0.8s_ease-in-out_infinite]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- "WHO WE ARE & WHAT WE DO PROPERLY" -->
+<section id="about" class="w-full py-14 sm:py-16 lg:py-20 bg-uka-parchment relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center">
+            
+            <!-- Left Narrative -->
+            <div class="lg:col-span-7 space-y-5">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-uka-gold/20 border border-uka-gold/40 text-uka-forest text-xs font-bold uppercase tracking-wider">
+                    Our Constitutional Purpose
+                </div>
+                
+                <h2 class="font-heading text-2xl sm:text-3xl lg:text-4xl font-black text-uka-deep leading-tight">
+                    Four commitments we make, and we execute them properly
+                </h2>
+
+                <p class="text-sm sm:text-base text-slate-800 leading-relaxed font-normal">
+                    Under the Supreme Governing Charter of the United Kabye Association, Eastern Region Branch, we operate with strict constitutional fiduciary integrity. Every cedi is receipted, every welfare case is verified, and our community outreach is directly felt in our hospitals, children's homes, and towns.
+                </p>
+
+                <div class="space-y-3.5 pt-1">
+                    <div class="flex items-start gap-3">
+                        <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-uka-gold to-yellow-300 text-uka-deep flex items-center justify-center font-black text-xs shrink-0 mt-0.5 shadow-sm">✓</div>
+                        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed"><strong class="text-uka-forest font-bold">We protect our members practically:</strong> Guaranteed welfare packages for childbirth, lawful marriages, severe illness, bereavement, and unexpected disasters.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-uka-gold to-yellow-300 text-uka-deep flex items-center justify-center font-black text-xs shrink-0 mt-0.5 shadow-sm">✓</div>
+                        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed"><strong class="text-uka-forest font-bold">We serve our region quarterly:</strong> Mandatory civic cleanups, material donations to children's homes, and hospital visitation delegations.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-uka-gold to-yellow-300 text-uka-deep flex items-center justify-center font-black text-xs shrink-0 mt-0.5 shadow-sm">✓</div>
+                        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed"><strong class="text-uka-forest font-bold">We keep serialized receipts:</strong> The Financial Secretary receipts every payment, and the Treasurer publishes audited reports.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-uka-gold to-yellow-300 text-uka-deep flex items-center justify-center font-black text-xs shrink-0 mt-0.5 shadow-sm">✓</div>
+                        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed"><strong class="text-uka-forest font-bold">We unite as an authentic family:</strong> Annual cultural excursions and youth mentorship to preserve Kabye heritage across Ghana.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 pt-3">
+                    <button type="button" onclick="openConstitutionModal()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-uka-forest to-uka-emerald text-white font-extrabold text-xs uppercase tracking-wider hover:brightness-110 shadow-md hover:scale-[1.02] transition-all">
+                        <span>📜</span>
+                        <span>Explore Welfare Rules & Charter</span>
+                    </button>
+                    <a href="{% url 'core:impact' %}" class="w-full sm:w-auto text-center px-6 py-3 rounded-full bg-white border border-uka-border text-slate-800 hover:border-uka-forest hover:text-uka-forest font-extrabold text-xs uppercase tracking-wider transition">
+                        View Field Chronicles →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Visual Manifesto Box with Logo Header -->
+            <div class="lg:col-span-5">
+                <div class="bg-gradient-to-br from-white via-uka-cream to-white rounded-3xl p-6 sm:p-8 border-2 border-uka-gold/30 shadow-xl space-y-4 relative overflow-hidden">
+                    <div class="flex items-center gap-3.5 border-b border-uka-border pb-4">
+                        <div class="w-12 h-12 rounded-full p-0.5 bg-gradient-to-tr from-uka-gold to-yellow-300 shrink-0">
+                            <img src="{% static 'images/wc.jpg' %}" alt="UKA Crest" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div>
+                            <span class="text-xs font-mono font-bold text-uka-terracotta uppercase tracking-wider block">Official Charter</span>
+                            <span class="font-heading font-black text-sm text-uka-forest">Eastern Region Supreme Mandate</span>
+                        </div>
+                    </div>
+                    
+                    <blockquote class="font-heading text-base sm:text-xl font-bold text-uka-deep leading-snug">
+                        "The association shall be known, cited, and legally recognized as the United Kabye Association of Ghana, Eastern Region Branch."
+                    </blockquote>
+                    <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                        Promulgated pursuant to the National Constitution. Committed to upholding the cultural dignity, social welfare, and united civic front of all people of Kabye lineage residing or working in the Eastern Region.
+                    </p>
+                    <div class="pt-3.5 border-t border-uka-border flex flex-wrap items-center justify-between gap-2 text-xs text-uka-forest font-bold">
+                        <span>Motto: Unity Culture Progress and Service</span>
+                        <span class="text-uka-terracotta font-mono">Est. Eastern Region</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- THE 5 STATUTORY WELFARE PACKAGES -->
+<section id="welfare" class="w-full py-14 sm:py-16 lg:py-20 bg-white border-t border-uka-border overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12 space-y-2.5">
+            <span class="text-xs font-black text-uka-terracotta uppercase tracking-[0.22em]">Article 5 Welfare Scheme</span>
+            <h2 class="font-heading text-2xl sm:text-3xl lg:text-4xl font-black text-uka-deep">
+                Five statutory packages, zero bureaucracy
+            </h2>
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                A pot with food in it. A brother by a hospital bed. An association that stands with you during life's greatest milestones and darkest trials.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-7">
+            <!-- Package 1: Childbirth -->
+            <div class="bg-gradient-to-b from-white to-uka-parchment rounded-3xl border border-uka-border overflow-hidden shadow-sm hover:shadow-lg hover:border-uka-gold transition-all flex flex-col justify-between">
+                <div class="p-6 sm:p-7 space-y-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-100 text-uka-golddark flex items-center justify-center font-mono font-black text-lg shadow-inner">
+                        01
+                    </div>
+                    <h3 class="font-heading text-xl sm:text-2xl font-bold text-uka-forest">Childbirth & Naming</h3>
+                    <p class="text-sm text-slate-700 leading-relaxed font-normal">
+                        Statutory financial relief and an official executive delegation dispatched to celebrate and honor new additions to our registered families.
+                    </p>
+                </div>
+                <div class="px-6 sm:px-7 py-4 bg-white border-t border-uka-border flex items-center justify-between text-xs sm:text-sm">
+                    <span class="text-slate-600 font-semibold">Benefaction Type:</span>
+                    <strong class="text-uka-forest font-bold">Celebratory Grant</strong>
+                </div>
+            </div>
+
+            <!-- Package 2: Marriage -->
+            <div class="bg-gradient-to-b from-white to-uka-parchment rounded-3xl border border-uka-border overflow-hidden shadow-sm hover:shadow-lg hover:border-uka-gold transition-all flex flex-col justify-between">
+                <div class="p-6 sm:p-7 space-y-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-uka-emerald flex items-center justify-center font-mono font-black text-lg shadow-inner">
+                        02
+                    </div>
+                    <h3 class="font-heading text-xl sm:text-2xl font-bold text-uka-forest">Lawful Marriage</h3>
+                    <p class="text-sm text-slate-700 leading-relaxed font-normal">
+                        Solemnization presentation and formal assembly honorarium to support an active member contracting lawful customary or ordinance marriage.
+                    </p>
+                </div>
+                <div class="px-6 sm:px-7 py-4 bg-white border-t border-uka-border flex items-center justify-between text-xs sm:text-sm">
+                    <span class="text-slate-600 font-semibold">Benefaction Type:</span>
+                    <strong class="text-uka-forest font-bold">Solemnization Honorarium</strong>
+                </div>
+            </div>
+
+            <!-- Package 3: Hospitalization -->
+            <div class="bg-gradient-to-b from-white to-uka-parchment rounded-3xl border border-uka-border overflow-hidden shadow-sm hover:shadow-lg hover:border-uka-gold transition-all flex flex-col justify-between">
+                <div class="p-6 sm:p-7 space-y-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-rose-100 text-uka-crimson flex items-center justify-center font-mono font-black text-lg shadow-inner">
+                        03
+                    </div>
+                    <h3 class="font-heading text-xl sm:text-2xl font-bold text-uka-forest">Severe Illness & Admission</h3>
+                    <p class="text-sm text-slate-700 leading-relaxed font-normal">
+                        Direct welfare disbursement and organized fraternal bedside visitations during formal, certified in-patient clinical hospitalization.
+                    </p>
+                </div>
+                <div class="px-6 sm:px-7 py-4 bg-white border-t border-uka-border flex items-center justify-between text-xs sm:text-sm">
+                    <span class="text-slate-600 font-semibold">Benefaction Type:</span>
+                    <strong class="text-uka-forest font-bold">In-Patient Medical Cover</strong>
+                </div>
+            </div>
+
+            <!-- Package 4: Bereavement -->
+            <div class="bg-gradient-to-b from-white to-uka-parchment rounded-3xl border border-uka-border overflow-hidden shadow-sm hover:shadow-lg hover:border-uka-gold transition-all flex flex-col justify-between">
+                <div class="p-6 sm:p-7 space-y-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-200 text-slate-800 flex items-center justify-center font-mono font-black text-lg shadow-inner">
+                        04
+                    </div>
+                    <h3 class="font-heading text-xl sm:text-2xl font-bold text-uka-forest">Bereavement Solidarity</h3>
+                    <p class="text-sm text-slate-700 leading-relaxed font-normal">
+                        Solemn final rites package and unified delegation presence honoring the passing of an active member, spouse, biological child, or parent.
+                    </p>
+                </div>
+                <div class="px-6 sm:px-7 py-4 bg-white border-t border-uka-border flex items-center justify-between text-xs sm:text-sm">
+                    <span class="text-slate-600 font-semibold">Benefaction Type:</span>
+                    <strong class="text-uka-forest font-bold">Funeral Solidarity Shield</strong>
+                </div>
+            </div>
+
+            <!-- Package 5: Disaster Relief -->
+            <div class="bg-gradient-to-b from-white to-uka-parchment rounded-3xl border border-uka-border overflow-hidden shadow-sm hover:shadow-lg hover:border-uka-gold transition-all flex flex-col justify-between">
+                <div class="p-6 sm:p-7 space-y-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-orange-100 text-uka-terracotta flex items-center justify-center font-mono font-black text-lg shadow-inner">
+                        05
+                    </div>
+                    <h3 class="font-heading text-xl sm:text-2xl font-bold text-uka-forest">Calamity & Disaster</h3>
+                    <p class="text-sm text-slate-700 leading-relaxed font-normal">
+                        Emergency relief intervention authorized by the Executive to stabilize members suffering catastrophic natural disasters or accidents.
+                    </p>
+                </div>
+                <div class="px-6 sm:px-7 py-4 bg-white border-t border-uka-border flex items-center justify-between text-xs sm:text-sm">
+                    <span class="text-slate-600 font-semibold">Benefaction Type:</span>
+                    <strong class="text-uka-forest font-bold">Emergency Stabilization</strong>
+                </div>
+            </div>
+
+            <!-- Interactive Eligibility Checker Card -->
+            <div class="bg-gradient-to-br from-uka-deep via-uka-forest to-black text-white rounded-3xl p-6 sm:p-7 shadow-xl border-2 border-uka-gold/40 flex flex-col justify-between">
+                <div class="space-y-3.5">
+                    <span class="inline-block text-[11px] font-mono font-bold uppercase tracking-widest text-uka-gold bg-black/40 px-3 py-1 rounded-full border border-uka-gold/30">
+                        Article 5.1 Vesting Engine
+                    </span>
+                    <h3 class="font-heading text-xl sm:text-2xl font-bold text-white">Check Your Eligibility</h3>
+                    <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-light">
+                        Welfare packages vest after 6 continuous months of verified active good standing. Test your status:
+                    </p>
+                    <select id="vesting-select" class="w-full bg-white/10 border border-white/20 rounded-xl p-3 text-xs sm:text-sm text-white focus:outline-none" onchange="runVestingCheck()">
+                        <option value="1" class="text-black">1 Month Active (Probationary)</option>
+                        <option value="3" class="text-black">3 Months Active (Notice Threshold)</option>
+                        <option value="5" class="text-black">5 Months Active (Near Vesting)</option>
+                        <option value="6" selected class="text-black">6 Months Active (Fully Vested)</option>
+                        <option value="12" class="text-black">1 Year+ Active (Exemplary Standing)</option>
+                    </select>
+                </div>
+                <div id="vesting-output" class="p-3.5 rounded-xl bg-emerald-950/80 border border-emerald-500/50 text-xs sm:text-sm text-emerald-200 mt-4 font-medium">
+                    <strong>Status: Fully Vested.</strong> You are eligible for all 5 statutory welfare relief packages.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- "HOW IT OPERATES" 4-STEP PROCESS -->
+<section class="w-full py-14 sm:py-16 bg-uka-parchment border-t border-uka-border overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-xl mx-auto mb-10 space-y-2">
+            <span class="text-xs font-black text-uka-terracotta uppercase tracking-widest">Transparent Governance</span>
+            <h2 class="font-heading text-2xl sm:text-3xl font-black text-uka-deep">No black box. Exactly how our shield operates</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+            <div class="bg-white p-6 rounded-3xl border border-uka-border shadow-sm space-y-2.5">
+                <span class="font-mono text-2xl font-black text-uka-golddark">01</span>
+                <h4 class="font-heading font-bold text-base text-uka-forest">You Register & Induct</h4>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Submit your application with the statutory GHC 50.00 induction fee and are presented at the Ordinary Assembly.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-3xl border border-uka-border shadow-sm space-y-2.5">
+                <span class="font-mono text-2xl font-black text-uka-golddark">02</span>
+                <h4 class="font-heading font-bold text-base text-uka-forest">We Receipt Monthly</h4>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    You contribute GHC 20.00/month via MoMo or bank, and receive a serialized official digital receipt from the Financial Secretary.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-3xl border border-uka-border shadow-sm space-y-2.5">
+                <span class="font-mono text-2xl font-black text-uka-golddark">03</span>
+                <h4 class="font-heading font-bold text-base text-uka-forest">Your Rights Vest</h4>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    After 6 continuous months in good standing, you are fully shielded across all 5 statutory welfare packages.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-3xl border border-uka-border shadow-sm space-y-2.5">
+                <span class="font-mono text-2xl font-black text-uka-golddark">04</span>
+                <h4 class="font-heading font-bold text-base text-uka-forest">You Receive Support</h4>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    When milestones or hardships occur, relief is approved by the Executive and disbursed immediately by the Treasurer.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STAND WITH A FAMILY SPOTLIGHT (Feature II: Z-Pattern Video Left, Manifesto Right) -->
+<section class="w-full py-12 sm:py-16 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="rounded-3xl bg-gradient-to-br from-uka-deep via-uka-forest to-black text-white p-6 sm:p-10 lg:p-12 shadow-2xl relative overflow-hidden border-2 border-uka-gold/35">
+            <!-- Ambient Emerald & Gold Glow -->
+            <div class="absolute -bottom-24 -left-24 w-72 sm:w-96 h-72 sm:h-96 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+                
+                <!-- Left 9:16 Portrait Stage (Video 2: Fraternal Celebrations) -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-[270px] sm:max-w-[295px] aspect-[9/16] rounded-[2rem] overflow-hidden border-4 border-uka-gold/90 bg-uka-deep shadow-[0_0_45px_rgba(16,185,129,0.25)] group">
+                        <div class="absolute inset-0 z-10 shadow-[inset_0_0_40px_rgba(0,0,0,0.45)] pointer-events-none"></div>
+                        
+                        <video id="heritage-video-2"
+                               autoplay
+                               loop
+                               muted
+                               playsinline
+                               onclick="toggleHeritagePlay(2)"
+                               class="w-full h-full object-cover cursor-pointer">
+                            <source src="{% static 'videos/cultural_dance_2.mp4' %}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <!-- Top Control Bar -->
+                        <div class="absolute top-3.5 left-3.5 right-3.5 z-20 flex items-center justify-between gap-2">
+                            <button type="button"
+                                    id="play-toggle-btn-2"
+                                    onclick="toggleHeritagePlay(2)"
+                                    aria-label="Play or pause Brotherhood Celebration video"
+                                    class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-black/75 hover:bg-uka-gold text-white hover:text-uka-deep border border-uka-gold/50 backdrop-blur-md text-[10px] font-mono font-bold uppercase tracking-wider shadow-lg transition-all">
+                                <span id="play-icon-2">⏸</span>
+                                <span id="play-label-2">Pause</span>
+                            </button>
+
+                            <button type="button"
+                                    id="mute-toggle-btn-2"
+                                    onclick="toggleHeritageMute(2)"
+                                    aria-label="Mute or unmute Brotherhood Celebration video"
+                                    class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-black/75 hover:bg-uka-gold text-white hover:text-uka-deep border border-uka-gold/50 backdrop-blur-md text-[10px] font-mono font-bold uppercase tracking-wider shadow-lg transition-all">
+                                <span id="mute-icon-2">🔇</span>
+                                <span id="mute-label-2">Sound</span>
+                            </button>
+                        </div>
+
+                        <!-- Bottom Glassmorphism Status Badge -->
+                        <div class="absolute bottom-3.5 left-3.5 right-3.5 z-20 flex justify-between items-end pointer-events-none">
+                            <div class="bg-black/65 backdrop-blur-md border border-white/20 p-3 rounded-xl shadow-lg">
+                                <span class="block text-[9px] font-mono text-emerald-300 uppercase tracking-widest">Brotherhood in Motion</span>
+                                <span class="block text-xs sm:text-sm font-bold text-white leading-none mt-1">Joy & Solidarity</span>
+                            </div>
+                            
+                            <div id="eq-bars-2" class="flex items-end gap-1 h-5 pb-1.5 pr-1">
+                                <div class="w-1 h-full bg-uka-gold animate-[pulse_0.9s_ease-in-out_infinite]"></div>
+                                <div class="w-1 h-2/3 bg-uka-gold animate-[pulse_1.1s_ease-in-out_infinite]"></div>
+                                <div class="w-1 h-4/5 bg-uka-gold animate-[pulse_0.75s_ease-in-out_infinite]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Brotherhood Manifesto & Action CTAs -->
+                <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+                    <span class="inline-block px-3.5 py-1 rounded-full bg-uka-gold/20 text-uka-gold text-[11px] sm:text-xs font-black uppercase tracking-widest border border-uka-gold/30">
+                        A United Front for the Eastern Region
+                    </span>
+                    <h2 class="font-heading text-2xl sm:text-3xl lg:text-4xl font-black leading-tight text-white">
+                        Stand with a family that stands with you
+                    </h2>
+                    <p class="text-sm sm:text-base text-slate-200 leading-relaxed font-light max-w-2xl mx-auto lg:mx-0">
+                        In moments of joy, we dance and celebrate together. In moments of grief, childbirth, marriage, or sickness, no Kabye family faces the burden alone. Join the fraternity or fulfill your monthly subscription today.
+                    </p>
+                    <div class="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2">
+                        <a href="#membership" class="w-full sm:w-auto text-center px-7 py-3.5 rounded-full bg-gradient-to-r from-uka-gold via-yellow-400 to-amber-500 hover:from-yellow-400 hover:to-uka-gold text-uka-deep font-black text-xs uppercase tracking-widest shadow-lg shadow-uka-gold/30 hover:scale-105 transition-all">
+                            Register as a Member (GHC 50)
+                        </a>
+                        <a href="#dues" class="w-full sm:w-auto text-center px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-widest border border-white/30 backdrop-blur-sm transition">
+                            Pay Monthly Dues (GHC 20)
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FINANCIAL INTEGRITY & OFFICIAL MOMO PAYMENT GUIDE -->
+<section id="dues" class="w-full py-14 sm:py-16 lg:py-20 bg-uka-parchment border-t border-uka-border overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center">
+            
+            <!-- Left Narrative: How to Send & Reference Rules -->
+            <div class="lg:col-span-5 space-y-4 sm:space-y-5">
+                <span class="text-xs font-black text-uka-terracotta uppercase tracking-widest">Articles 3, 4 & 8 Payment Protocol</span>
+                <h2 class="font-heading text-2xl sm:text-3xl font-black text-uka-deep leading-tight">
+                    Official MoMo Paypoint & Reference Guide
+                </h2>
+                <p class="text-sm text-slate-700 leading-relaxed">
+                    All membership registration fees (GHC 50.00) and monthly dues (GHC 20.00) are paid directly to the Branch's designated Mobile Money account under joint mandatory signatories: the Branch Chairman and Branch Treasurer.
+                </p>
+
+                <!-- Step-by-Step Transfer Instruction -->
+                <div class="p-4 sm:p-5 rounded-2xl bg-white border border-uka-border shadow-sm space-y-3">
+                    <span class="text-xs font-bold text-uka-forest uppercase tracking-wider block">Mandatory Transfer Rule</span>
+                    <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                        When sending money via Mobile Money, <strong>always state your Full Name together with what the payment is for</strong> in the transfer reference—specifically <strong>Monthly Dues</strong> or <strong>Registration</strong>—so the Financial Secretary can issue your serialized receipt.
+                    </p>
+                    <div class="pt-2 border-t border-uka-border/70 grid grid-cols-1 gap-2 text-xs font-mono">
+                        <div class="px-3 py-2 rounded-xl bg-uka-parchment text-uka-forest break-words">
+                            Dues: <strong>Your Name - Monthly Dues</strong>
+                        </div>
+                        <div class="px-3 py-2 rounded-xl bg-uka-parchment text-uka-terracotta break-words">
+                            New: <strong>Your Name - Registration</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-4 sm:p-5 rounded-2xl bg-white border border-uka-border shadow-sm space-y-1.5">
+                    <span class="text-xs font-bold text-uka-terracotta uppercase tracking-wider block">Default Sanctions (Art. 3.4)</span>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Default exceeding 3 months triggers a written arrears notice. Default exceeding 6 months forfeits welfare entitlements and assembly voting rights.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Official MoMo Paypoint Card -->
+            <div class="lg:col-span-7">
+                <div class="p-5 sm:p-8 rounded-3xl bg-white border-2 border-uka-gold/30 shadow-xl space-y-5">
+                    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-uka-border pb-3.5">
+                        <span class="font-heading text-base sm:text-lg font-bold text-uka-forest">UKA Official MoMo Paypoint</span>
+                        <span class="text-[11px] font-mono text-uka-forest px-3 py-1 rounded-full bg-emerald-100 font-bold">
+                            Verified Account
+                        </span>
+                    </div>
+
+                    <!-- Contribution Type Switcher -->
+                    <div>
+                        <label class="block text-xs font-mono font-bold text-slate-700 uppercase mb-2">1. Select What You Are Paying For</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3">
+                            <button type="button" onclick="setDuesPlan('1-month', 20)" id="plan-1" class="p-3 rounded-2xl bg-gradient-to-r from-uka-forest to-uka-emerald text-white font-bold text-xs text-center shadow-md transition">
+                                Monthly Dues<br><span class="text-sm sm:text-base font-sans font-black text-uka-gold">GHC 20</span>
+                            </button>
+                            <button type="button" onclick="setDuesPlan('3-month', 60)" id="plan-3" class="p-3 rounded-2xl bg-uka-parchment border border-uka-border text-slate-700 font-bold text-xs text-center hover:border-uka-forest transition">
+                                3 Months Dues<br><span class="text-sm sm:text-base font-sans font-black text-uka-forest">GHC 60</span>
+                            </button>
+                            <button type="button" onclick="setDuesPlan('induction', 50)" id="plan-ind" class="p-3 rounded-2xl bg-uka-parchment border border-uka-border text-slate-700 font-bold text-xs text-center hover:border-uka-forest transition">
+                                Registration Fee<br><span class="text-sm sm:text-base font-sans font-black text-uka-forest">GHC 50</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- MoMo Details with Instant Copy -->
+                    <div class="bg-gradient-to-br from-uka-deep via-uka-forest to-uka-deep text-white p-4 sm:p-6 rounded-2xl shadow-inner space-y-3.5">
+                        <div class="flex flex-wrap items-center justify-between gap-1 text-xs">
+                            <span class="text-slate-300">2. Send Mobile Money To:</span>
+                            <span class="text-uka-gold font-bold">MTN Mobile Money / Telecel</span>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3">
+                            <span class="font-mono text-xl sm:text-3xl font-black text-white tracking-wider" id="momo-account-number">0244000000</span>
+                            <button type="button" onclick="copyMomoNumber()" class="px-4 py-2 rounded-xl bg-gradient-to-r from-uka-gold to-yellow-400 hover:from-yellow-400 hover:to-uka-gold text-uka-deep text-xs font-black uppercase tracking-wider transition shadow shrink-0">
+                                <span id="copy-btn-text">Copy Number</span>
+                            </button>
+                        </div>
+                        <div class="text-xs text-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 pt-3 border-t border-white/15">
+                            <span>Account Name: <strong class="text-white">United Kabye Association ER</strong></span>
+                            <span class="text-uka-goldlight">Amount: <strong id="momo-selected-amount" class="text-uka-gold">GHC 20.00</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Mandatory Reference Format Box -->
+                    <div class="p-4 sm:p-5 rounded-2xl bg-amber-50/90 border border-uka-gold/50 space-y-2">
+                        <div class="flex flex-wrap items-center justify-between gap-1">
+                            <span class="text-[11px] sm:text-xs font-mono font-black text-uka-deep uppercase tracking-wider">3. Required Transfer Reference Format</span>
+                            <span class="text-[10px] sm:text-[11px] font-mono font-bold text-uka-terracotta">Do Not Leave Blank</span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-800 leading-relaxed">
+                            Enter your <strong>Full Name + Purpose</strong> in the MoMo Reference box before confirming your PIN:
+                        </p>
+                        <div class="px-3.5 sm:px-4 py-2.5 rounded-xl bg-white border border-uka-gold/40 font-mono text-xs sm:text-sm font-bold text-uka-forest flex flex-wrap items-center justify-between gap-2">
+                            <span id="momo-reference-example" class="break-words">[Your Full Name] - Monthly Dues</span>
+                            <span class="text-[10px] uppercase tracking-wider text-slate-400">Example</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FIELD MISSIONS & CSR INITIATIVES -->
+<section id="missions" class="w-full py-14 sm:py-16 lg:py-20 bg-white border-t border-uka-border overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4">
+            <div class="space-y-2">
+                <span class="text-xs font-black text-uka-terracotta uppercase tracking-widest">Article 10 CSR Mandate</span>
+                <h2 class="font-heading text-2xl sm:text-3xl font-black text-uka-deep">Civic action & community missions</h2>
+                <p class="text-sm text-slate-700 max-w-xl">
+                    Every quarter, the Eastern Region Branch steps out into our towns: cleaning markets, supporting public healthcare centers, and blessing children's homes.
+                </p>
+            </div>
+            <div>
+                <span class="text-xs font-mono font-bold text-uka-forest">Lead: Social & Welfare Committee</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
+            <!-- Mission 1 -->
+            <div class="bg-gradient-to-b from-white to-uka-parchment rounded-3xl border border-uka-border overflow-hidden shadow-sm hover:shadow-lg hover:border-uka-gold transition-all space-y-3 p-6 sm:p-7">
+                <div class="w-11 h-11 rounded-2xl bg-emerald-100 text-uka-emerald flex items-center justify-center font-bold text-lg">
+                    🧹
+                </div>
+                <h3 class="font-heading text-lg sm:text-xl font-bold text-uka-forest">Town & Market Cleanups</h3>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Organized Saturday cleanups revitalizing public drains, market facilities, and town corridors in partnership with regional sanitation authorities.
+                </p>
+                <div class="text-xs font-mono font-bold text-uka-terracotta pt-1">Coordinated by Branch Youth Organizer</div>
+            </div>
+
+            <!-- Mission 2 -->
+            <div class="bg-gradient-to-b from-white to-uka-parchment rounded-3xl border border-uka-border overflow-hidden shadow-sm hover:shadow-lg hover:border-uka-gold transition-all space-y-3 p-6 sm:p-7">
+                <div class="w-11 h-11 rounded-2xl bg-amber-100 text-uka-golddark flex items-center justify-center font-bold text-lg">
+                    🏥
+                </div>
+                <h3 class="font-heading text-lg sm:text-xl font-bold text-uka-forest">Clinics & Orphanages Support</h3>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Mandatory quarterly visitations bringing food staples, toiletries, and material support to public pediatric wards and regional children's homes.
+                </p>
+                <div class="text-xs font-mono font-bold text-uka-terracotta pt-1">Coordinated by Women's Organizer</div>
+            </div>
+
+            <!-- Mission 3 -->
+            <div class="bg-gradient-to-b from-white to-uka-parchment rounded-3xl border border-uka-border overflow-hidden shadow-sm hover:shadow-lg hover:border-uka-gold transition-all space-y-3 p-6 sm:p-7">
+                <div class="w-11 h-11 rounded-2xl bg-orange-100 text-uka-terracotta flex items-center justify-center font-bold text-lg">
+                    🚌
+                </div>
+                <h3 class="font-heading text-lg sm:text-xl font-bold text-uka-forest">Brotherhood Excursions</h3>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Annual regional excursions designed to bring Kabye families together, promote fellowship, cultivate youth leadership, and build an unbreakable family front.
+                </p>
+                <div class="text-xs font-mono font-bold text-uka-terracotta pt-1">Coordinated by Branch Organizer</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EXECUTIVE DIRECTORATE -->
+<section id="executives" class="w-full py-14 sm:py-16 bg-uka-parchment border-t border-uka-border overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-xl mx-auto mb-10 space-y-1.5">
+            <span class="text-xs font-black text-uka-terracotta uppercase tracking-widest">Article 2 Governance</span>
+            <h2 class="font-heading text-2xl sm:text-3xl font-black text-uka-deep">Acting Branch Leadership</h2>
+            <p class="text-xs sm:text-sm text-slate-700">Serving in an acting constitutional capacity ahead of secret ballot elections.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5">
+            <div class="p-5 sm:p-6 rounded-3xl bg-white border-2 border-uka-gold/40 text-center shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-uka-forest to-uka-emerald text-uka-gold mx-auto mb-3 flex items-center justify-center font-heading font-bold text-sm shadow">CH</div>
+                <h4 class="font-heading font-bold text-sm sm:text-base text-uka-forest">Mr. Paul Abotsi</h4>
+                <p class="text-xs text-uka-terracotta font-mono font-semibold mt-0.5">Acting Branch Chairman</p>
+                <span class="text-[11px] text-slate-600 block mt-1.5">Joint Signatory</span>
+            </div>
+            <div class="p-5 sm:p-6 rounded-3xl bg-white border border-uka-border text-center shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-uka-forest to-uka-emerald text-uka-gold mx-auto mb-3 flex items-center justify-center font-heading font-bold text-sm shadow">SEC</div>
+                <h4 class="font-heading font-bold text-sm sm:text-base text-uka-forest">Mary Samoh</h4>
+                <p class="text-xs text-uka-terracotta font-mono font-semibold mt-0.5">Acting Branch Secretary</p>
+                <span class="text-[11px] text-slate-600 block mt-1.5">Official Minutes</span>
+            </div>
+            <div class="p-5 sm:p-6 rounded-3xl bg-white border border-uka-border text-center shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-uka-forest to-uka-emerald text-uka-gold mx-auto mb-3 flex items-center justify-center font-heading font-bold text-sm shadow">TR</div>
+                <h4 class="font-heading font-bold text-sm sm:text-base text-uka-forest">Yaw Djato</h4>
+                <p class="text-xs text-uka-terracotta font-mono font-semibold mt-0.5">Acting Branch Treasurer</p>
+                <span class="text-[11px] text-slate-600 block mt-1.5">Joint Signatory</span>
+            </div>
+            <div class="p-5 sm:p-6 rounded-3xl bg-white border border-uka-border text-center shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-uka-forest to-uka-emerald text-uka-gold mx-auto mb-3 flex items-center justify-center font-heading font-bold text-sm shadow">ORG</div>
+                <h4 class="font-heading font-bold text-sm sm:text-base text-uka-forest">Esso Samah</h4>
+                <p class="text-xs text-uka-terracotta font-mono font-semibold mt-0.5">Acting Branch Organizer</p>
+                <span class="text-[11px] text-slate-600 block mt-1.5">Field & Excursions</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MEMBERSHIP ONBOARDING APPLICATION -->
+<section id="membership" class="w-full py-14 sm:py-16 lg:py-20 bg-white border-t border-uka-border overflow-hidden">
+    <div class="max-w-2xl mx-auto px-4 sm:px-8">
+        <div class="text-center space-y-1.5 mb-8">
+            <span class="text-xs font-black text-uka-terracotta uppercase tracking-widest">Article 4 Induction</span>
+            <h2 class="font-heading text-2xl sm:text-3xl font-black text-uka-deep">Apply for Membership</h2>
+            <p class="text-xs sm:text-sm text-slate-700">
+                Open to individuals of Kabye heritage by birth, marriage, or legal affiliation living or working in the Eastern Region.
+            </p>
+        </div>
+
+        <form class="bg-gradient-to-b from-white to-uka-parchment p-5 sm:p-9 rounded-3xl border-2 border-uka-gold/30 shadow-xl space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-xs font-mono font-bold text-slate-800 uppercase mb-1.5">Full Legal Name *</label>
+                    <input type="text" required placeholder="e.g. Kwami Esso" class="w-full bg-white border border-uka-border rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-uka-forest">
+                </div>
+                <div>
+                    <label class="block text-xs font-mono font-bold text-slate-800 uppercase mb-1.5">Phone Number (MoMo) *</label>
+                    <input type="tel" required placeholder="024 XXX XXXX" class="w-full bg-white border border-uka-border rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-uka-forest">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-xs font-mono font-bold text-slate-800 uppercase mb-1.5">Eastern Region Town / Workplace *</label>
+                    <input type="text" required placeholder="e.g. Koforidua / Suhum / Nsawam" class="w-full bg-white border border-uka-border rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-uka-forest">
+                </div>
+                <div>
+                    <label class="block text-xs font-mono font-bold text-slate-800 uppercase mb-1.5">Heritage & Affiliation Basis</label>
+                    <select class="w-full bg-white border border-uka-border rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-uka-forest">
+                        <option>Kabye Heritage by Birth</option>
+                        <option>Affiliation by Marriage</option>
+                        <option>Cultural Ally / Institutional Friend</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-amber-50 border border-uka-gold/30 text-xs sm:text-sm text-slate-800">
+                <strong>Statutory Induction Fee:</strong> A fee of <strong class="text-uka-terracotta font-bold">GHC 50.00</strong> accompanies formal application, followed by presentation at the Ordinary General Meeting.
+            </div>
+
+            <button type="button" onclick="alert('Application logged. Please transfer your GHC 50.00 registration fee via the MoMo Paypoint above using your Full Name - Registration as the reference.')" class="w-full py-3.5 rounded-full bg-gradient-to-r from-uka-gold via-yellow-400 to-amber-500 hover:from-yellow-400 hover:to-uka-gold text-uka-deep font-black text-xs sm:text-sm uppercase tracking-widest shadow-lg shadow-uka-gold/25 hover:scale-[1.01] transition-all">
+                Submit Membership Application (GHC 50)
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- GOD-MODE SUPREME CONSTITUTION & BYE-LAWS MODAL -->
+<div id="constitution-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/85 backdrop-blur-xl p-3 sm:p-6 overflow-x-hidden" onclick="closeConstitutionOnBackdrop(event)">
+    <div class="relative w-full max-w-5xl max-h-[92vh] rounded-3xl bg-gradient-to-br from-uka-deep via-uka-forest to-black border-2 border-uka-gold/60 shadow-[0_0_60px_rgba(243,186,47,0.3)] flex flex-col overflow-hidden text-white">
+        
+        <!-- Top Ceremonial Header -->
+        <div class="flex items-center justify-between gap-3 px-4 sm:px-8 py-3.5 sm:py-4 border-b border-white/15 bg-black/50 shrink-0">
+            <div class="flex items-center gap-3 min-w-0">
+                <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full p-0.5 bg-gradient-to-tr from-uka-gold to-yellow-200 shadow-lg shrink-0">
+                    <img src="{% static 'images/wc.jpg' %}" alt="UKA Crest" class="w-full h-full object-cover rounded-full">
+                </div>
+                <div class="min-w-0">
+                    <span class="block text-[9px] sm:text-[10px] font-mono uppercase tracking-[0.2em] text-uka-gold truncate">Supreme Governing Charter</span>
+                    <h3 class="font-heading text-sm sm:text-xl font-black text-white leading-tight truncate">
+                        Constitution & Bye-Laws
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Action Controls: View Switcher, Download PDF, Close -->
+            <div class="flex items-center gap-2 shrink-0">
+                <a href="{% static 'kabaye_cosnt.pdf' %}" target="_blank" rel="noopener"
+                   class="hidden md:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-mono text-[11px] font-bold uppercase tracking-wider transition">
+                    Open Full Tab ↗
+                </a>
+                <a href="{% static 'kabaye_cosnt.pdf' %}" download="UKA_Eastern_Region_Constitution.pdf"
+                   class="inline-flex items-center gap-1 px-3 sm:px-4 py-2 rounded-full bg-gradient-to-r from-uka-gold to-amber-500 hover:brightness-105 text-uka-deep font-mono text-[10px] sm:text-[11px] font-black uppercase tracking-wider shadow transition">
+                    <span>⬇ PDF</span>
+                </a>
+                <button type="button" onclick="closeConstitutionModal()"
+                        class="w-9 h-9 rounded-full bg-white/10 hover:bg-uka-crimson text-white flex items-center justify-center font-bold transition shrink-0"
+                        aria-label="Close Constitution Modal">
+                    ✕
+                </button>
+            </div>
+        </div>
+
+        <!-- Mode Switcher Bar (Interactive Charter Reader vs Official PDF Viewer) -->
+        <div class="px-4 sm:px-8 py-2.5 sm:py-3 bg-uka-deep/90 border-b border-white/10 flex flex-wrap items-center justify-between gap-2 shrink-0">
+            <div class="flex items-center gap-2">
+                <button type="button" id="tab-charter-btn" onclick="switchConstitutionTab('charter')"
+                        class="px-3.5 sm:px-4 py-1.5 rounded-full bg-uka-gold text-uka-deep font-mono text-[11px] sm:text-xs font-black uppercase tracking-wider shadow transition">
+                    Charter Articles (1–10)
+                </button>
+                <button type="button" id="tab-pdf-btn" onclick="switchConstitutionTab('pdf')"
+                        class="px-3.5 sm:px-4 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-slate-200 font-mono text-[11px] sm:text-xs font-bold uppercase tracking-wider transition">
+                    Signed PDF
+                </button>
+            </div>
+            <span class="text-[11px] font-mono text-uka-goldlight hidden md:inline">
+                Motto: "Unity Culture Progress and Service" • Eastern Region Branch
+            </span>
+        </div>
+
+        <!-- VIEW 1: Styled Interactive Charter Reader (Articles 1–10) -->
+        <div id="constitution-charter-view" class="p-4 sm:p-8 overflow-y-auto space-y-4 sm:space-y-5 flex-grow">
+            <!-- Highlighted Welfare & Dues Banner -->
+            <div class="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-uka-gold/20 via-emerald-900/40 to-uka-gold/10 border border-uka-gold/40 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div>
+                    <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-uka-gold block">Quick Constitutional Reference</span>
+                    <p class="text-xs sm:text-sm text-slate-100 mt-0.5">
+                        Induction: <strong class="text-uka-gold">GHC 50.00</strong> • Monthly Dues: <strong class="text-uka-gold">GHC 20.00</strong> • Welfare Vesting: <strong class="text-uka-gold">6 Continuous Months</strong>
+                    </p>
+                </div>
+                <button type="button" onclick="switchConstitutionTab('pdf')" class="px-4 py-2 rounded-xl bg-black/50 hover:bg-black/70 border border-uka-gold/40 text-uka-goldlight font-mono text-xs font-bold uppercase tracking-wider shrink-0 transition">
+                    View Signed PDF →
+                </button>
+            </div>
+
+            <!-- Articles Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4 text-xs sm:text-sm">
+                <div class="p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+                    <span class="font-mono text-[11px] font-bold text-uka-gold uppercase">Article 1 • Supremacy & Jurisdiction</span>
+                    <h4 class="font-heading font-bold text-base text-white">Name & Legal Supremacy</h4>
+                    <p class="text-slate-300 leading-relaxed">Recognized as the United Kabye Association of Ghana, Eastern Region Branch, governed subordinate to the National Constitution.</p>
+                </div>
+
+                <div class="p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+                    <span class="font-mono text-[11px] font-bold text-uka-gold uppercase">Article 2 • Governance</span>
+                    <h4 class="font-heading font-bold text-base text-white">Executive Directorate</h4>
+                    <p class="text-slate-300 leading-relaxed">Elected by universal secret ballot at AGM for a 3-year tenure (max 2 consecutive terms). Two-thirds (2/3) Assembly vote required for impeachment.</p>
+                </div>
+
+                <div class="p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+                    <span class="font-mono text-[11px] font-bold text-uka-gold uppercase">Article 3 • Subscriptions</span>
+                    <h4 class="font-heading font-bold text-base text-white">GHC 20.00 Monthly Dues & Sanctions</h4>
+                    <p class="text-slate-300 leading-relaxed">Payable by the final day of each month. 3 months default triggers written arrears notice; over 6 months suspends voting and welfare entitlements.</p>
+                </div>
+
+                <div class="p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+                    <span class="font-mono text-[11px] font-bold text-uka-gold uppercase">Article 4 • Induction</span>
+                    <h4 class="font-heading font-bold text-base text-white">Eligibility & GHC 50.00 Registration</h4>
+                    <p class="text-slate-300 leading-relaxed">Open to adults (18+) of Kabye heritage by birth, marriage, or affiliation residing/working in the Eastern Region upon payment of GHC 50.00 induction fee.</p>
+                </div>
+
+                <div class="md:col-span-2 p-4 sm:p-5 rounded-2xl bg-emerald-950/60 border-2 border-uka-gold/40 space-y-2">
+                    <span class="font-mono text-[11px] font-bold text-uka-gold uppercase">Article 5 • Statutory Welfare Scheme</span>
+                    <h4 class="font-heading font-bold text-base sm:text-lg text-white">6-Month Vesting & 5 Qualifying Welfare Events</h4>
+                    <p class="text-slate-200 leading-relaxed">
+                        Requires <strong>6 continuous months</strong> of active registration and financial good standing (max 1 claim per 3-month window; siblings assessed individually). Covers: <strong>(1) Childbirth & Naming</strong>, <strong>(2) Lawful Marriage</strong>, <strong>(3) Severe Illness / In-Patient Admission</strong>, <strong>(4) Bereavement</strong> (member, spouse, biological child, or parent), and <strong>(5) Natural Calamity / Disaster</strong>.
+                    </p>
+                </div>
+
+                <div class="p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+                    <span class="font-mono text-[11px] font-bold text-uka-gold uppercase">Article 6 • Assemblies</span>
+                    <h4 class="font-heading font-bold text-base text-white">1st & 3rd Sundays @ 2:00 PM</h4>
+                    <p class="text-slate-300 leading-relaxed">Bi-monthly General Assemblies require a 1/3 active member quorum. Policy changes require a 2/3 supermajority.</p>
+                </div>
+
+                <div class="p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+                    <span class="font-mono text-[11px] font-bold text-uka-gold uppercase">Article 7 • Languages & Conduct</span>
+                    <h4 class="font-heading font-bold text-base text-white">Multilingual & Platform Discipline</h4>
+                    <p class="text-slate-300 leading-relaxed">Official media: Kabiye, English, Twi, and French. Progressive discipline: (1) Written Caution, (2) 7-day suspension, (3) Disciplinary Committee trial.</p>
+                </div>
+
+                <div class="p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+                    <span class="font-mono text-[11px] font-bold text-uka-gold uppercase">Article 8 • Fiduciary Controls</span>
+                    <h4 class="font-heading font-bold text-base text-white">Dual Signatories & Serialized Receipts</h4>
+                    <p class="text-slate-300 leading-relaxed">Institutional bank/MoMo accounts require joint Chairman & Treasurer signatures. Audited annually by an independent 3-member Internal Audit Committee.</p>
+                </div>
+
+                <div class="p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+                    <span class="font-mono text-[11px] font-bold text-uka-gold uppercase">Articles 9 & 10 • Amendments & CSR</span>
+                    <h4 class="font-heading font-bold text-base text-white">Quarterly Clinics & Orphanage Missions</h4>
+                    <p class="text-slate-300 leading-relaxed">Bye-laws require 2/3 Assembly vote to amend. Social & Welfare Committee leads quarterly clinic/orphanage visitations with 1-month advance notice.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW 2: Embedded Official PDF Document (static/kabaye_cosnt.pdf) -->
+        <div id="constitution-pdf-view" class="hidden flex-grow bg-slate-950 flex flex-col">
+            <iframe src="{% static 'kabaye_cosnt.pdf' %}#toolbar=1&navpanes=0"
+                    title="United Kabye Association Constitution PDF"
+                    class="w-full h-[65vh] sm:h-[68vh] border-0">
+            </iframe>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // 1. Dynamic Assembly Calculator (1st & 3rd Sunday @ 2:00 PM GMT)
+    function getNextAssemblyTarget() {
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = now.getMonth();
+        
+        let sundays = [];
+        let cursor = new Date(year, month, 1, 14, 0, 0);
+        
+        while (cursor.getMonth() === month) {
+            if (cursor.getDay() === 0) sundays.push(new Date(cursor));
+            cursor.setDate(cursor.getDate() + 1);
+        }
+
+        const validSundays = [sundays[0], sundays[2]].filter(d => d && d > now);
+        
+        if (validSundays.length > 0) {
+            return validSundays[0];
+        } else {
+            let nextMonth = new Date(year, month + 1, 1, 14, 0, 0);
+            while (nextMonth.getDay() !== 0) {
+                nextMonth.setDate(nextMonth.getDate() + 1);
+            }
+            return nextMonth;
+        }
+    }
+
+    const assemblyTarget = getNextAssemblyTarget().getTime();
+
+    function updateAssemblyClock() {
+        const diff = assemblyTarget - new Date().getTime();
+        if (diff > 0) {
+            document.getElementById('clock-days').innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
+            document.getElementById('clock-hours').innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            document.getElementById('clock-mins').innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            document.getElementById('clock-secs').innerText = Math.floor((diff % (1000 * 60)) / 1000);
+        }
+    }
+    setInterval(updateAssemblyClock, 1000);
+    updateAssemblyClock();
+
+    // 2. Interactive Article 5.1 Vesting Checker
+    function runVestingCheck() {
+        const months = parseInt(document.getElementById('vesting-select').value);
+        const box = document.getElementById('vesting-output');
+        if (months >= 6) {
+            box.innerHTML = "<strong>Status: Fully Vested.</strong> You are eligible for all 5 statutory welfare relief packages.";
+            box.className = "p-3.5 rounded-xl bg-emerald-950/80 border border-emerald-500/50 text-xs sm:text-sm text-emerald-200 mt-4 font-medium";
+        } else {
+            box.innerHTML = `<strong>Status: Probationary (${months}/6 Months).</strong> Active member, but subject to Article 5.1 qualification vesting window.`;
+            box.className = "p-3.5 rounded-xl bg-amber-950/80 border border-amber-500/50 text-xs sm:text-sm text-amber-200 mt-4 font-medium";
+        }
+    }
+
+    // 3. Payment Selector & Live Reference Updater
+    function setDuesPlan(plan, amount) {
+        const p1 = document.getElementById('plan-1');
+        const p3 = document.getElementById('plan-3');
+        const pInd = document.getElementById('plan-ind');
+        const amtEl = document.getElementById('momo-selected-amount');
+        const refEl = document.getElementById('momo-reference-example');
+
+        [p1, p3, pInd].forEach(btn => {
+            btn.className = "p-3 rounded-2xl bg-uka-parchment border border-uka-border text-slate-700 font-bold text-xs text-center hover:border-uka-forest transition";
+        });
+
+        if (plan === '1-month') {
+            p1.className = "p-3 rounded-2xl bg-gradient-to-r from-uka-forest to-uka-emerald text-white font-bold text-xs text-center shadow-md transition";
+            if (amtEl) amtEl.innerText = "GHC 20.00";
+            if (refEl) refEl.innerText = "[Your Full Name] - Monthly Dues";
+        } else if (plan === '3-month') {
+            p3.className = "p-3 rounded-2xl bg-gradient-to-r from-uka-forest to-uka-emerald text-white font-bold text-xs text-center shadow-md transition";
+            if (amtEl) amtEl.innerText = "GHC 60.00";
+            if (refEl) refEl.innerText = "[Your Full Name] - 3 Months Dues";
+        } else {
+            pInd.className = "p-3 rounded-2xl bg-gradient-to-r from-uka-forest to-uka-emerald text-white font-bold text-xs text-center shadow-md transition";
+            if (amtEl) amtEl.innerText = "GHC 50.00";
+            if (refEl) refEl.innerText = "[Your Full Name] - Registration";
+        }
+    }
+
+    // 4. One-Click Copy Number
+    function copyMomoNumber() {
+        const num = document.getElementById('momo-account-number').innerText;
+        navigator.clipboard.writeText(num).then(() => {
+            const btn = document.getElementById('copy-btn-text');
+            btn.innerText = "Copied!";
+            setTimeout(() => { btn.innerText = "Copy Number"; }, 2000);
+        });
+    }
+
+    // 5. Dual Heritage Video Sound & Play/Pause Controls
+    function toggleHeritageMute(id) {
+        const vid = document.getElementById(`heritage-video-${id}`);
+        const icon = document.getElementById(`mute-icon-${id}`);
+        const label = document.getElementById(`mute-label-${id}`);
+        if (!vid) return;
+
+        const willUnmute = vid.muted;
+
+        // Mute the other reel automatically if unmuting this one
+        [1, 2].forEach(otherId => {
+            if (otherId !== id) {
+                const otherVid = document.getElementById(`heritage-video-${otherId}`);
+                const otherIcon = document.getElementById(`mute-icon-${otherId}`);
+                const otherLabel = document.getElementById(`mute-label-${otherId}`);
+                if (otherVid) {
+                    otherVid.muted = true;
+                    if (otherIcon) otherIcon.innerText = '🔇';
+                    if (otherLabel) otherLabel.innerText = 'Sound';
+                }
+            }
+        });
+
+        vid.muted = !willUnmute;
+        if (vid.muted) {
+            icon.innerText = '🔇';
+            label.innerText = 'Sound';
+        } else {
+            if (vid.paused) toggleHeritagePlay(id);
+            icon.innerText = '🔊';
+            label.innerText = 'On';
+        }
+    }
+
+    function toggleHeritagePlay(id) {
+        const vid = document.getElementById(`heritage-video-${id}`);
+        const icon = document.getElementById(`play-icon-${id}`);
+        const label = document.getElementById(`play-label-${id}`);
+        const eq = document.getElementById(`eq-bars-${id}`);
+        if (!vid) return;
+
+        if (vid.paused) {
+            vid.play();
+            icon.innerText = '⏸';
+            label.innerText = 'Pause';
+            if (eq) eq.classList.remove('opacity-30');
+        } else {
+            vid.pause();
+            icon.innerText = '▶';
+            label.innerText = 'Play';
+            if (eq) eq.classList.add('opacity-30');
+        }
+    }
+
+    // 6. God-Mode Constitution Modal Controls
+    function openConstitutionModal() {
+        const modal = document.getElementById('constitution-modal');
+        if (!modal) return;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeConstitutionModal() {
+        const modal = document.getElementById('constitution-modal');
+        if (!modal) return;
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+    }
+
+    function closeConstitutionOnBackdrop(e) {
+        if (e.target.id === 'constitution-modal') {
+            closeConstitutionModal();
+        }
+    }
+
+    function switchConstitutionTab(tab) {
+        const charterView = document.getElementById('constitution-charter-view');
+        const pdfView = document.getElementById('constitution-pdf-view');
+        const charterBtn = document.getElementById('tab-charter-btn');
+        const pdfBtn = document.getElementById('tab-pdf-btn');
+
+        if (tab === 'pdf') {
+            charterView.classList.add('hidden');
+            pdfView.classList.remove('hidden');
+            pdfBtn.className = "px-3.5 sm:px-4 py-1.5 rounded-full bg-uka-gold text-uka-deep font-mono text-[11px] sm:text-xs font-black uppercase tracking-wider shadow transition";
+            charterBtn.className = "px-3.5 sm:px-4 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-slate-200 font-mono text-[11px] sm:text-xs font-bold uppercase tracking-wider transition";
+        } else {
+            pdfView.classList.add('hidden');
+            charterView.classList.remove('hidden');
+            charterBtn.className = "px-3.5 sm:px-4 py-1.5 rounded-full bg-uka-gold text-uka-deep font-mono text-[11px] sm:text-xs font-black uppercase tracking-wider shadow transition";
+            pdfBtn.className = "px-3.5 sm:px-4 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-slate-200 font-mono text-[11px] sm:text-xs font-bold uppercase tracking-wider transition";
+        }
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeConstitutionModal();
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,28 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Secrets & Environment variables
+.env
+*.env
+local_settings.py
+
+# Relational Database files
+*.sqlite3
+*.db
+
+# Media & static uploads
+media/
+staticfiles/
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
