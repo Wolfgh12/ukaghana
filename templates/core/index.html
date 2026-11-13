@@ -659,26 +659,31 @@
                         </span>
                     </div>
 
-                    <!-- Contribution Type Switcher -->
+                    <!-- Statutory Payment Schedule (Informational) -->
                     <div>
-                        <label class="block text-xs font-mono font-bold text-slate-700 uppercase mb-2">1. Select What You Are Paying For</label>
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3">
-                            <button type="button" onclick="setDuesPlan('1-month', 20)" id="plan-1" class="p-3 rounded-2xl bg-gradient-to-r from-uka-forest to-uka-emerald text-white font-bold text-xs text-center shadow-md transition">
-                                Monthly Dues<br><span class="text-sm sm:text-base font-sans font-black text-uka-gold">GHC 20</span>
-                            </button>
-                            <button type="button" onclick="setDuesPlan('3-month', 60)" id="plan-3" class="p-3 rounded-2xl bg-uka-parchment border border-uka-border text-slate-700 font-bold text-xs text-center hover:border-uka-forest transition">
-                                3 Months Dues<br><span class="text-sm sm:text-base font-sans font-black text-uka-forest">GHC 60</span>
-                            </button>
-                            <button type="button" onclick="setDuesPlan('induction', 50)" id="plan-ind" class="p-3 rounded-2xl bg-uka-parchment border border-uka-border text-slate-700 font-bold text-xs text-center hover:border-uka-forest transition">
-                                Registration Fee<br><span class="text-sm sm:text-base font-sans font-black text-uka-forest">GHC 50</span>
-                            </button>
+                        <span class="block text-xs font-mono font-bold text-slate-700 uppercase mb-2">Statutory Contribution Amounts</span>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
+                            <div class="p-3.5 rounded-2xl bg-uka-parchment border border-uka-border flex items-center justify-between gap-2">
+                                <div>
+                                    <span class="block text-xs font-bold text-uka-forest">Monthly Dues</span>
+                                    <span class="block text-[11px] text-slate-600">Article 3 Subscription</span>
+                                </div>
+                                <span class="font-sans text-base sm:text-lg font-black text-uka-forest">GHC 20.00</span>
+                            </div>
+                            <div class="p-3.5 rounded-2xl bg-uka-parchment border border-uka-border flex items-center justify-between gap-2">
+                                <div>
+                                    <span class="block text-xs font-bold text-uka-terracotta">Registration Fee</span>
+                                    <span class="block text-[11px] text-slate-600">One-Time Induction</span>
+                                </div>
+                                <span class="font-sans text-base sm:text-lg font-black text-uka-terracotta">GHC 50.00</span>
+                            </div>
                         </div>
                     </div>
 
                     <!-- MoMo Details with Instant Copy -->
                     <div class="bg-gradient-to-br from-uka-deep via-uka-forest to-uka-deep text-white p-4 sm:p-6 rounded-2xl shadow-inner space-y-3.5">
                         <div class="flex flex-wrap items-center justify-between gap-1 text-xs">
-                            <span class="text-slate-300">2. Send Mobile Money To:</span>
+                            <span class="text-slate-300">1. Send Mobile Money To:</span>
                             <span class="text-uka-gold font-bold">MTN Mobile Money / Telecel</span>
                         </div>
                         <div class="flex flex-wrap items-center justify-between gap-3">
@@ -689,21 +694,21 @@
                         </div>
                         <div class="text-xs text-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 pt-3 border-t border-white/15">
                             <span>Account Name: <strong class="text-white">United Kabye Association ER</strong></span>
-                            <span class="text-uka-goldlight">Amount: <strong id="momo-selected-amount" class="text-uka-gold">GHC 20.00</strong></span>
+                            <span class="text-uka-goldlight font-mono">Dual Signatory Account</span>
                         </div>
                     </div>
 
                     <!-- Mandatory Reference Format Box -->
                     <div class="p-4 sm:p-5 rounded-2xl bg-amber-50/90 border border-uka-gold/50 space-y-2">
                         <div class="flex flex-wrap items-center justify-between gap-1">
-                            <span class="text-[11px] sm:text-xs font-mono font-black text-uka-deep uppercase tracking-wider">3. Required Transfer Reference Format</span>
+                            <span class="text-[11px] sm:text-xs font-mono font-black text-uka-deep uppercase tracking-wider">2. Required Transfer Reference Format</span>
                             <span class="text-[10px] sm:text-[11px] font-mono font-bold text-uka-terracotta">Do Not Leave Blank</span>
                         </div>
                         <p class="text-xs sm:text-sm text-slate-800 leading-relaxed">
                             Enter your <strong>Full Name + Purpose</strong> in the MoMo Reference box before confirming your PIN:
                         </p>
                         <div class="px-3.5 sm:px-4 py-2.5 rounded-xl bg-white border border-uka-gold/40 font-mono text-xs sm:text-sm font-bold text-uka-forest flex flex-wrap items-center justify-between gap-2">
-                            <span id="momo-reference-example" class="break-words">[Your Full Name] - Monthly Dues</span>
+                            <span class="break-words">[Your Full Name] - Monthly Dues / Registration</span>
                             <span class="text-[10px] uppercase tracking-wider text-slate-400">Example</span>
                         </div>
                     </div>
@@ -1054,34 +1059,7 @@
         }
     }
 
-    // 3. Payment Selector & Live Reference Updater
-    function setDuesPlan(plan, amount) {
-        const p1 = document.getElementById('plan-1');
-        const p3 = document.getElementById('plan-3');
-        const pInd = document.getElementById('plan-ind');
-        const amtEl = document.getElementById('momo-selected-amount');
-        const refEl = document.getElementById('momo-reference-example');
-
-        [p1, p3, pInd].forEach(btn => {
-            btn.className = "p-3 rounded-2xl bg-uka-parchment border border-uka-border text-slate-700 font-bold text-xs text-center hover:border-uka-forest transition";
-        });
-
-        if (plan === '1-month') {
-            p1.className = "p-3 rounded-2xl bg-gradient-to-r from-uka-forest to-uka-emerald text-white font-bold text-xs text-center shadow-md transition";
-            if (amtEl) amtEl.innerText = "GHC 20.00";
-            if (refEl) refEl.innerText = "[Your Full Name] - Monthly Dues";
-        } else if (plan === '3-month') {
-            p3.className = "p-3 rounded-2xl bg-gradient-to-r from-uka-forest to-uka-emerald text-white font-bold text-xs text-center shadow-md transition";
-            if (amtEl) amtEl.innerText = "GHC 60.00";
-            if (refEl) refEl.innerText = "[Your Full Name] - 3 Months Dues";
-        } else {
-            pInd.className = "p-3 rounded-2xl bg-gradient-to-r from-uka-forest to-uka-emerald text-white font-bold text-xs text-center shadow-md transition";
-            if (amtEl) amtEl.innerText = "GHC 50.00";
-            if (refEl) refEl.innerText = "[Your Full Name] - Registration";
-        }
-    }
-
-    // 4. One-Click Copy Number
+    // 3. One-Click Copy Number
     function copyMomoNumber() {
         const num = document.getElementById('momo-account-number').innerText;
         navigator.clipboard.writeText(num).then(() => {
