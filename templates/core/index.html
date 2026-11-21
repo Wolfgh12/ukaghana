@@ -75,15 +75,15 @@
                     </div>
 
                     <!-- Assembly Headline -->
-                    <div class="space-y-2 my-3">
-                        <span class="inline-block text-[10px] sm:text-[11px] font-mono font-bold uppercase tracking-widest text-uka-gold bg-black/50 px-3 py-1 rounded-full border border-uka-gold/30">
+                    <div class="text-center space-y-2.5 my-4 max-w-md mx-auto">
+                        <span class="inline-block text-[10px] sm:text-[11px] font-mono font-bold uppercase tracking-widest text-uka-gold bg-black/50 px-3.5 py-1 rounded-full border border-uka-gold/30">
                             Article 6 Assembly Mandate
                         </span>
                         <h3 class="font-heading text-xl sm:text-2xl font-black leading-tight text-white">
                             Next General Assembly
                         </h3>
-                        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-light">
-                            Bi-monthly assembly convened on 1st & 3rd Sundays at 2:00 PM prompt. Deliberative quorum: 1/3 active members in good standing.
+                        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-light text-center">
+                            Bi-monthly assembly convened on 1st &amp; 3rd Sundays at 2:00 PM prompt. Deliberative quorum: 1/3 active members in good standing.
                         </p>
                     </div>
 
@@ -511,66 +511,43 @@
             </div>
         </div>
 
-        <!-- 12-Column Cinema Media Stage (2 High-Res Photos + 1 Featured Video) -->
+        <!-- 12-Column Cinema Media Stage (1 Fine-Gold Encased Photo + 1 Featured Video) -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-stretch">
             
-            <!-- Left 7 Columns: Dual Ceremonial Photo Showcase -->
-            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
-                
-                <!-- Photo 01: Funeral.jpeg -->
-                <div onclick="openHomePhotoModal('{% static 'images/Funeral.jpeg' %}', 'Article 5.4 Bereavement Delegation', 'Eastern Region Executive & Members Standing in Fraternal Solidarity')"
-                     role="button" tabindex="0" onkeydown="if(event.key==='Enter')openHomePhotoModal('{% static 'images/Funeral.jpeg' %}', 'Article 5.4 Bereavement Delegation', 'Eastern Region Executive & Members Standing in Fraternal Solidarity')"
-                     class="group cursor-pointer relative rounded-3xl overflow-hidden border-2 border-uka-gold/50 hover:border-uka-gold bg-black shadow-2xl min-h-[300px] sm:min-h-[380px] flex flex-col justify-between">
-                    <img src="{% static 'images/Funeral.jpeg' %}"
-                         alt="United Kabye Association Eastern Region Branch Bereavement Solidarity Delegation"
-                         class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-black/30 pointer-events-none"></div>
+            <!-- Left 7 Columns: Single Fine-Gold Encased Photo (Click to View Full Gallery) -->
+            <div class="lg:col-span-7">
+                <a href="{% url 'core:impact' %}"
+                   class="group block h-full rounded-[2rem] p-1.5 sm:p-2 bg-gradient-to-tr from-uka-golddark via-uka-gold to-yellow-200 shadow-[0_0_55px_rgba(243,186,47,0.45)] hover:shadow-[0_0_75px_rgba(243,186,47,0.7)] transition-all duration-500">
+                    <div class="relative h-full w-full rounded-[1.65rem] overflow-hidden bg-black border border-uka-gold/60 min-h-[340px] sm:min-h-[420px] flex flex-col justify-between">
+                        <img src="{% static 'images/Funeral.jpeg' %}"
+                             alt="United Kabye Association Eastern Region Branch Bereavement Solidarity Delegation"
+                             class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-black/30 pointer-events-none"></div>
 
-                    <div class="relative z-10 p-4 flex items-center justify-between gap-2">
-                        <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-uka-gold/40 text-uka-gold font-mono text-[10px] font-bold uppercase tracking-wider">
-                            Delegation Frame 01
-                        </span>
-                        <span class="w-8 h-8 rounded-full bg-black/70 border border-white/20 text-white flex items-center justify-center text-xs group-hover:bg-uka-gold group-hover:text-uka-deep transition">
-                            ⤢
-                        </span>
+                        <!-- Top Fine-Gold Frame Badge -->
+                        <div class="relative z-10 p-4 sm:p-6 flex flex-wrap items-center justify-between gap-2">
+                            <span class="px-3.5 py-1.5 rounded-full bg-gradient-to-r from-uka-gold via-yellow-300 to-amber-500 text-uka-deep font-mono text-[10px] sm:text-xs font-black uppercase tracking-wider shadow-lg">
+                                ★ Article 5.4 Delegation Archive
+                            </span>
+                            <span class="px-3.5 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-uka-gold/60 text-uka-goldlight font-mono text-[10px] sm:text-xs font-bold uppercase tracking-wider group-hover:bg-uka-gold group-hover:text-uka-deep transition">
+                                Click to See More Photos →
+                            </span>
+                        </div>
+
+                        <!-- Bottom Centered Narrative -->
+                        <div class="relative z-10 p-5 sm:p-8 text-center max-w-xl mx-auto space-y-2">
+                            <span class="block text-[10px] sm:text-xs font-mono uppercase tracking-[0.22em] text-uka-gold">
+                                Unified Brotherhood Presence
+                            </span>
+                            <h3 class="font-heading text-xl sm:text-3xl font-black text-white leading-snug group-hover:text-uka-goldlight transition-colors">
+                                Standing Together in Solemn Solidarity
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                                Tap anywhere on this frame to view the complete delegation photo archive &amp; field chronicles in our gallery.
+                            </p>
+                        </div>
                     </div>
-
-                    <div class="relative z-10 p-5 space-y-1">
-                        <span class="block text-[10px] font-mono uppercase tracking-widest text-uka-goldlight">Unified Presence</span>
-                        <h3 class="font-heading text-base sm:text-lg font-black text-white leading-snug">
-                            Standing Together in Solemn Solidarity
-                        </h3>
-                        <p class="text-xs text-slate-300">Tap to inspect full photograph</p>
-                    </div>
-                </div>
-
-                <!-- Photo 02: Funeral_2.jpeg -->
-                <div onclick="openHomePhotoModal('{% static 'images/Funeral_2.jpeg' %}', 'Fraternal Final Rites Support', 'Members & Leadership Honoring a Colleague in Bereavement')"
-                     role="button" tabindex="0" onkeydown="if(event.key==='Enter')openHomePhotoModal('{% static 'images/Funeral_2.jpeg' %}', 'Fraternal Final Rites Support', 'Members & Leadership Honoring a Colleague in Bereavement')"
-                     class="group cursor-pointer relative rounded-3xl overflow-hidden border-2 border-uka-gold/50 hover:border-uka-gold bg-black shadow-2xl min-h-[300px] sm:min-h-[380px] flex flex-col justify-between">
-                    <img src="{% static 'images/Funeral_2.jpeg' %}"
-                         alt="United Kabye Association Members Supporting a Colleague at Funeral Rites"
-                         class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-black/30 pointer-events-none"></div>
-
-                    <div class="relative z-10 p-4 flex items-center justify-between gap-2">
-                        <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-uka-gold/40 text-uka-gold font-mono text-[10px] font-bold uppercase tracking-wider">
-                            Delegation Frame 02
-                        </span>
-                        <span class="w-8 h-8 rounded-full bg-black/70 border border-white/20 text-white flex items-center justify-center text-xs group-hover:bg-uka-gold group-hover:text-uka-deep transition">
-                            ⤢
-                        </span>
-                    </div>
-
-                    <div class="relative z-10 p-5 space-y-1">
-                        <span class="block text-[10px] font-mono uppercase tracking-widest text-emerald-300">Brotherhood Bond</span>
-                        <h3 class="font-heading text-base sm:text-lg font-black text-white leading-snug">
-                            Supporting Our Colleague & Family
-                        </h3>
-                        <p class="text-xs text-slate-300">Tap to inspect full photograph</p>
-                    </div>
-                </div>
-
+                </a>
             </div>
 
             <!-- Right 5 Columns: Cinema Video Dispatch (Funeral_video.mp4) -->
