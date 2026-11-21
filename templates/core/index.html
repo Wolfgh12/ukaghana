@@ -481,6 +481,152 @@
     </div>
 </section>
 
+<!-- GOD-MODE FIELD PROOF: ARTICLE 5.4 BEREAVEMENT SOLIDARITY IN ACTION -->
+<section id="solidarity-showcase" class="w-full py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-uka-deep via-uka-forest to-black text-white border-y-2 border-uka-gold/40 relative overflow-x-clip">
+    <!-- Ambient Ceremonial Glows -->
+    <div class="hidden sm:block absolute -top-24 left-10 w-96 h-96 bg-uka-gold/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="hidden sm:block absolute -bottom-24 right-10 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10 space-y-10 sm:space-y-12">
+        
+        <!-- Top Narrative Header -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 border-b border-white/15 pb-8">
+            <div class="space-y-3 max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-uka-gold/15 border border-uka-gold/40 text-uka-gold text-[11px] sm:text-xs font-mono font-bold uppercase tracking-widest">
+                    <span>🛡️ Article 5.4 Welfare in Action</span>
+                </div>
+                <h2 class="font-heading text-2xl sm:text-4xl lg:text-5xl font-black text-white leading-tight">
+                    When grief strikes, <span class="text-uka-gold">the entire brotherhood stands beside you</span>
+                </h2>
+                <p class="text-sm sm:text-base text-slate-200 leading-relaxed font-light">
+                    Our constitution is lived in the field. Recently, the Eastern Region Branch executive and members mobilized in unified solidarity to support our bereaved colleague—honoring final rites with dignity, presence, and fraternal relief.
+                </p>
+            </div>
+
+            <div class="shrink-0">
+                <a href="{% url 'core:impact' %}" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-gradient-to-r from-uka-gold via-yellow-400 to-amber-500 hover:brightness-105 text-uka-deep font-black text-xs uppercase tracking-widest shadow-lg shadow-uka-gold/25 transition-all hover:scale-105">
+                    <span>Open Full Field Gallery</span>
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- 12-Column Cinema Media Stage (2 High-Res Photos + 1 Featured Video) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+            
+            <!-- Left 7 Columns: Dual Ceremonial Photo Showcase -->
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+                
+                <!-- Photo 01: Funeral.jpeg -->
+                <div onclick="openHomePhotoModal('{% static 'images/Funeral.jpeg' %}', 'Article 5.4 Bereavement Delegation', 'Eastern Region Executive & Members Standing in Fraternal Solidarity')"
+                     role="button" tabindex="0" onkeydown="if(event.key==='Enter')openHomePhotoModal('{% static 'images/Funeral.jpeg' %}', 'Article 5.4 Bereavement Delegation', 'Eastern Region Executive & Members Standing in Fraternal Solidarity')"
+                     class="group cursor-pointer relative rounded-3xl overflow-hidden border-2 border-uka-gold/50 hover:border-uka-gold bg-black shadow-2xl min-h-[300px] sm:min-h-[380px] flex flex-col justify-between">
+                    <img src="{% static 'images/Funeral.jpeg' %}"
+                         alt="United Kabye Association Eastern Region Branch Bereavement Solidarity Delegation"
+                         class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-black/30 pointer-events-none"></div>
+
+                    <div class="relative z-10 p-4 flex items-center justify-between gap-2">
+                        <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-uka-gold/40 text-uka-gold font-mono text-[10px] font-bold uppercase tracking-wider">
+                            Delegation Frame 01
+                        </span>
+                        <span class="w-8 h-8 rounded-full bg-black/70 border border-white/20 text-white flex items-center justify-center text-xs group-hover:bg-uka-gold group-hover:text-uka-deep transition">
+                            ⤢
+                        </span>
+                    </div>
+
+                    <div class="relative z-10 p-5 space-y-1">
+                        <span class="block text-[10px] font-mono uppercase tracking-widest text-uka-goldlight">Unified Presence</span>
+                        <h3 class="font-heading text-base sm:text-lg font-black text-white leading-snug">
+                            Standing Together in Solemn Solidarity
+                        </h3>
+                        <p class="text-xs text-slate-300">Tap to inspect full photograph</p>
+                    </div>
+                </div>
+
+                <!-- Photo 02: Funeral_2.jpeg -->
+                <div onclick="openHomePhotoModal('{% static 'images/Funeral_2.jpeg' %}', 'Fraternal Final Rites Support', 'Members & Leadership Honoring a Colleague in Bereavement')"
+                     role="button" tabindex="0" onkeydown="if(event.key==='Enter')openHomePhotoModal('{% static 'images/Funeral_2.jpeg' %}', 'Fraternal Final Rites Support', 'Members & Leadership Honoring a Colleague in Bereavement')"
+                     class="group cursor-pointer relative rounded-3xl overflow-hidden border-2 border-uka-gold/50 hover:border-uka-gold bg-black shadow-2xl min-h-[300px] sm:min-h-[380px] flex flex-col justify-between">
+                    <img src="{% static 'images/Funeral_2.jpeg' %}"
+                         alt="United Kabye Association Members Supporting a Colleague at Funeral Rites"
+                         class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-black/30 pointer-events-none"></div>
+
+                    <div class="relative z-10 p-4 flex items-center justify-between gap-2">
+                        <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-uka-gold/40 text-uka-gold font-mono text-[10px] font-bold uppercase tracking-wider">
+                            Delegation Frame 02
+                        </span>
+                        <span class="w-8 h-8 rounded-full bg-black/70 border border-white/20 text-white flex items-center justify-center text-xs group-hover:bg-uka-gold group-hover:text-uka-deep transition">
+                            ⤢
+                        </span>
+                    </div>
+
+                    <div class="relative z-10 p-5 space-y-1">
+                        <span class="block text-[10px] font-mono uppercase tracking-widest text-emerald-300">Brotherhood Bond</span>
+                        <h3 class="font-heading text-base sm:text-lg font-black text-white leading-snug">
+                            Supporting Our Colleague & Family
+                        </h3>
+                        <p class="text-xs text-slate-300">Tap to inspect full photograph</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right 5 Columns: Cinema Video Dispatch (Funeral_video.mp4) -->
+            <div class="lg:col-span-5 flex flex-col justify-between rounded-3xl bg-black/60 backdrop-blur-md border-2 border-uka-gold/50 p-4 sm:p-5 shadow-2xl space-y-4">
+                <div class="flex items-center justify-between gap-2">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-uka-gold/20 border border-uka-gold/40 text-uka-gold font-mono text-[10px] font-bold uppercase tracking-wider">
+                        🎥 Field Dispatch Footage
+                    </span>
+                    <span class="text-[11px] font-mono text-slate-300">Eastern Region</span>
+                </div>
+
+                <div class="relative w-full rounded-2xl overflow-hidden bg-black border border-white/15 aspect-video lg:aspect-[4/3]">
+                    <video id="home-funeral-video"
+                           controls
+                           playsinline
+                           preload="metadata"
+                           poster="{% static 'images/Funeral.jpeg' %}"
+                           class="w-full h-full object-cover">
+                        <source src="{% static 'videos/Funeral_video.mp4' %}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="space-y-1.5 pt-1">
+                    <h3 class="font-heading text-base sm:text-lg font-bold text-white">
+                        Bereavement Solidarity Delegation Footage
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-light">
+                        Watch the Eastern Region delegation standing shoulder-to-shoulder with our colleague—fulfilling our constitutional pledge that no member faces bereavement alone.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FULLSCREEN PHOTO LIGHTBOX FOR HOMEPAGE SOLIDARITY FRAMES -->
+<div id="home-photo-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/90 backdrop-blur-xl p-3 sm:p-6 overflow-x-clip" onclick="if(event.target.id==='home-photo-modal')closeHomePhotoModal()">
+    <div class="relative w-full max-w-4xl max-h-[92vh] rounded-3xl bg-gradient-to-br from-uka-deep via-uka-forest to-black border-2 border-uka-gold/60 shadow-2xl flex flex-col overflow-hidden text-white">
+        <div class="flex items-center justify-between gap-3 px-4 sm:px-6 py-3.5 border-b border-white/15 bg-black/50 shrink-0">
+            <span id="hpm-title" class="font-heading text-sm sm:text-base font-black text-uka-gold truncate">Delegation Archive</span>
+            <button type="button" onclick="closeHomePhotoModal()" class="w-9 h-9 rounded-full bg-white/10 hover:bg-uka-crimson text-white flex items-center justify-center font-bold transition shrink-0" aria-label="Close photo preview">
+                ✕
+            </button>
+        </div>
+        <div class="bg-black flex items-center justify-center overflow-hidden max-h-[72vh]">
+            <img id="hpm-img" src="" alt="UKA Solidarity Photo" class="w-full max-h-[72vh] object-contain">
+        </div>
+        <div class="px-4 sm:px-6 py-3.5 bg-black/60 border-t border-white/10 text-xs sm:text-sm text-slate-200 flex flex-wrap items-center justify-between gap-2">
+            <span id="hpm-caption">United Kabye Association of Ghana • Eastern Region Branch</span>
+            <span class="font-mono text-[11px] text-uka-gold">Article 5.4 Solidarity</span>
+        </div>
+    </div>
+</div>
+
 <!-- "HOW IT OPERATES" 4-STEP PROCESS -->
 <section class="w-full py-14 sm:py-16 bg-uka-parchment border-t border-uka-border overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
@@ -1165,8 +1311,31 @@
         }
     }
 
+    // 7. Homepage Solidarity Photo Modal Controls
+    function openHomePhotoModal(src, title, caption) {
+        const modal = document.getElementById('home-photo-modal');
+        if (!modal) return;
+        document.getElementById('hpm-img').src = src;
+        document.getElementById('hpm-title').innerText = title;
+        document.getElementById('hpm-caption').innerText = caption;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeHomePhotoModal() {
+        const modal = document.getElementById('home-photo-modal');
+        if (!modal) return;
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+    }
+
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') closeConstitutionModal();
+        if (e.key === 'Escape') {
+            closeConstitutionModal();
+            closeHomePhotoModal();
+        }
     });
 </script>
 {% endblock %}

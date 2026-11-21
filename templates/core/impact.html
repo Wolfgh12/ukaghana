@@ -83,7 +83,10 @@
             <!-- Interactive Filter Pills -->
             <div class="flex flex-wrap items-center gap-2 sm:gap-2.5" id="gallery-filters">
                 <button type="button" onclick="filterGallery('all', this)" class="filter-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-uka-forest to-uka-emerald text-white font-bold text-[11px] sm:text-xs uppercase tracking-wider shadow-md transition">
-                    All Chronicles (7)
+                    All Chronicles (10)
+                </button>
+                <button type="button" onclick="filterGallery('solidarity', this)" class="filter-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white border border-uka-border text-slate-700 hover:border-uka-forest font-bold text-[11px] sm:text-xs uppercase tracking-wider transition">
+                    Welfare & Solidarity (3)
                 </button>
                 <button type="button" onclick="filterGallery('cleanups', this)" class="filter-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white border border-uka-border text-slate-700 hover:border-uka-forest font-bold text-[11px] sm:text-xs uppercase tracking-wider transition">
                     Municipal Cleanups
@@ -103,25 +106,119 @@
         <!-- Asymmetric Editorial Bento Grid -->
         <div class="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-7" id="bento-grid">
 
-            <!-- FRAME 01 (Wide Feature - 8 Cols): Koforidua Market Cleanup -->
-            <article data-category="cleanups" onclick="openLightbox(0)"
+            <!-- FRAME 01 (Wide Feature - 8 Cols): Real Funeral Solidarity Photo 1 -->
+            <article data-category="solidarity" onclick="openLightbox(0)"
+                     class="gallery-card w-full md:col-span-8 group cursor-pointer rounded-3xl overflow-hidden bg-black border-2 border-uka-gold/50 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[340px] sm:min-h-[420px] flex flex-col justify-between p-6 sm:p-10 text-white">
+                <img src="{% static 'images/Funeral.jpeg' %}"
+                     alt="Article 5.4 Bereavement Solidarity Delegation — United Kabye Association Eastern Region"
+                     class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-black/25 pointer-events-none"></div>
+
+                <!-- Top Metadata Row -->
+                <div class="relative z-10 flex flex-wrap items-center justify-between gap-2">
+                    <span class="px-3 py-1 rounded-full bg-uka-gold text-uka-deep font-mono text-[10px] sm:text-xs font-black uppercase tracking-wider shadow">
+                        Article 5.4 Solidarity • Live Archive
+                    </span>
+                    <span class="px-3 py-1 rounded-full bg-black/65 backdrop-blur-md border border-white/20 font-mono text-[10px] sm:text-xs text-uka-goldlight">
+                        Photo 01 • Expand Fullscreen ↗
+                    </span>
+                </div>
+
+                <!-- Bottom Narrative Overlay -->
+                <div class="relative z-10 space-y-2.5 sm:space-y-3 max-w-2xl pt-20 sm:pt-28">
+                    <span class="text-[11px] sm:text-xs font-mono text-uka-gold uppercase tracking-widest block">
+                        Eastern Region Executive & Members Delegation
+                    </span>
+                    <h3 class="font-heading text-xl sm:text-4xl font-black leading-tight text-white group-hover:text-uka-goldlight transition-colors">
+                        Bereavement Solidarity: Standing With Our Colleague
+                    </h3>
+                    <p class="text-xs sm:text-base text-slate-200 leading-relaxed font-light">
+                        Branch leadership and members assembled in full fraternal solidarity to honor final rites and support our bereaved colleague—fulfilling Article 5.4 of our Supreme Charter.
+                    </p>
+                </div>
+            </article>
+
+            <!-- FRAME 02 (Tall Feature - 4 Cols): Real Funeral Solidarity Photo 2 -->
+            <article data-category="solidarity" onclick="openLightbox(1)"
+                     class="gallery-card w-full md:col-span-4 group cursor-pointer rounded-3xl overflow-hidden bg-black border-2 border-uka-gold/50 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[320px] sm:min-h-[420px] flex flex-col justify-between p-6 sm:p-8 text-white">
+                <img src="{% static 'images/Funeral_2.jpeg' %}"
+                     alt="Fraternal Presence at Funeral Rites — United Kabye Association"
+                     class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/25 pointer-events-none"></div>
+
+                <div class="relative z-10 flex items-center justify-between gap-2">
+                    <span class="px-3 py-1 rounded-full bg-white/95 text-uka-deep font-mono text-[10px] sm:text-[11px] font-black uppercase tracking-wider">
+                        Photo 02 • Welfare Shield
+                    </span>
+                    <span class="w-9 h-9 rounded-full bg-black/60 border border-white/25 flex items-center justify-center text-uka-gold text-sm group-hover:scale-110 transition-transform shrink-0">
+                        ↗
+                    </span>
+                </div>
+
+                <div class="relative z-10 space-y-2.5 pt-20 sm:pt-28">
+                    <span class="text-[11px] sm:text-xs font-mono text-emerald-300 uppercase tracking-wider block">
+                        Unified Brotherhood Presence
+                    </span>
+                    <h3 class="font-heading text-xl sm:text-2xl font-black leading-snug text-white">
+                        Fraternal Delegation & Final Rites Support
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-light">
+                        No Kabye family bears grief alone. Click to view the full-resolution delegation photograph.
+                    </p>
+                </div>
+            </article>
+
+            <!-- FRAME 03 (Full-Width Cinema Video Feature - 12 Cols): Real Funeral Video -->
+            <article data-category="solidarity" onclick="openLightbox(2)"
+                     class="gallery-card w-full md:col-span-12 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-r from-uka-deep via-uka-forest to-black border-2 border-uka-gold/60 hover:border-uka-gold shadow-2xl transition-all duration-500 relative min-h-[260px] sm:min-h-[320px] grid grid-cols-1 lg:grid-cols-12 items-center">
+                <!-- Video Thumbnail Preview -->
+                <div class="lg:col-span-5 relative h-56 sm:h-72 lg:h-full overflow-hidden bg-black">
+                    <img src="{% static 'images/Funeral.jpeg' %}"
+                         alt="Funeral Solidarity Video Preview"
+                         class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-uka-gold to-amber-500 text-uka-deep flex items-center justify-center shadow-[0_0_40px_rgba(243,186,47,0.7)] group-hover:scale-110 transition-transform">
+                            <span class="text-2xl sm:text-3xl font-black ml-1">▶</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Narrative -->
+                <div class="lg:col-span-7 p-6 sm:p-10 text-white space-y-3 sm:space-y-4">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span class="px-3 py-1 rounded-full bg-uka-gold text-uka-deep font-mono text-[10px] sm:text-xs font-black uppercase tracking-wider">
+                            🎥 Video Chronicle • Article 5.4
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-white/10 border border-white/20 font-mono text-[10px] sm:text-xs text-uka-goldlight">
+                            Click to Watch Field Footage
+                        </span>
+                    </div>
+                    <h3 class="font-heading text-xl sm:text-3xl font-black leading-tight text-white group-hover:text-uka-goldlight transition-colors">
+                        Bereavement Solidarity Delegation — Field Video Dispatch
+                    </h3>
+                    <p class="text-xs sm:text-base text-slate-200 leading-relaxed font-light max-w-2xl">
+                        Watch recorded footage of our Eastern Region Branch members and officers standing shoulder-to-shoulder with our bereaved colleague during final rites.
+                    </p>
+                </div>
+            </article>
+
+            <!-- FRAME 04 (Wide Feature - 8 Cols): Koforidua Market Cleanup -->
+            <article data-category="cleanups" onclick="openLightbox(3)"
                      class="gallery-card w-full md:col-span-8 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-br from-uka-deep via-uka-forest to-emerald-950 border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[320px] sm:min-h-[380px] flex flex-col justify-between p-6 sm:p-10 text-white">
                 <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(243,186,47,0.22),transparent_60%)] pointer-events-none"></div>
                 <div class="absolute -right-10 -bottom-10 w-52 sm:w-64 h-52 sm:h-64 opacity-10 rounded-full overflow-hidden pointer-events-none group-hover:scale-110 transition-transform duration-700">
                     <img src="{% static 'images/wc.jpg' %}" alt="UKA Watermark" class="w-full h-full object-cover">
                 </div>
 
-                <!-- Top Metadata Row -->
                 <div class="relative z-10 flex flex-wrap items-center justify-between gap-2">
                     <span class="px-3 py-1 rounded-full bg-uka-gold text-uka-deep font-mono text-[10px] sm:text-xs font-black uppercase tracking-wider shadow">
                         Municipal Sanitation • Koforidua
                     </span>
                     <span class="px-3 py-1 rounded-full bg-black/50 backdrop-blur-md border border-white/15 font-mono text-[10px] sm:text-xs text-uka-goldlight">
-                        Chronicle № 01 • Expand ↗
+                        Chronicle № 04 • Expand ↗
                     </span>
                 </div>
 
-                <!-- Bottom Narrative Overlay -->
                 <div class="relative z-10 space-y-2.5 sm:space-y-3 max-w-2xl pt-12 sm:pt-16">
                     <span class="text-[11px] sm:text-xs font-mono text-emerald-300 uppercase tracking-widest block">
                         Coordinated by Branch Youth Organizer
@@ -135,8 +232,8 @@
                 </div>
             </article>
 
-            <!-- FRAME 02 (Tall Feature - 4 Cols): Pediatric Ward Visitation -->
-            <article data-category="clinics" onclick="openLightbox(1)"
+            <!-- FRAME 05 (Tall Feature - 4 Cols): Pediatric Ward Visitation -->
+            <article data-category="clinics" onclick="openLightbox(4)"
                      class="gallery-card w-full md:col-span-4 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-br from-[#2B1208] via-uka-terracotta/90 to-uka-deep border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[300px] sm:min-h-[380px] flex flex-col justify-between p-6 sm:p-8 text-white">
                 <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(243,186,47,0.25),transparent_65%)] pointer-events-none"></div>
                 <div class="absolute -right-8 -top-8 w-40 sm:w-44 h-40 sm:h-44 opacity-10 rounded-full overflow-hidden pointer-events-none group-hover:scale-110 transition-transform duration-700">
@@ -165,8 +262,8 @@
                 </div>
             </article>
 
-            <!-- FRAME 03 (4 Cols): Brotherhood Excursion -->
-            <article data-category="excursions" onclick="openLightbox(2)"
+            <!-- FRAME 06 (4 Cols): Brotherhood Excursion -->
+            <article data-category="excursions" onclick="openLightbox(5)"
                      class="gallery-card w-full md:col-span-4 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-br from-uka-forest via-uka-moss to-uka-deep border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[290px] sm:min-h-[340px] flex flex-col justify-between p-6 sm:p-8 text-white">
                 <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(243,186,47,0.2),transparent_60%)] pointer-events-none"></div>
 
@@ -192,8 +289,8 @@
                 </div>
             </article>
 
-            <!-- FRAME 04 (4 Cols): Bi-Monthly Assembly -->
-            <article data-category="assemblies" onclick="openLightbox(3)"
+            <!-- FRAME 07 (4 Cols): Bi-Monthly Assembly -->
+            <article data-category="assemblies" onclick="openLightbox(6)"
                      class="gallery-card w-full md:col-span-4 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-br from-slate-950 via-uka-deep to-uka-forest border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[290px] sm:min-h-[340px] flex flex-col justify-between p-6 sm:p-8 text-white">
                 <div class="absolute -right-6 -bottom-6 w-36 sm:w-40 h-36 sm:h-40 opacity-15 rounded-full overflow-hidden pointer-events-none">
                     <img src="{% static 'images/wc.jpg' %}" alt="UKA Crest" class="w-full h-full object-cover">
@@ -221,8 +318,8 @@
                 </div>
             </article>
 
-            <!-- FRAME 05 (4 Cols): Children's Home Provisions -->
-            <article data-category="clinics" onclick="openLightbox(4)"
+            <!-- FRAME 08 (4 Cols): Children's Home Provisions -->
+            <article data-category="clinics" onclick="openLightbox(7)"
                      class="gallery-card w-full md:col-span-4 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-br from-[#3B2606] via-uka-golddark/90 to-uka-deep border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[290px] sm:min-h-[340px] flex flex-col justify-between p-6 sm:p-8 text-white">
                 <div class="relative z-10 flex items-center justify-between gap-2">
                     <span class="px-3 py-1 rounded-full bg-white/95 text-uka-deep font-mono text-[10px] sm:text-[11px] font-black uppercase tracking-wider">
@@ -246,8 +343,8 @@
                 </div>
             </article>
 
-            <!-- FRAME 06 (Wide Bottom Left - 6 Cols): Nkawkaw Sanitation -->
-            <article data-category="cleanups" onclick="openLightbox(5)"
+            <!-- FRAME 09 (Wide Bottom Left - 6 Cols): Nkawkaw Sanitation -->
+            <article data-category="cleanups" onclick="openLightbox(8)"
                      class="gallery-card w-full md:col-span-6 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-r from-uka-deep via-uka-forest to-uka-moss border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[270px] sm:min-h-[300px] flex flex-col justify-between p-6 sm:p-8 text-white">
                 <div class="relative z-10 flex items-center justify-between gap-2">
                     <span class="px-3 py-1 rounded-full bg-uka-gold text-uka-deep font-mono text-[10px] sm:text-[11px] font-black uppercase tracking-wider">
@@ -271,8 +368,8 @@
                 </div>
             </article>
 
-            <!-- FRAME 07 (Wide Bottom Right - 6 Cols): Youth & Cultural Mentorship -->
-            <article data-category="excursions" onclick="openLightbox(6)"
+            <!-- FRAME 10 (Wide Bottom Right - 6 Cols): Youth & Cultural Mentorship -->
+            <article data-category="excursions" onclick="openLightbox(9)"
                      class="gallery-card w-full md:col-span-6 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-r from-uka-forest via-uka-deep to-black border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[270px] sm:min-h-[300px] flex flex-col justify-between p-6 sm:p-8 text-white">
                 <div class="relative z-10 flex items-center justify-between gap-2">
                     <span class="px-3 py-1 rounded-full bg-white/15 border border-uka-gold/40 text-uka-gold font-mono text-[10px] sm:text-[11px] font-bold uppercase tracking-wider">
@@ -387,8 +484,20 @@
 
         <!-- Scrollable Modal Content -->
         <div class="overflow-y-auto flex-grow">
-            <!-- Visual Showcase Stage -->
-            <div class="relative h-48 sm:h-72 bg-gradient-to-tr from-uka-deep via-uka-emerald/40 to-uka-forest flex flex-col items-center justify-center p-5 sm:p-8 text-center border-b border-white/10 overflow-hidden">
+            <!-- Stage Mode A: High-Resolution Photograph Viewer -->
+            <div id="lb-photo-stage" class="hidden bg-black border-b border-white/15 flex items-center justify-center">
+                <img id="lb-photo-img" src="" alt="Field Archive Photograph" class="w-full max-h-[55vh] object-contain">
+            </div>
+
+            <!-- Stage Mode B: Video Player Stage -->
+            <div id="lb-video-stage" class="hidden bg-black border-b border-white/15 flex items-center justify-center">
+                <video id="lb-video-player" controls playsinline class="w-full max-h-[55vh] bg-black">
+                    <source id="lb-video-source" src="" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Stage Mode C: Ceremonial Emblem Stage (for text-only chronicles) -->
+            <div id="lb-emblem-stage" class="relative h-48 sm:h-64 bg-gradient-to-tr from-uka-deep via-uka-emerald/40 to-uka-forest flex flex-col items-center justify-center p-5 sm:p-8 text-center border-b border-white/10 overflow-hidden">
                 <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-1 bg-gradient-to-tr from-uka-gold to-yellow-200 shadow-2xl mb-3 sm:mb-4">
                     <img src="{% static 'images/wc.jpg' %}" alt="UKA Official Crest" class="w-full h-full object-cover rounded-full">
                 </div>
@@ -432,6 +541,34 @@
 <script>
     const chronicles = [
         {
+            mediaType: "image",
+            mediaSrc: "{% static 'images/Funeral.jpeg' %}",
+            badge: "Article 5.4 Bereavement Solidarity",
+            location: "Eastern Region Branch Delegation",
+            lead: "Eastern Region Executive & Members",
+            title: "Bereavement Solidarity: Standing With Our Colleague",
+            desc: "Branch leadership and members mobilized in full fraternal solidarity to support our bereaved colleague—honoring final rites with dignity, unity, and Article 5.4 welfare relief."
+        },
+        {
+            mediaType: "image",
+            mediaSrc: "{% static 'images/Funeral_2.jpeg' %}",
+            badge: "Fraternal Final Rites Support",
+            location: "Eastern Region Branch Delegation",
+            lead: "Brotherhood Delegation & Protocol",
+            title: "Fraternal Delegation & Final Rites Support",
+            desc: "Standing shoulder-to-shoulder with our colleague and family during bereavement, demonstrating that no Kabye household faces life's trials alone."
+        },
+        {
+            mediaType: "video",
+            mediaSrc: "{% static 'videos/Funeral_video.mp4' %}",
+            badge: "🎥 Field Video Dispatch • Art. 5.4",
+            location: "Eastern Region Branch",
+            lead: "Eastern Region Executive & Members",
+            title: "Bereavement Solidarity Delegation — Field Video Dispatch",
+            desc: "Recorded footage from the Eastern Region Branch delegation supporting our colleague at funeral rites under Article 5.4 of the Supreme Branch Charter."
+        },
+        {
+            mediaType: "emblem",
             badge: "Municipal Sanitation • Koforidua",
             location: "New Juaben South Municipality, Eastern Region",
             lead: "Coordinated by Branch Youth Organizer",
@@ -439,6 +576,7 @@
             desc: "Over 65 inducted members mobilized at dawn with sanitation equipment to clear arterial market drains and public walkways in partnership with municipal environmental officers."
         },
         {
+            mediaType: "emblem",
             badge: "Healthcare Outreach",
             location: "Koforidua Regional Pediatric & Maternal Wards",
             lead: "Coordinated by Women's Organizer Delegation",
@@ -446,6 +584,7 @@
             desc: "Direct donation of clinical toiletries, baby essentials, and nutritional staples to recovering mothers and children in Koforidua, accompanied by bedside solidarity prayers."
         },
         {
+            mediaType: "emblem",
             badge: "Cultural Excursion",
             location: "Yilo Krobo & Akuapem Ridge Corridor",
             lead: "Coordinated by Branch Organizer",
@@ -453,6 +592,7 @@
             desc: "Uniting households across Eastern Region districts for traditional Kabiye music, youth leadership induction, and fraternal bonding outside the assembly hall."
         },
         {
+            mediaType: "emblem",
             badge: "Article 6 Assembly",
             location: "Eastern Region Branch Secretariat",
             lead: "Presided by Branch Chairman & Secretariat",
@@ -460,6 +600,7 @@
             desc: "Bi-monthly deliberations conducted inclusively in Kabiye, English, Twi, and French—reviewing audited Treasurer ledgers, verifying welfare claims, and inducting new members."
         },
         {
+            mediaType: "emblem",
             badge: "Orphanage Solidarity",
             location: "Suhum & Nsawam Municipal Corridor",
             lead: "Coordinated by Social & Welfare Committee",
@@ -467,6 +608,7 @@
             desc: "Quarterly delivery of bags of rice, cooking oil, exercise books, and sanitary supplies to regional children's homes under Article 10 community service."
         },
         {
+            mediaType: "emblem",
             badge: "District Civic Action • Nkawkaw",
             location: "Kwahu West Municipality, Eastern Region",
             lead: "Coordinated by Youth & Sanitation Taskforce",
@@ -474,6 +616,7 @@
             desc: "Branch volunteers clearing overgrown clinic perimeters and public transit terminals in Nkawkaw to safeguard community hygiene and public health."
         },
         {
+            mediaType: "emblem",
             badge: "Next-Gen Heritage",
             location: "Eastern Region Youth & Artisans Forum",
             lead: "Coordinated by Youth & Women's Joint Wing",
@@ -499,6 +642,14 @@
         });
     }
 
+    function stopLightboxVideo() {
+        const videoEl = document.getElementById('lb-video-player');
+        if (videoEl) {
+            videoEl.pause();
+            videoEl.currentTime = 0;
+        }
+    }
+
     function openLightbox(index) {
         currentIdx = index;
         renderLightbox();
@@ -509,6 +660,7 @@
     }
 
     function closeLightbox() {
+        stopLightboxVideo();
         const modal = document.getElementById('cinema-lightbox');
         modal.classList.add('hidden');
         modal.classList.remove('flex');
@@ -522,6 +674,7 @@
     }
 
     function stepLightbox(dir) {
+        stopLightboxVideo();
         currentIdx = (currentIdx + dir + chronicles.length) % chronicles.length;
         renderLightbox();
     }
@@ -534,6 +687,29 @@
         document.getElementById('lb-lead').innerText = item.lead;
         document.getElementById('lb-title').innerText = item.title;
         document.getElementById('lb-desc').innerText = item.desc;
+
+        const photoStage = document.getElementById('lb-photo-stage');
+        const videoStage = document.getElementById('lb-video-stage');
+        const emblemStage = document.getElementById('lb-emblem-stage');
+        const videoEl = document.getElementById('lb-video-player');
+        const videoSrc = document.getElementById('lb-video-source');
+
+        photoStage.classList.add('hidden');
+        videoStage.classList.add('hidden');
+        emblemStage.classList.add('hidden');
+
+        if (item.mediaType === 'image') {
+            document.getElementById('lb-photo-img').src = item.mediaSrc;
+            document.getElementById('lb-photo-img').alt = item.title;
+            photoStage.classList.remove('hidden');
+        } else if (item.mediaType === 'video') {
+            videoSrc.src = item.mediaSrc;
+            videoEl.load();
+            videoStage.classList.remove('hidden');
+            videoEl.play().catch(() => {});
+        } else {
+            emblemStage.classList.remove('hidden');
+        }
     }
 
     document.addEventListener('keydown', (e) => {
