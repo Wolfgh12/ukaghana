@@ -546,32 +546,52 @@
 </section>
 
 <!-- CINEMA LIGHTBOX MODAL -->
-<div id="cinema-lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/85 backdrop-blur-xl p-3 sm:p-8 overflow-x-clip" onclick="closeLightboxOnBackdrop(event)">
-    <div class="relative w-full max-w-4xl max-h-[92vh] rounded-3xl bg-gradient-to-br from-uka-deep via-uka-forest to-black border-2 border-uka-gold/50 shadow-2xl flex flex-col overflow-hidden text-white">
+<div id="cinema-lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/90 backdrop-blur-xl p-2.5 sm:p-6 overflow-x-clip" onclick="closeLightboxOnBackdrop(event)">
+    <div class="relative w-full max-w-6xl max-h-[94vh] rounded-3xl bg-gradient-to-br from-uka-deep via-uka-forest to-black border-2 border-uka-gold/70 shadow-[0_0_80px_rgba(243,186,47,0.3)] flex flex-col overflow-hidden text-white">
         
-        <!-- Top Bar -->
-        <div class="flex items-center justify-between gap-3 px-4 sm:px-8 py-3.5 sm:py-4 border-b border-white/15 bg-black/40 shrink-0">
+        <!-- Top Ceremonial Bar -->
+        <div class="flex items-center justify-between gap-3 px-4 sm:px-7 py-3 border-b border-white/15 bg-black/60 shrink-0">
             <div class="flex items-center gap-2.5 sm:gap-3 min-w-0">
-                <span id="lb-badge" class="px-2.5 sm:px-3 py-1 rounded-full bg-uka-gold text-uka-deep font-mono text-[10px] sm:text-xs font-black uppercase tracking-wider truncate">
+                <span id="lb-badge" class="px-3 py-1 rounded-full bg-gradient-to-r from-uka-gold via-yellow-300 to-amber-500 text-uka-deep font-mono text-[10px] sm:text-xs font-black uppercase tracking-wider truncate shadow">
                     Category
                 </span>
-                <span id="lb-counter" class="font-mono text-[11px] sm:text-xs text-slate-300 shrink-0">01 / 07</span>
+                <span id="lb-counter" class="font-mono text-[11px] sm:text-xs text-uka-goldlight shrink-0">01 / 11</span>
             </div>
-            <button type="button" onclick="closeLightbox()" class="w-9 h-9 rounded-full bg-white/10 hover:bg-uka-crimson text-white flex items-center justify-center font-bold transition shrink-0" aria-label="Close modal">
-                ✕
-            </button>
+            <div class="flex items-center gap-2 shrink-0">
+                <a id="lb-full-link" href="#" target="_blank" rel="noopener"
+                   class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-uka-gold hover:text-uka-deep border border-uka-gold/40 text-uka-goldlight font-mono text-[11px] font-bold uppercase tracking-wider transition">
+                    Full Resolution ↗
+                </a>
+                <button type="button" onclick="closeLightbox()" class="w-9 h-9 rounded-full bg-white/10 hover:bg-uka-crimson text-white flex items-center justify-center font-bold transition shrink-0" aria-label="Close modal">
+                    ✕
+                </button>
+            </div>
         </div>
 
         <!-- Scrollable Modal Content -->
         <div class="overflow-y-auto flex-grow">
-            <!-- Stage Mode A: High-Resolution Photograph Viewer -->
-            <div id="lb-photo-stage" class="hidden bg-black border-b border-white/15 flex items-center justify-center">
-                <img id="lb-photo-img" src="" alt="Field Archive Photograph" class="w-full max-h-[55vh] object-contain">
+            <!-- Stage Mode A: High-Resolution Full-View Photograph Stage -->
+            <div id="lb-photo-stage" class="hidden relative bg-gradient-to-b from-black via-slate-950 to-black border-b border-uka-gold/30 p-2 sm:p-4 flex items-center justify-center">
+                <!-- Quick Left Arrow (Desktop) -->
+                <button type="button" onclick="stepLightbox(-1)" aria-label="Previous frame"
+                        class="hidden md:flex absolute left-4 z-20 w-11 h-11 rounded-full bg-black/75 hover:bg-uka-gold text-white hover:text-uka-deep border border-uka-gold/50 items-center justify-center font-black shadow-xl transition">
+                    ←
+                </button>
+
+                <div class="rounded-2xl p-1 bg-gradient-to-tr from-uka-golddark/70 via-uka-gold/80 to-yellow-200/70 shadow-[0_0_45px_rgba(243,186,47,0.25)]">
+                    <img id="lb-photo-img" src="" alt="Field Archive Photograph" class="w-full max-h-[66vh] sm:max-h-[72vh] object-contain rounded-xl bg-black">
+                </div>
+
+                <!-- Quick Right Arrow (Desktop) -->
+                <button type="button" onclick="stepLightbox(1)" aria-label="Next frame"
+                        class="hidden md:flex absolute right-4 z-20 w-11 h-11 rounded-full bg-black/75 hover:bg-uka-gold text-white hover:text-uka-deep border border-uka-gold/50 items-center justify-center font-black shadow-xl transition">
+                    →
+                </button>
             </div>
 
-            <!-- Stage Mode B: Video Player Stage -->
-            <div id="lb-video-stage" class="hidden bg-black border-b border-white/15 flex items-center justify-center">
-                <video id="lb-video-player" controls playsinline class="w-full max-h-[55vh] bg-black">
+            <!-- Stage Mode B: Full-View Cinema Video Stage -->
+            <div id="lb-video-stage" class="hidden bg-black border-b border-uka-gold/30 p-2 sm:p-4 flex items-center justify-center">
+                <video id="lb-video-player" controls playsinline class="w-full max-h-[66vh] sm:max-h-[72vh] rounded-xl bg-black border border-uka-gold/40 shadow-2xl">
                     <source id="lb-video-source" src="" type="video/mp4">
                 </video>
             </div>
@@ -585,29 +605,32 @@
                     Eastern Region, Ghana
                 </span>
                 <p class="text-[10px] sm:text-[11px] font-mono text-slate-300/80 mt-1.5 sm:mt-2">
-                    Official Branch Field Archive • Verified by Social & Welfare Committee
+                    Official Branch Field Archive • Verified by Social &amp; Welfare Committee
                 </p>
             </div>
 
-            <!-- Chronicle Details -->
-            <div class="p-5 sm:p-8 space-y-4">
-                <div class="flex flex-wrap items-center justify-between gap-2 text-[11px] sm:text-xs font-mono text-uka-gold">
-                    <span id="lb-lead">Lead Officer</span>
-                    <span>Charter Mandate: Article 10 CSR</span>
+            <!-- Balanced Two-Column Chronicle Caption & Navigation Bar -->
+            <div class="p-4 sm:px-7 sm:py-5 bg-black/45 grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
+                <div class="lg:col-span-8 space-y-1.5">
+                    <div class="flex flex-wrap items-center gap-2 text-[10px] sm:text-xs font-mono text-uka-gold">
+                        <span id="lb-lead">Lead Officer</span>
+                        <span class="text-white/30">•</span>
+                        <span class="text-emerald-300">Eastern Region Branch Archive</span>
+                    </div>
+                    <h3 id="lb-title" class="font-heading text-lg sm:text-2xl font-black text-white leading-snug">
+                        Chronicle Title
+                    </h3>
+                    <p id="lb-desc" class="text-xs sm:text-sm text-slate-200 leading-relaxed font-light">
+                        Chronicle description text.
+                    </p>
                 </div>
-                <h3 id="lb-title" class="font-heading text-xl sm:text-3xl font-black text-white leading-tight">
-                    Chronicle Title
-                </h3>
-                <p id="lb-desc" class="text-xs sm:text-base text-slate-200 leading-relaxed font-light">
-                    Chronicle description text.
-                </p>
 
                 <!-- Navigation Controls -->
-                <div class="pt-4 border-t border-white/15 flex items-center justify-between gap-2 sm:gap-3">
-                    <button type="button" onclick="stepLightbox(-1)" class="px-3.5 sm:px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-[11px] sm:text-xs uppercase tracking-wider transition">
+                <div class="lg:col-span-4 flex items-center justify-between lg:justify-end gap-2.5 pt-3 lg:pt-0 border-t lg:border-t-0 border-white/15">
+                    <button type="button" onclick="stepLightbox(-1)" class="px-4 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-[11px] sm:text-xs uppercase tracking-wider transition">
                         ← Previous
                     </button>
-                    <button type="button" onclick="stepLightbox(1)" class="px-3.5 sm:px-5 py-2.5 rounded-full bg-gradient-to-r from-uka-gold to-amber-500 text-uka-deep font-black text-[11px] sm:text-xs uppercase tracking-wider hover:brightness-105 transition">
+                    <button type="button" onclick="stepLightbox(1)" class="px-4 py-2.5 rounded-full bg-gradient-to-r from-uka-gold to-amber-500 text-uka-deep font-black text-[11px] sm:text-xs uppercase tracking-wider hover:brightness-105 shadow-lg transition">
                         Next Frame →
                     </button>
                 </div>
@@ -782,20 +805,30 @@
         const emblemStage = document.getElementById('lb-emblem-stage');
         const videoEl = document.getElementById('lb-video-player');
         const videoSrc = document.getElementById('lb-video-source');
+        const fullLink = document.getElementById('lb-full-link');
 
         photoStage.classList.add('hidden');
         videoStage.classList.add('hidden');
         emblemStage.classList.add('hidden');
+        if (fullLink) fullLink.classList.add('hidden');
 
         if (item.mediaType === 'image') {
             document.getElementById('lb-photo-img').src = item.mediaSrc;
             document.getElementById('lb-photo-img').alt = item.title;
             photoStage.classList.remove('hidden');
+            if (fullLink) {
+                fullLink.href = item.mediaSrc;
+                fullLink.classList.remove('hidden');
+            }
         } else if (item.mediaType === 'video') {
             videoSrc.src = item.mediaSrc;
             videoEl.load();
             videoStage.classList.remove('hidden');
             videoEl.play().catch(() => {});
+            if (fullLink) {
+                fullLink.href = item.mediaSrc;
+                fullLink.classList.remove('hidden');
+            }
         } else {
             emblemStage.classList.remove('hidden');
         }
