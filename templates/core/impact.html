@@ -106,65 +106,83 @@
         <!-- Asymmetric Editorial Bento Grid -->
         <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8" id="bento-grid">
 
-            <!-- FRAME 01 (Wide Feature - 8 Cols): Real Funeral Solidarity Photo 1 -->
+            <!-- FRAME 01 (Split Editorial Photo Card - 6 Cols): Funeral.jpeg -->
             <article data-category="solidarity" onclick="openLightbox(0)"
-                     class="gallery-card w-full md:col-span-8 group cursor-pointer rounded-3xl overflow-hidden bg-black border-2 border-uka-gold/50 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[340px] sm:min-h-[420px] flex flex-col justify-between p-6 sm:p-10 text-white">
-                <img src="{% static 'images/Funeral.jpeg' %}"
-                     alt="Article 5.4 Bereavement Solidarity Delegation — United Kabye Association Eastern Region"
-                     class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-black/25 pointer-events-none"></div>
+                     class="gallery-card w-full md:col-span-6 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-b from-uka-deep via-uka-forest to-black border-2 border-uka-gold/55 hover:border-uka-gold shadow-2xl transition-all duration-500 flex flex-col justify-between">
+                <!-- Unobstructed Full-Brightness Photo Stage -->
+                <div class="relative w-full aspect-[4/3] overflow-hidden bg-black border-b border-uka-gold/35">
+                    <img src="{% static 'images/Funeral.jpeg' %}"
+                         alt="Article 5.4 Bereavement Solidarity Delegation — United Kabye Association Eastern Region"
+                         class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700">
 
-                <!-- Top Metadata Row -->
-                <div class="relative z-10 flex flex-wrap items-center justify-between gap-2">
-                    <span class="px-3 py-1 rounded-full bg-uka-gold text-uka-deep font-mono text-[10px] sm:text-xs font-black uppercase tracking-wider shadow">
-                        Article 5.4 Solidarity • Live Archive
-                    </span>
-                    <span class="px-3 py-1 rounded-full bg-black/65 backdrop-blur-md border border-white/20 font-mono text-[10px] sm:text-xs text-uka-goldlight">
-                        Photo 01 • Expand Fullscreen ↗
-                    </span>
+                    <!-- Minimal Floating Corner Pills -->
+                    <div class="absolute top-4 left-4 right-4 flex items-center justify-between gap-2 pointer-events-none">
+                        <span class="px-3 py-1 rounded-full bg-uka-gold text-uka-deep font-mono text-[10px] sm:text-xs font-black uppercase tracking-wider shadow-lg">
+                            Photo 01 • Article 5.4 Solidarity
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-black/75 backdrop-blur-md border border-white/25 font-mono text-[10px] text-uka-goldlight shadow">
+                            Expand ⤢
+                        </span>
+                    </div>
                 </div>
 
-                <!-- Bottom Narrative Overlay -->
-                <div class="relative z-10 space-y-2.5 sm:space-y-3 max-w-2xl pt-20 sm:pt-28">
-                    <span class="text-[11px] sm:text-xs font-mono text-uka-gold uppercase tracking-widest block">
-                        Eastern Region Executive & Members Delegation
-                    </span>
-                    <h3 class="font-heading text-xl sm:text-4xl font-black leading-tight text-white group-hover:text-uka-goldlight transition-colors">
-                        Bereavement Solidarity: Standing With Our Colleague
-                    </h3>
-                    <p class="text-xs sm:text-base text-slate-200 leading-relaxed font-light">
-                        Branch leadership and members assembled in full fraternal solidarity to honor final rites and support our bereaved colleague—fulfilling Article 5.4 of our Supreme Charter.
-                    </p>
+                <!-- Luxury Editorial Text Panel Below -->
+                <div class="p-6 sm:p-8 text-white space-y-2.5 flex-grow flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <span class="block text-[11px] font-mono text-uka-gold uppercase tracking-widest">
+                            Eastern Region Executive &amp; Members Delegation
+                        </span>
+                        <h3 class="font-heading text-xl sm:text-2xl font-black leading-snug text-white group-hover:text-uka-goldlight transition-colors">
+                            Bereavement Solidarity: Standing With Our Colleague
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-light">
+                            Branch leadership and members assembled in full fraternal solidarity to honor final rites and support our bereaved colleague—fulfilling Article 5.4 of our Supreme Charter.
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-2 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-uka-goldlight">
+                        <span>Verified Field Archive</span>
+                        <span class="group-hover:translate-x-1 transition-transform">Inspect Fullscreen →</span>
+                    </div>
                 </div>
             </article>
 
-            <!-- FRAME 02 (Tall Feature - 4 Cols): Real Funeral Solidarity Photo 2 -->
+            <!-- FRAME 02 (Split Editorial Photo Card - 6 Cols): Funeral_2.jpeg -->
             <article data-category="solidarity" onclick="openLightbox(1)"
-                     class="gallery-card w-full md:col-span-4 group cursor-pointer rounded-3xl overflow-hidden bg-black border-2 border-uka-gold/50 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[320px] sm:min-h-[420px] flex flex-col justify-between p-6 sm:p-8 text-white">
-                <img src="{% static 'images/Funeral_2.jpeg' %}"
-                     alt="Fraternal Presence at Funeral Rites — United Kabye Association"
-                     class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/25 pointer-events-none"></div>
+                     class="gallery-card w-full md:col-span-6 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-b from-uka-deep via-uka-forest to-black border-2 border-uka-gold/55 hover:border-uka-gold shadow-2xl transition-all duration-500 flex flex-col justify-between">
+                <!-- Unobstructed Full-Brightness Photo Stage -->
+                <div class="relative w-full aspect-[4/3] overflow-hidden bg-black border-b border-uka-gold/35">
+                    <img src="{% static 'images/Funeral_2.jpeg' %}"
+                         alt="Fraternal Presence at Funeral Rites — United Kabye Association"
+                         class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700">
 
-                <div class="relative z-10 flex items-center justify-between gap-2">
-                    <span class="px-3 py-1 rounded-full bg-white/95 text-uka-deep font-mono text-[10px] sm:text-[11px] font-black uppercase tracking-wider">
-                        Photo 02 • Welfare Shield
-                    </span>
-                    <span class="w-9 h-9 rounded-full bg-black/60 border border-white/25 flex items-center justify-center text-uka-gold text-sm group-hover:scale-110 transition-transform shrink-0">
-                        ↗
-                    </span>
+                    <!-- Minimal Floating Corner Pills -->
+                    <div class="absolute top-4 left-4 right-4 flex items-center justify-between gap-2 pointer-events-none">
+                        <span class="px-3 py-1 rounded-full bg-white/95 text-uka-deep font-mono text-[10px] sm:text-xs font-black uppercase tracking-wider shadow-lg">
+                            Photo 02 • Welfare Shield
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-black/75 backdrop-blur-md border border-white/25 font-mono text-[10px] text-emerald-300 shadow">
+                            Expand ⤢
+                        </span>
+                    </div>
                 </div>
 
-                <div class="relative z-10 space-y-2.5 pt-20 sm:pt-28">
-                    <span class="text-[11px] sm:text-xs font-mono text-emerald-300 uppercase tracking-wider block">
-                        Unified Brotherhood Presence
-                    </span>
-                    <h3 class="font-heading text-xl sm:text-2xl font-black leading-snug text-white">
-                        Fraternal Delegation & Final Rites Support
-                    </h3>
-                    <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-light">
-                        No Kabye family bears grief alone. Click to view the full-resolution delegation photograph.
-                    </p>
+                <!-- Luxury Editorial Text Panel Below -->
+                <div class="p-6 sm:p-8 text-white space-y-2.5 flex-grow flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <span class="block text-[11px] font-mono text-emerald-300 uppercase tracking-widest">
+                            Unified Brotherhood Presence
+                        </span>
+                        <h3 class="font-heading text-xl sm:text-2xl font-black leading-snug text-white group-hover:text-uka-goldlight transition-colors">
+                            Fraternal Delegation &amp; Final Rites Support
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-light">
+                            Standing shoulder-to-shoulder with our colleague and bereaved household during final rites—proving that no Kabye family faces grief alone.
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-2 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-uka-goldlight">
+                        <span>Verified Field Archive</span>
+                        <span class="group-hover:translate-x-1 transition-transform">Inspect Fullscreen →</span>
+                    </div>
                 </div>
             </article>
 
