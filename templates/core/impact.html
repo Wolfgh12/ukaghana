@@ -83,10 +83,10 @@
             <!-- Interactive Filter Pills -->
             <div class="flex flex-wrap items-center gap-2 sm:gap-2.5" id="gallery-filters">
                 <button type="button" onclick="filterGallery('all', this)" class="filter-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-uka-forest to-uka-emerald text-white font-bold text-[11px] sm:text-xs uppercase tracking-wider shadow-md transition">
-                    All Chronicles (10)
+                    All Chronicles (11)
                 </button>
                 <button type="button" onclick="filterGallery('solidarity', this)" class="filter-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white border border-uka-border text-slate-700 hover:border-uka-forest font-bold text-[11px] sm:text-xs uppercase tracking-wider transition">
-                    Welfare & Solidarity (3)
+                    Welfare & Solidarity (4)
                 </button>
                 <button type="button" onclick="filterGallery('cleanups', this)" class="filter-btn px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white border border-uka-border text-slate-700 hover:border-uka-forest font-bold text-[11px] sm:text-xs uppercase tracking-wider transition">
                     Municipal Cleanups
@@ -104,7 +104,7 @@
         </div>
 
         <!-- Asymmetric Editorial Bento Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-7" id="bento-grid">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8" id="bento-grid">
 
             <!-- FRAME 01 (Wide Feature - 8 Cols): Real Funeral Solidarity Photo 1 -->
             <article data-category="solidarity" onclick="openLightbox(0)"
@@ -168,42 +168,104 @@
                 </div>
             </article>
 
-            <!-- FRAME 03 (Full-Width Cinema Video Feature - 12 Cols): Real Funeral Video -->
+            <!-- FRAME 03 (Cinema Video Dispatch I - 6 Cols): Funeral_video.mp4 -->
             <article data-category="solidarity" onclick="openLightbox(2)"
-                     class="gallery-card w-full md:col-span-12 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-r from-uka-deep via-uka-forest to-black border-2 border-uka-gold/60 hover:border-uka-gold shadow-2xl transition-all duration-500 relative min-h-[260px] sm:min-h-[320px] grid grid-cols-1 lg:grid-cols-12 items-center">
-                <!-- Video Thumbnail Preview -->
-                <div class="lg:col-span-5 relative h-56 sm:h-72 lg:h-full overflow-hidden bg-black">
+                     class="gallery-card w-full md:col-span-6 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-b from-uka-deep via-uka-forest to-black border-2 border-uka-gold/55 hover:border-uka-gold shadow-2xl transition-all duration-500 flex flex-col justify-between">
+                <!-- Spacious 16:9 Cinema Thumbnail Stage -->
+                <div class="relative w-full aspect-video overflow-hidden bg-black border-b border-uka-gold/30">
                     <img src="{% static 'images/Funeral.jpeg' %}"
-                         alt="Funeral Solidarity Video Preview"
-                         class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-                        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-uka-gold to-amber-500 text-uka-deep flex items-center justify-center shadow-[0_0_40px_rgba(243,186,47,0.7)] group-hover:scale-110 transition-transform">
+                         alt="Bereavement Solidarity Delegation — Field Video Dispatch I"
+                         class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-black/30"></div>
+
+                    <!-- Top Stage Pill -->
+                    <div class="absolute top-4 left-4 right-4 flex items-center justify-between gap-2">
+                        <span class="px-3 py-1 rounded-full bg-uka-gold text-uka-deep font-mono text-[10px] sm:text-xs font-black uppercase tracking-wider shadow">
+                            🎥 Video Dispatch I • Art. 5.4
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/20 font-mono text-[10px] text-uka-goldlight">
+                            Play Cinema ↗
+                        </span>
+                    </div>
+
+                    <!-- Center Gold Play Medallion -->
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-uka-gold via-yellow-400 to-amber-500 text-uka-deep flex items-center justify-center shadow-[0_0_40px_rgba(243,186,47,0.75)] group-hover:scale-110 transition-transform duration-300">
                             <span class="text-2xl sm:text-3xl font-black ml-1">▶</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Video Narrative -->
-                <div class="lg:col-span-7 p-6 sm:p-10 text-white space-y-3 sm:space-y-4">
-                    <div class="flex flex-wrap items-center gap-2">
-                        <span class="px-3 py-1 rounded-full bg-uka-gold text-uka-deep font-mono text-[10px] sm:text-xs font-black uppercase tracking-wider">
-                            🎥 Video Chronicle • Article 5.4
+                <!-- Uncramped Editorial Details -->
+                <div class="p-6 sm:p-8 text-white space-y-2.5 flex-grow flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <span class="block text-[11px] font-mono text-uka-gold uppercase tracking-widest">
+                            Eastern Region Branch Delegation • Part I
                         </span>
-                        <span class="px-3 py-1 rounded-full bg-white/10 border border-white/20 font-mono text-[10px] sm:text-xs text-uka-goldlight">
-                            Click to Watch Field Footage
-                        </span>
+                        <h3 class="font-heading text-xl sm:text-2xl font-black leading-snug text-white group-hover:text-uka-goldlight transition-colors">
+                            Bereavement Solidarity — Arrival & Fraternal Tribute
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-light">
+                            Recorded footage capturing the Eastern Region Branch executive and members assembling in unity to honor final rites for our bereaved colleague.
+                        </p>
                     </div>
-                    <h3 class="font-heading text-xl sm:text-3xl font-black leading-tight text-white group-hover:text-uka-goldlight transition-colors">
-                        Bereavement Solidarity Delegation — Field Video Dispatch
-                    </h3>
-                    <p class="text-xs sm:text-base text-slate-200 leading-relaxed font-light max-w-2xl">
-                        Watch recorded footage of our Eastern Region Branch members and officers standing shoulder-to-shoulder with our bereaved colleague during final rites.
-                    </p>
+                    <div class="pt-4 mt-2 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-uka-goldlight">
+                        <span>Verified Field Archive</span>
+                        <span class="group-hover:translate-x-1 transition-transform">Watch Full Video →</span>
+                    </div>
                 </div>
             </article>
 
-            <!-- FRAME 04 (Wide Feature - 8 Cols): Koforidua Market Cleanup -->
-            <article data-category="cleanups" onclick="openLightbox(3)"
+            <!-- FRAME 04 (Cinema Video Dispatch II - 6 Cols): fun_2.mp4 -->
+            <article data-category="solidarity" onclick="openLightbox(3)"
+                     class="gallery-card w-full md:col-span-6 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-b from-uka-deep via-uka-forest to-black border-2 border-uka-gold/55 hover:border-uka-gold shadow-2xl transition-all duration-500 flex flex-col justify-between">
+                <!-- Spacious 16:9 Cinema Thumbnail Stage -->
+                <div class="relative w-full aspect-video overflow-hidden bg-black border-b border-uka-gold/30">
+                    <img src="{% static 'images/Funeral_2.jpeg' %}"
+                         alt="Bereavement Solidarity Delegation — Field Video Dispatch II"
+                         class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-black/30"></div>
+
+                    <!-- Top Stage Pill -->
+                    <div class="absolute top-4 left-4 right-4 flex items-center justify-between gap-2">
+                        <span class="px-3 py-1 rounded-full bg-uka-gold text-uka-deep font-mono text-[10px] sm:text-xs font-black uppercase tracking-wider shadow">
+                            🎥 Video Dispatch II • Art. 5.4
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/20 font-mono text-[10px] text-emerald-300">
+                            Play Cinema ↗
+                        </span>
+                    </div>
+
+                    <!-- Center Gold Play Medallion -->
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-uka-gold via-yellow-400 to-amber-500 text-uka-deep flex items-center justify-center shadow-[0_0_40px_rgba(243,186,47,0.75)] group-hover:scale-110 transition-transform duration-300">
+                            <span class="text-2xl sm:text-3xl font-black ml-1">▶</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Uncramped Editorial Details -->
+                <div class="p-6 sm:p-8 text-white space-y-2.5 flex-grow flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <span class="block text-[11px] font-mono text-emerald-300 uppercase tracking-widest">
+                            Eastern Region Branch Delegation • Part II
+                        </span>
+                        <h3 class="font-heading text-xl sm:text-2xl font-black leading-snug text-white group-hover:text-uka-goldlight transition-colors">
+                            Brotherhood Presence & Family Solidarity Rites
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed font-light">
+                            Extended field footage showcasing our members standing shoulder-to-shoulder with the bereaved household throughout the solemn ceremony.
+                        </p>
+                    </div>
+                    <div class="pt-4 mt-2 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-uka-goldlight">
+                        <span>Verified Field Archive</span>
+                        <span class="group-hover:translate-x-1 transition-transform">Watch Full Video →</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- FRAME 05 (Wide Feature - 8 Cols): Koforidua Market Cleanup -->
+            <article data-category="cleanups" onclick="openLightbox(4)"
                      class="gallery-card w-full md:col-span-8 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-br from-uka-deep via-uka-forest to-emerald-950 border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[320px] sm:min-h-[380px] flex flex-col justify-between p-6 sm:p-10 text-white">
                 <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(243,186,47,0.22),transparent_60%)] pointer-events-none"></div>
                 <div class="absolute -right-10 -bottom-10 w-52 sm:w-64 h-52 sm:h-64 opacity-10 rounded-full overflow-hidden pointer-events-none group-hover:scale-110 transition-transform duration-700">
@@ -215,7 +277,7 @@
                         Municipal Sanitation • Koforidua
                     </span>
                     <span class="px-3 py-1 rounded-full bg-black/50 backdrop-blur-md border border-white/15 font-mono text-[10px] sm:text-xs text-uka-goldlight">
-                        Chronicle № 04 • Expand ↗
+                        Chronicle № 05 • Expand ↗
                     </span>
                 </div>
 
@@ -232,8 +294,8 @@
                 </div>
             </article>
 
-            <!-- FRAME 05 (Tall Feature - 4 Cols): Pediatric Ward Visitation -->
-            <article data-category="clinics" onclick="openLightbox(4)"
+            <!-- FRAME 06 (Tall Feature - 4 Cols): Pediatric Ward Visitation -->
+            <article data-category="clinics" onclick="openLightbox(5)"
                      class="gallery-card w-full md:col-span-4 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-br from-[#2B1208] via-uka-terracotta/90 to-uka-deep border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[300px] sm:min-h-[380px] flex flex-col justify-between p-6 sm:p-8 text-white">
                 <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(243,186,47,0.25),transparent_65%)] pointer-events-none"></div>
                 <div class="absolute -right-8 -top-8 w-40 sm:w-44 h-40 sm:h-44 opacity-10 rounded-full overflow-hidden pointer-events-none group-hover:scale-110 transition-transform duration-700">
@@ -262,8 +324,8 @@
                 </div>
             </article>
 
-            <!-- FRAME 06 (4 Cols): Brotherhood Excursion -->
-            <article data-category="excursions" onclick="openLightbox(5)"
+            <!-- FRAME 07 (4 Cols): Brotherhood Excursion -->
+            <article data-category="excursions" onclick="openLightbox(6)"
                      class="gallery-card w-full md:col-span-4 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-br from-uka-forest via-uka-moss to-uka-deep border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[290px] sm:min-h-[340px] flex flex-col justify-between p-6 sm:p-8 text-white">
                 <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(243,186,47,0.2),transparent_60%)] pointer-events-none"></div>
 
@@ -289,8 +351,8 @@
                 </div>
             </article>
 
-            <!-- FRAME 07 (4 Cols): Bi-Monthly Assembly -->
-            <article data-category="assemblies" onclick="openLightbox(6)"
+            <!-- FRAME 08 (4 Cols): Bi-Monthly Assembly -->
+            <article data-category="assemblies" onclick="openLightbox(7)"
                      class="gallery-card w-full md:col-span-4 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-br from-slate-950 via-uka-deep to-uka-forest border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[290px] sm:min-h-[340px] flex flex-col justify-between p-6 sm:p-8 text-white">
                 <div class="absolute -right-6 -bottom-6 w-36 sm:w-40 h-36 sm:h-40 opacity-15 rounded-full overflow-hidden pointer-events-none">
                     <img src="{% static 'images/wc.jpg' %}" alt="UKA Crest" class="w-full h-full object-cover">
@@ -318,8 +380,8 @@
                 </div>
             </article>
 
-            <!-- FRAME 08 (4 Cols): Children's Home Provisions -->
-            <article data-category="clinics" onclick="openLightbox(7)"
+            <!-- FRAME 09 (4 Cols): Children's Home Provisions -->
+            <article data-category="clinics" onclick="openLightbox(8)"
                      class="gallery-card w-full md:col-span-4 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-br from-[#3B2606] via-uka-golddark/90 to-uka-deep border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[290px] sm:min-h-[340px] flex flex-col justify-between p-6 sm:p-8 text-white">
                 <div class="relative z-10 flex items-center justify-between gap-2">
                     <span class="px-3 py-1 rounded-full bg-white/95 text-uka-deep font-mono text-[10px] sm:text-[11px] font-black uppercase tracking-wider">
@@ -343,8 +405,8 @@
                 </div>
             </article>
 
-            <!-- FRAME 09 (Wide Bottom Left - 6 Cols): Nkawkaw Sanitation -->
-            <article data-category="cleanups" onclick="openLightbox(8)"
+            <!-- FRAME 10 (Wide Bottom Left - 6 Cols): Nkawkaw Sanitation -->
+            <article data-category="cleanups" onclick="openLightbox(9)"
                      class="gallery-card w-full md:col-span-6 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-r from-uka-deep via-uka-forest to-uka-moss border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[270px] sm:min-h-[300px] flex flex-col justify-between p-6 sm:p-8 text-white">
                 <div class="relative z-10 flex items-center justify-between gap-2">
                     <span class="px-3 py-1 rounded-full bg-uka-gold text-uka-deep font-mono text-[10px] sm:text-[11px] font-black uppercase tracking-wider">
@@ -368,8 +430,8 @@
                 </div>
             </article>
 
-            <!-- FRAME 10 (Wide Bottom Right - 6 Cols): Youth & Cultural Mentorship -->
-            <article data-category="excursions" onclick="openLightbox(9)"
+            <!-- FRAME 11 (Wide Bottom Right - 6 Cols): Youth & Cultural Mentorship -->
+            <article data-category="excursions" onclick="openLightbox(10)"
                      class="gallery-card w-full md:col-span-6 group cursor-pointer rounded-3xl overflow-hidden bg-gradient-to-r from-uka-forest via-uka-deep to-black border-2 border-uka-gold/30 hover:border-uka-gold shadow-xl hover:shadow-2xl transition-all duration-500 relative min-h-[270px] sm:min-h-[300px] flex flex-col justify-between p-6 sm:p-8 text-white">
                 <div class="relative z-10 flex items-center justify-between gap-2">
                     <span class="px-3 py-1 rounded-full bg-white/15 border border-uka-gold/40 text-uka-gold font-mono text-[10px] sm:text-[11px] font-bold uppercase tracking-wider">
@@ -561,11 +623,20 @@
         {
             mediaType: "video",
             mediaSrc: "{% static 'videos/Funeral_video.mp4' %}",
-            badge: "🎥 Field Video Dispatch • Art. 5.4",
+            badge: "🎥 Video Dispatch I • Art. 5.4",
             location: "Eastern Region Branch",
             lead: "Eastern Region Executive & Members",
-            title: "Bereavement Solidarity Delegation — Field Video Dispatch",
-            desc: "Recorded footage from the Eastern Region Branch delegation supporting our colleague at funeral rites under Article 5.4 of the Supreme Branch Charter."
+            title: "Bereavement Solidarity — Arrival & Fraternal Tribute",
+            desc: "Recorded footage capturing the Eastern Region Branch executive and members assembling in unity to honor final rites for our bereaved colleague."
+        },
+        {
+            mediaType: "video",
+            mediaSrc: "{% static 'videos/fun_2.mp4' %}",
+            badge: "🎥 Video Dispatch II • Art. 5.4",
+            location: "Eastern Region Branch",
+            lead: "Eastern Region Executive & Members",
+            title: "Brotherhood Presence & Family Solidarity Rites",
+            desc: "Extended field footage showcasing our members standing shoulder-to-shoulder with the bereaved household throughout the solemn ceremony under Article 5.4."
         },
         {
             mediaType: "emblem",
