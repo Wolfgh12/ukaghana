@@ -228,12 +228,23 @@
                     <div class="space-y-4 text-xs sm:text-sm relative z-10">
                         <div class="p-4 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-between gap-3">
                             <div class="min-w-0">
-                                <span class="block text-[10px] font-mono uppercase tracking-wider text-uka-gold">Secretariat & MoMo Line</span>
-                                <span id="contact-phone-num" class="font-mono text-base sm:text-lg font-black text-white tracking-wider">0244000000</span>
+                                <span class="block text-[10px] font-mono uppercase tracking-wider text-uka-gold">Official MTN MoMo Paypoint • Paul Abotsi</span>
+                                <span id="contact-phone-num" class="font-mono text-base sm:text-lg font-black text-white tracking-wider">0248117934</span>
                             </div>
                             <button type="button" onclick="copySecretariatPhone()" class="px-3.5 py-2 rounded-xl bg-uka-gold text-uka-deep font-mono text-[11px] font-black uppercase tracking-wider hover:brightness-105 transition shrink-0">
                                 <span id="copy-phone-label">Copy</span>
                             </button>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-between gap-3">
+                            <div class="min-w-0">
+                                <span class="block text-[10px] font-mono uppercase tracking-wider text-emerald-300">Secretariat &amp; Chairman WhatsApp</span>
+                                <span class="font-mono text-base sm:text-lg font-black text-white tracking-wider">+233 24 425 1048</span>
+                            </div>
+                            <a href="https://wa.me/233244251048" target="_blank" rel="noopener noreferrer"
+                               class="px-3.5 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-uka-deep font-mono text-[11px] font-black uppercase tracking-wider transition shrink-0">
+                                WhatsApp ↗
+                            </a>
                         </div>
 
                         <div class="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
@@ -356,11 +367,29 @@
     function handleContactSubmit(e) {
         e.preventDefault();
         const name = document.getElementById('c-name').value.trim();
+        const phone = document.getElementById('c-phone').value.trim();
+        const town = document.getElementById('c-town').value.trim() || "Not specified";
         const topic = document.getElementById('c-topic').value;
+        const msg = document.getElementById('c-message').value.trim();
         const box = document.getElementById('contact-success-box');
         const text = document.getElementById('contact-success-text');
 
-        text.innerText = `Thank you, ${name}. Your note regarding "${topic}" has been logged for Acting Branch Secretary Mary Samoh and the Eastern Region Secretariat. We will reach out to you shortly!`;
+        const whatsappText = [
+            "*UKA EASTERN REGION SECRETARIAT INQUIRY*",
+            "",
+            `*Name:* ${name}`,
+            `*Phone / WhatsApp:* ${phone}`,
+            `*Town:* ${town}`,
+            `*Topic:* ${topic}`,
+            "",
+            `*Message:*\n${msg}`,
+            "",
+            "_Sent via ukaghana.vercel.app_"
+        ].join("\n");
+
+        window.open(`https://wa.me/233244251048?text=${encodeURIComponent(whatsappText)}`, '_blank', 'noopener,noreferrer');
+
+        text.innerText = `Thank you, ${name}. WhatsApp has been opened with your message regarding "${topic}" addressed to Chairman Mr. Paul Abotsi (+233 24 425 1048).`;
         box.classList.remove('hidden');
         e.target.reset();
     }
